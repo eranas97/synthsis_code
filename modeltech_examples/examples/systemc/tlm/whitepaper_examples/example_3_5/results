@@ -1,0 +1,231 @@
+# do run.do 
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# 
+# Exported modules:
+# 	top
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# vsim top 
+# Loading work/systemc.so
+# Loading work.top
+# top/my_master 60 ns writing 0 , 50
+# top/my_master 70 ns writing 0 , 50
+# top/slave 70 ns no ack 0 1
+# top/my_master 80 ns writing 0 , 50
+# top/slave 80 ns writing 50 to 0
+# top/my_master 110 ns reading 0
+# top/my_master 120 ns reading 0
+# top/slave 120 ns no ack 0 1
+# top/my_master 130 ns reading 0
+# top/slave 130 ns reading 50 from 0
+# top/my_master 140 ns read 0 , 50
+# top/my_master 160 ns writing 1 , 51
+# top/my_master 170 ns writing 1 , 51
+# top/slave 170 ns no ack 1 1
+# top/my_master 180 ns writing 1 , 51
+# top/slave 180 ns writing 51 to 1
+# top/my_master 210 ns reading 1
+# top/my_master 220 ns reading 1
+# top/slave 220 ns no ack 1 1
+# top/my_master 230 ns reading 1
+# top/slave 230 ns reading 51 from 1
+# top/my_master 240 ns read 1 , 51
+# top/my_master 260 ns writing 2 , 52
+# top/my_master 270 ns writing 2 , 52
+# top/slave 270 ns no ack 2 1
+# top/my_master 280 ns writing 2 , 52
+# top/slave 280 ns writing 52 to 2
+# top/my_master 310 ns reading 2
+# top/my_master 320 ns reading 2
+# top/slave 320 ns no ack 2 1
+# top/my_master 330 ns reading 2
+# top/slave 330 ns reading 52 from 2
+# top/my_master 340 ns read 2 , 52
+# top/my_master 360 ns writing 3 , 53
+# top/my_master 370 ns writing 3 , 53
+# top/slave 370 ns no ack 3 1
+# top/my_master 380 ns writing 3 , 53
+# top/slave 380 ns writing 53 to 3
+# top/my_master 410 ns reading 3
+# top/my_master 420 ns reading 3
+# top/slave 420 ns no ack 3 1
+# top/my_master 430 ns reading 3
+# top/slave 430 ns reading 53 from 3
+# top/my_master 440 ns read 3 , 53
+# top/my_master 460 ns writing 4 , 54
+# top/my_master 470 ns writing 4 , 54
+# top/slave 470 ns no ack 4 1
+# top/my_master 480 ns writing 4 , 54
+# top/slave 480 ns writing 54 to 4
+# top/my_master 510 ns reading 4
+# top/my_master 520 ns reading 4
+# top/slave 520 ns no ack 4 1
+# top/my_master 530 ns reading 4
+# top/slave 530 ns reading 54 from 4
+# top/my_master 540 ns read 4 , 54
+# top/my_master 560 ns writing 5 , 55
+# top/my_master 570 ns writing 5 , 55
+# top/slave 570 ns no ack 5 1
+# top/my_master 580 ns writing 5 , 55
+# top/slave 580 ns writing 55 to 5
+# top/my_master 610 ns reading 5
+# top/my_master 620 ns reading 5
+# top/slave 620 ns no ack 5 1
+# top/my_master 630 ns reading 5
+# top/slave 630 ns reading 55 from 5
+# top/my_master 640 ns read 5 , 55
+# top/my_master 660 ns writing 6 , 56
+# top/my_master 670 ns writing 6 , 56
+# top/slave 670 ns no ack 6 1
+# top/my_master 680 ns writing 6 , 56
+# top/slave 680 ns writing 56 to 6
+# top/my_master 710 ns reading 6
+# top/my_master 720 ns reading 6
+# top/slave 720 ns no ack 6 1
+# top/my_master 730 ns reading 6
+# top/slave 730 ns reading 56 from 6
+# top/my_master 740 ns read 6 , 56
+# top/my_master 760 ns writing 7 , 57
+# top/my_master 770 ns writing 7 , 57
+# top/slave 770 ns no ack 7 1
+# top/my_master 780 ns writing 7 , 57
+# top/slave 780 ns writing 57 to 7
+# top/my_master 810 ns reading 7
+# top/my_master 820 ns reading 7
+# top/slave 820 ns no ack 7 1
+# top/my_master 830 ns reading 7
+# top/slave 830 ns reading 57 from 7
+# top/my_master 840 ns read 7 , 57
+# top/my_master 860 ns writing 8 , 58
+# top/my_master 870 ns writing 8 , 58
+# top/slave 870 ns no ack 8 1
+# top/my_master 880 ns writing 8 , 58
+# top/slave 880 ns writing 58 to 8
+# top/my_master 910 ns reading 8
+# top/my_master 920 ns reading 8
+# top/slave 920 ns no ack 8 1
+# top/my_master 930 ns reading 8
+# top/slave 930 ns reading 58 from 8
+# top/my_master 940 ns read 8 , 58
+# top/my_master 960 ns writing 9 , 59
+# top/my_master 970 ns writing 9 , 59
+# top/slave 970 ns no ack 9 1
+# top/my_master 980 ns writing 9 , 59
+# top/slave 980 ns writing 59 to 9
+# top/my_master 1010 ns reading 9
+# top/my_master 1020 ns reading 9
+# top/slave 1020 ns no ack 9 1
+# top/my_master 1030 ns reading 9
+# top/slave 1030 ns reading 59 from 9
+# top/my_master 1040 ns read 9 , 59
+# top/my_master 1060 ns writing 10 , 60
+# top/my_master 1070 ns writing 10 , 60
+# top/slave 1070 ns no ack 10 1
+# top/my_master 1080 ns writing 10 , 60
+# top/slave 1080 ns writing 60 to 10
+# top/my_master 1110 ns reading 10
+# top/my_master 1120 ns reading 10
+# top/slave 1120 ns no ack 10 1
+# top/my_master 1130 ns reading 10
+# top/slave 1130 ns reading 60 from 10
+# top/my_master 1140 ns read 10 , 60
+# top/my_master 1160 ns writing 11 , 61
+# top/my_master 1170 ns writing 11 , 61
+# top/slave 1170 ns no ack 11 1
+# top/my_master 1180 ns writing 11 , 61
+# top/slave 1180 ns writing 61 to 11
+# top/my_master 1210 ns reading 11
+# top/my_master 1220 ns reading 11
+# top/slave 1220 ns no ack 11 1
+# top/my_master 1230 ns reading 11
+# top/slave 1230 ns reading 61 from 11
+# top/my_master 1240 ns read 11 , 61
+# top/my_master 1260 ns writing 12 , 62
+# top/my_master 1270 ns writing 12 , 62
+# top/slave 1270 ns no ack 12 1
+# top/my_master 1280 ns writing 12 , 62
+# top/slave 1280 ns writing 62 to 12
+# top/my_master 1310 ns reading 12
+# top/my_master 1320 ns reading 12
+# top/slave 1320 ns no ack 12 1
+# top/my_master 1330 ns reading 12
+# top/slave 1330 ns reading 62 from 12
+# top/my_master 1340 ns read 12 , 62
+# top/my_master 1360 ns writing 13 , 63
+# top/my_master 1370 ns writing 13 , 63
+# top/slave 1370 ns no ack 13 1
+# top/my_master 1380 ns writing 13 , 63
+# top/slave 1380 ns writing 63 to 13
+# top/my_master 1410 ns reading 13
+# top/my_master 1420 ns reading 13
+# top/slave 1420 ns no ack 13 1
+# top/my_master 1430 ns reading 13
+# top/slave 1430 ns reading 63 from 13
+# top/my_master 1440 ns read 13 , 63
+# top/my_master 1460 ns writing 14 , 64
+# top/my_master 1470 ns writing 14 , 64
+# top/slave 1470 ns no ack 14 1
+# top/my_master 1480 ns writing 14 , 64
+# top/slave 1480 ns writing 64 to 14
+# top/my_master 1510 ns reading 14
+# top/my_master 1520 ns reading 14
+# top/slave 1520 ns no ack 14 1
+# top/my_master 1530 ns reading 14
+# top/slave 1530 ns reading 64 from 14
+# top/my_master 1540 ns read 14 , 64
+# top/my_master 1560 ns writing 15 , 65
+# top/my_master 1570 ns writing 15 , 65
+# top/slave 1570 ns no ack 15 1
+# top/my_master 1580 ns writing 15 , 65
+# top/slave 1580 ns writing 65 to 15
+# top/my_master 1610 ns reading 15
+# top/my_master 1620 ns reading 15
+# top/slave 1620 ns no ack 15 1
+# top/my_master 1630 ns reading 15
+# top/slave 1630 ns reading 65 from 15
+# top/my_master 1640 ns read 15 , 65
+# top/my_master 1660 ns writing 16 , 66
+# top/my_master 1670 ns writing 16 , 66
+# top/slave 1670 ns no ack 16 1
+# top/my_master 1680 ns writing 16 , 66
+# top/slave 1680 ns error 
+# top/my_master 1690 ns error on write 16 , 66
+# top/my_master 1710 ns reading 16
+# top/my_master 1720 ns reading 16
+# top/slave 1720 ns no ack 16 1
+# top/my_master 1730 ns reading 16
+# top/slave 1730 ns error 
+# top/my_master 1740 ns error on read 16
+# top/my_master 1760 ns writing 17 , 67
+# top/my_master 1770 ns writing 17 , 67
+# top/slave 1770 ns no ack 17 1
+# top/my_master 1780 ns writing 17 , 67
+# top/slave 1780 ns error 
+# top/my_master 1790 ns error on write 17 , 67
+# top/my_master 1810 ns reading 17
+# top/my_master 1820 ns reading 17
+# top/slave 1820 ns no ack 17 1
+# top/my_master 1830 ns reading 17
+# top/slave 1830 ns error 
+# top/my_master 1840 ns error on read 17
+# top/my_master 1860 ns writing 18 , 68
+# top/my_master 1870 ns writing 18 , 68
+# top/slave 1870 ns no ack 18 1
+# top/my_master 1880 ns writing 18 , 68
+# top/slave 1880 ns error 
+# top/my_master 1890 ns error on write 18 , 68
+# top/my_master 1910 ns reading 18
+# top/my_master 1920 ns reading 18
+# top/slave 1920 ns no ack 18 1
+# top/my_master 1930 ns reading 18
+# top/slave 1930 ns error 
+# top/my_master 1940 ns error on read 18
+# top/my_master 1960 ns writing 19 , 69
+# top/my_master 1970 ns writing 19 , 69
+# top/slave 1970 ns no ack 19 1
+# top/my_master 1980 ns writing 19 , 69
+# top/slave 1980 ns error 
+# top/my_master 1990 ns error on write 19 , 69

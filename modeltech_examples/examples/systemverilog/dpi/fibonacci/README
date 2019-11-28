@@ -1,0 +1,13 @@
+This example shows the following SystemVerilog features:
+
+    * Direct Programming interface (DPI)
+
+The example has a simple C algorithm for computing a Fibonacci sequence.  The
+C function is called directly by the verilog code using a SystemVerilog
+mechanism called the Direct Programming Interface (DPI).  This mechanism is
+explained in detail in the User's manual.
+
+This DPI example can be used along with the verilog PLI version in the
+examples/verilog/pli/fibonacci directory to examine the differences between
+the two interfaces.  The testbench is set up to call this function in a loop
+so relative performance can be measured.

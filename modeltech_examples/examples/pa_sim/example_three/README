@@ -1,0 +1,29 @@
+This example shows the following Power Aware feature:
+
+    * Hard macros and liberty models
+
+Preliminary Information
+-----------------------
+For information about hard macros and liberty models, please visit the Power Aware User 
+Manual, Chapter 3, "Macro Models Concepts" section.
+
+
+Running the example
+-------------------
+A do file "run.do" has been included with this example in order to help you compile, 
+optimize, and simulate the design. The "-pa_enable=libertypamodel" option is required 
+in the vopt command. 
+
+This example contains the hard macro model "mux_cell" and the liberty model "register_1". 
+The instance of the "mux_cell" hard macro is part of PD_MUX power domain while some 
+instances of "register_1" is part of PD_IN power domain and others are part of PD_TOP 
+power domain.
+
+The tool should automatically connect the power supplies ports of hard macros and the 
+pg_pins of the liberty model with the primary power supplies of the corresponding power 
+domain based on their pg_type attributes unless there is an explicit connection applied.
+
+In the example, there is only one explicit connection for the power supply "pwr_sup" of 
+"mux_cell" with "VDD_MUX_net". The connection applied for the hard macros and liberty models 
+are reported in report.cell.txt and report.connection.txt report files.
+

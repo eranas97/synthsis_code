@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<rmdb version="1.0" loadtcl="default" options="-j 2">
+  <runnable name="generate" type="group">
+    <parameters>
+      <parameter name="top">top_opt</parameter>
+      <parameter name="work">(%DATADIR%)/generate/work</parameter>
+      <parameter name="testname">(%INSTANCE%)</parameter>
+      <parameter name="ucdbfile">(%testname%).ucdb</parameter>
+      <parameter name="NUMTESTS">42</parameter>
+      <!-- 7 = 256, 8 = 512, 9 = 1024, 10 = 2048, 11 = 4096, 12 = 8192, 13 = 16384, 14 = 32768, 15 = 65536, 16 = 131072-->
+      <!-- 17 = 262144, 18 = 524288, 19 = 1048576 -->
+      <parameter name="UPPERRANGE" ask="Upper Range of coverage bins ?" accept="oneof(7,8,9,10,11,12,13,14,15,16,17,18,19,20)">16</parameter>
+      <parameter name="PLUSARG" type="tcl">[GenerateTestStatus]</parameter>
+    </parameters>
+    <members>
+      <member>Test</member>
+    </members>
+    <localfile name="top.sv" expand="yes">
+      <command>module top;</command>
+      <command>  bit [(%UPPERRANGE%):0] a;</command>
+      <command>  covergroup cg;</command>
+      <command>    cvpa: coverpoint a ;</command>
+      <command>    option.auto_bin_max = 268435456;</command>
+      <command>  endgroup</command>
+      <command>  cg cv = new;</command>
+      <command>  initial begin</command>
+      <command>    $display("Hello world");</command>
+      <command>    #1; $display($get_coverage());</command>
+      <command>    // controllable simulation status</command>
+      <command>    if ($test$plusargs("note"))    assert(1) $note("This is a note");</command>
+      <command>    if ($test$plusargs("error"))   assert(1) $error("This is an error");</command>
+      <command>    if ($test$plusargs("warning")) assert(1) $warning("This is a warning");</command>
+      <command>    if ($test$plusargs("fatal"))   assert(1) $fatal("This is a fatal");</command>
+      <command>  end</command>
+     <command> endmodule</command>
+    </localfile>
+    <preScript>
+      <command>file delete -force work</command>
+      <command>vlib work</command>
+      <command>vlog -sv -cover bces top.sv</command>
+      <command>vopt top -o (%top%)</command>
+    </preScript>
+    <execScript>
+      <command>vsim -c (%top%) -lib (%work%) -sv_seed random (%PLUSARG%) -suppress 12023</command>
+      <command>run -all</command>
+      <command>coverage attribute -name TESTNAME -value (%testname%)</command>
+      <command>coverage save (%ucdbfile%)</command>
+    </execScript>
+    <postScript launch="vsim">
+      <command>package require fileutil</command>
+      <command>proc is_test {name} {return [string match Test*.ucdb $name]}</command>
+      <command>set files [::fileutil::find (%DATADIR%) is_test]</command>
+      <command>set ofile [open (%VRUNDIR%)/filelist "w"]</command>
+      <command>foreach file $files {puts $ofile $file}</command>
+      <command>close $ofile</command>
+    </postScript>
+  </runnable>
+
+  <runnable name="Test" type="task" repeat="(%NUMTESTS%)"/>
+
+  <usertcl name="default">
+    proc GenerateTestStatus {} {
+      set seed [expr int(floor(rand()*4+1))]
+      set generateRandomStatus [expr int(floor(rand()*$seed+1))]
+      switch -- $generateRandomStatus { "1" {set Status "+note=1" }
+                                        "2" {set Status "+warning=1"}
+                                        "3" {set Status "+error=1"}
+                                        "4" {set Status "+fatal=1"}
+                                      }
+      return $Status
+    }
+  </usertcl>
+
+</rmdb> 

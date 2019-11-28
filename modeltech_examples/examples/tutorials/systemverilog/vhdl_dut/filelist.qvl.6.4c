@@ -1,0 +1,67 @@
+//
+// DESCRIPTION: QVL Simulator Arguments File
+//
+// QVL Usage for Simulator Arguments File:
+// (See QVL documentation for details)
+//   1) Modify the "$QUESTA_HOME" to point to your Questa installation
+//   2) Under the QVL Monitors sections of the arguments filelist, update
+//      the -y and +incdir options to refer to the appropriate monitor
+//      directories. 
+//      Note: By default, all QVL checkers are specified through 
+//      the -y option.
+//   3) Add this filelist to your vlog arguments
+//      For example:
+//        vlog -f filelist.qvl ...
+//
+//   Note: In order to avoid using the -mfcu (multi-file compilation unit) 
+//     vlog option with your simulation environment, you must compile the 
+//     checkers into a library using the compile_ovl_lib and compile_qvl_lib
+//     scripts.
+//
+//   Note: Disabling QVL Impicit X/Z Checks
+//     Similar to the Accellera Standard OVL checkers, the QVL monitors
+//     have implicit X/Z checks that are not needed for violation reporting.
+//     It is recommended that you remove the
+//     QVL_XCHECK_OFF define from the QVL library compilation below.
+//
+// LAST MODIFIED: 12/09/2008
+// Questa Release: 6.4 or later
+
+// Command line switches
+//-sv                              // SystemVerilog
+-mfcu                            // Multi-file compilation unit
+
+// `DEFINES
++define+QVL_ASSERT_ON            // Turn on QVL/OVL assertions
++define+QVL_COVER_ON             // Turn on QVL/OVL coverage
++define+QVL_XCHECK_OFF  // Turn off Implicit X/Z Checks
+//+define+QVL_SV_COVERGROUP_OFF  // Turn off SV cover groups
+//+define+QVL_CW_FINAL_COVER     // Display final checker cover info
+//+define+QVL_MW_FINAL_COVER_OFF // Don't display final monitor cover info
+
+// File extensions
++libext+.vlib                    // OVL wrapper files
++libext+.v                       // Verilog wrapper files
++libext+.sv                       // Verilog wrapper files
+
+// Include directories
+// -- Accellera Standard OVL checkers
++incdir+$QUESTA_HOME/verilog_src/std_ovl
+// -- QVL checkers
++incdir+$QVLPROD/qvl_src/qvl_checkers
+
+// -- QVL monitors
+// ADD +incdir FOR MONITOR DIRECTORIES HERE
++incdir+$QVLPROD/qvl_src/qvl_monitors/amba
+//+incdir+$QVLPROD/qvl_src/qvl_monitors/amba_axi
+
+// Library directories
+// -- Accellera Standard OVL checkers
+-y $QUESTA_HOME/verilog_src/std_ovl
+// -- QVL checkers
+-y $QVLPROD/qvl_src/qvl_checkers
+
+// -- QVL monitors
+// ADD -y FOR MONITOR DIRECTORIES HERE
+-y $QVLPROD/qvl_src/qvl_monitors/amba
+//-y $QVLPROD/qvl_src/qvl_monitors/amba_axi

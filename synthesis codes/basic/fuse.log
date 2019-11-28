@@ -1,0 +1,12 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/synthesis codes/basic/tb_vedic3bit_isim_beh.exe -prj D:/synthesis codes/basic/tb_vedic3bit_beh.prj work.tb_vedic3bit work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/synthesis codes/basic/vedic3bit.v" into library work
+Analyzing Verilog file "D:/synthesis codes/basic/tb_vedic3bit.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "D:/synthesis codes/basic/vedic3bit.v" Line 51: Instantiating <P0> from unknown module <adder2bit>
+ERROR:HDLCompiler:1654 - "D:/synthesis codes/basic/vedic3bit.v" Line 52: Instantiating <P1> from unknown module <adder3bit>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

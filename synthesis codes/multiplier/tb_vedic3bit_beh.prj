@@ -1,0 +1,5 @@
+verilog work "adder3bit.v"
+verilog work "adder2bit.v"
+verilog work "vedic3bit.v"
+verilog work "tb_vedic3bit.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

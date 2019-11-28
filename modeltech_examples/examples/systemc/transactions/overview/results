@@ -1,0 +1,180 @@
+# do run.do 
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# 
+# Exported modules:
+# 	top
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# vsim top 
+# Loading work/systemc.so
+# Loading work.top
+# Constructing my_startup
+# Constructing test
+# Constructing pipelined_bus_ports
+# Constructing rw_pipelined_transactor
+# Constructing pipelined_bus_ports
+# Constructing design
+# Constructing transactions
+# posedge clk at time 0 s
+# cycle = 1
+# posedge clk at time 20 ns
+# posedge clk at time 40 ns
+# at time 40 ns: received request for memory address 0
+# posedge clk at time 60 ns
+# posedge clk at time 80 ns
+# reading memory address 0 with value 100
+# posedge clk at time 100 ns
+# at time 100 ns: received data : 100
+# posedge clk at time 120 ns
+# cycle = 2
+# posedge clk at time 140 ns
+# posedge clk at time 160 ns
+# at time 180 ns: received request for memory address 1
+# posedge clk at time 180 ns
+# posedge clk at time 200 ns
+# reading memory address 1 with value 101
+# posedge clk at time 220 ns
+# posedge clk at time 240 ns
+# at time 240 ns: received data : 101
+# posedge clk at time 260 ns
+# cycle = 3
+# posedge clk at time 280 ns
+# posedge clk at time 300 ns
+# posedge clk at time 320 ns
+# posedge clk at time 340 ns
+# at time 340 ns: received request for memory address 2
+# posedge clk at time 360 ns
+# posedge clk at time 380 ns
+# posedge clk at time 400 ns
+# reading memory address 2 with value 102
+# posedge clk at time 420 ns
+# posedge clk at time 440 ns
+# at time 440 ns: received data : 102
+# posedge clk at time 460 ns
+# cycle = 4
+# posedge clk at time 480 ns
+# posedge clk at time 500 ns
+# posedge clk at time 520 ns
+# posedge clk at time 540 ns
+# at time 560 ns: received request for memory address 16
+# posedge clk at time 560 ns
+# posedge clk at time 580 ns
+# posedge clk at time 600 ns
+# posedge clk at time 620 ns
+# posedge clk at time 640 ns
+# reading memory address 16 with value 116
+# posedge clk at time 660 ns
+# data for address 16 is 116
+# posedge clk at time 680 ns
+# cycle = 5
+# posedge clk at time 700 ns
+# posedge clk at time 720 ns
+# posedge clk at time 740 ns
+# posedge clk at time 760 ns
+# posedge clk at time 780 ns
+# posedge clk at time 800 ns
+# at time 800 ns: received request for memory address 228
+# posedge clk at time 820 ns
+# posedge clk at time 840 ns
+# posedge clk at time 860 ns
+# posedge clk at time 880 ns
+# posedge clk at time 900 ns
+# posedge clk at time 920 ns
+# reading memory address 228 with value 72
+# posedge clk at time 940 ns
+# data for address 228 is 72
+# posedge clk at time 960 ns
+# cycle = 6
+# posedge clk at time 980 ns
+# posedge clk at time 1 us
+# posedge clk at time 1020 ns
+# posedge clk at time 1040 ns
+# posedge clk at time 1060 ns
+# posedge clk at time 1080 ns
+# at time 1100 ns: received request for memory address 27
+# posedge clk at time 1100 ns
+# posedge clk at time 1120 ns
+# posedge clk at time 1140 ns
+# posedge clk at time 1160 ns
+# posedge clk at time 1180 ns
+# posedge clk at time 1200 ns
+# reading memory address 27 with value 127
+# posedge clk at time 1220 ns
+# posedge clk at time 1240 ns
+# data for address 27 is 127
+# Constructing write_t
+# Constructing write_t
+# posedge clk at time 1260 ns
+# cycle = 7
+# posedge clk at time 1280 ns
+# posedge clk at time 1300 ns
+# posedge clk at time 1320 ns
+# posedge clk at time 1340 ns
+# posedge clk at time 1360 ns
+# posedge clk at time 1380 ns
+# posedge clk at time 1400 ns
+# posedge clk at time 1420 ns
+# at time 1420 ns: received request for memory address 101
+# posedge clk at time 1440 ns
+# posedge clk at time 1460 ns
+# posedge clk at time 1480 ns
+# posedge clk at time 1500 ns
+# posedge clk at time 1520 ns
+# posedge clk at time 1540 ns
+# posedge clk at time 1560 ns
+# reading memory address 101 with value 201
+# posedge clk at time 1580 ns
+# posedge clk at time 1600 ns
+# send data : 37
+# posedge clk at time 1620 ns
+# cycle = 8
+# posedge clk at time 1640 ns
+# posedge clk at time 1660 ns
+# posedge clk at time 1680 ns
+# posedge clk at time 1700 ns
+# posedge clk at time 1720 ns
+# posedge clk at time 1740 ns
+# posedge clk at time 1760 ns
+# posedge clk at time 1780 ns
+# at time 1800 ns: received request for memory address 107
+# posedge clk at time 1800 ns
+# posedge clk at time 1820 ns
+# posedge clk at time 1840 ns
+# posedge clk at time 1860 ns
+# posedge clk at time 1880 ns
+# posedge clk at time 1900 ns
+# posedge clk at time 1920 ns
+# posedge clk at time 1940 ns
+# posedge clk at time 1960 ns
+# reading memory address 107 with value 207
+# posedge clk at time 1980 ns
+# send data : 208
+# posedge clk at time 2 us
+# cycle = 9
+# posedge clk at time 2020 ns
+# posedge clk at time 2040 ns
+# posedge clk at time 2060 ns
+# posedge clk at time 2080 ns
+# posedge clk at time 2100 ns
+# posedge clk at time 2120 ns
+# posedge clk at time 2140 ns
+# posedge clk at time 2160 ns
+# posedge clk at time 2180 ns
+# posedge clk at time 2200 ns
+# at time 2200 ns: received request for memory address 232
+# posedge clk at time 2220 ns
+# posedge clk at time 2240 ns
+# posedge clk at time 2260 ns
+# posedge clk at time 2280 ns
+# posedge clk at time 2300 ns
+# posedge clk at time 2320 ns
+# posedge clk at time 2340 ns
+# posedge clk at time 2360 ns
+# posedge clk at time 2380 ns
+# posedge clk at time 2400 ns
+# reading memory address 232 with value 76
+# posedge clk at time 2420 ns
+# send data : 171
+# posedge clk at time 2440 ns
+# posedge clk at time 2460 ns
+# posedge clk at time 2480 ns
+# posedge clk at time 2500 ns

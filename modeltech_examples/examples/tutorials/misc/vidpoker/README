@@ -1,0 +1,143 @@
+ 			 Copyright 1991-2016 Mentor Graphics Corporation
+						All Rights Reserved.
+
+	This document contains information that is proprietary to 
+	Mentor Graphics Corporation. The original recipient of this 
+	document may duplicate this document in whole or in part for 
+	internal business purposes only, provided that this entire 
+	notice appears in all copies. In duplicating any part of this 
+	document, the recipient agrees to make every reasonable 
+	effort to prevent the unauthorized use and distribution of the 
+	proprietary information.
+
+	Trademarks that appear in Mentor Graphics product 
+	publications that are not owned by Mentor Graphics are 
+	trademarks of their respective owners.
+
+Introduction:
+=============
+
+This is a simulation of a Video Poker circuit with corresponding GUI in Tcl/Tk.
+The design is currently in Verilog only.  Because of it's dependency on Tcl/Tk,
+it will only run in ModelSim/EE, not PE.
+
+Version History:
+================
+
+[vidpoker.tcl]
+# v0.1 - Initial Release 
+# v0.2 - Modified to work with 5.1*
+# v0.3 - 1) Switched selection around.  Now you select what to keep.
+#        2) Deal now pauses between cards for effect, Draw now turns over 
+#           discards, waits, then releals, pausing between cards.  Looks good.
+# v0.4 - Limited bet to no more than you have.  Fixed cheat so you only get taxed, not rewarded.
+# v0.5 - 1) Turned status line into a three line scrollable text widget.
+#        2) Added bankroll comments.  If you bust, you get more money.
+# v0.6 - The bet was not being deducted from bankroll at Deal time.  Shouldn't then deduct it again
+#        if the player fails to get Jacks or Better.
+# v0.7 - Made seed get redriven each hand for even more randomness
+# v0.8 - Fixed a reference to a Windows specific background color (SystemMenu).  Made it more generic.
+# v0.9 - changed calls to 'exa' to explicit 'examine' to avoid ambiguity.
+# v1.0 - Added AutoPlay
+############################################
+
+Setup:
+======
+
+Be sure there is a subdirectory named "Images" below the 
+source directory.  It's required and must contain the images
+necessary to run the application.
+
+Building the Design:
+====================
+
+[Bring up ModelSim, type the following from the prompt]
+cd <source_directory> [where the design code is located]
+source compile.do
+source vidpoker.tcl
+
+Running the application:
+========================
+1) Press Deal.
+2) Select the cards to keep.
+3) Press Draw
+4) Repeat
+
+Notes:
+- You can change the bet size between hands but before hitting
+  the Deal button
+- The Tcl application generates and drives the seed for the random 
+  number generator into the design, providing better "randomness"
+- The application will autoplay.  For a nice show, select:
+  Simulation->Display top level in Wave Window
+  Simulation->Auto Play
+
+Contents:
+=========
+units 37>>  find . -print
+.
+./README
+./clock.v
+./compile.do
+./deck.v
+./play.v
+./resolver.v
+./top.v
+./vidpoker.tcl
+./Images
+./Images/10c.gif
+./Images/10d.gif
+./Images/10h.gif
+./Images/10s.gif
+./Images/2c.gif
+./Images/2d.gif
+./Images/2h.gif
+./Images/2s.gif
+./Images/3c.gif
+./Images/3d.gif
+./Images/3h.gif
+./Images/3s.gif
+./Images/4c.gif
+./Images/4d.gif
+./Images/4h.gif
+./Images/4s.gif
+./Images/5c.gif
+./Images/5d.gif
+./Images/5h.gif
+./Images/5s.gif
+./Images/6c.gif
+./Images/6d.gif
+./Images/6h.gif
+./Images/6s.gif
+./Images/7c.gif
+./Images/7d.gif
+./Images/7h.gif
+./Images/7s.gif
+./Images/8c.gif
+./Images/8d.gif
+./Images/8h.gif
+./Images/8s.gif
+./Images/9c.gif
+./Images/9d.gif
+./Images/9h.gif
+./Images/9s.gif
+./Images/ac.gif
+./Images/ad.gif
+./Images/ah.gif
+./Images/as.gif
+./Images/back.gif
+./Images/jacksbetterpayout.gif
+./Images/jc.gif
+./Images/jd.gif
+./Images/jh.gif
+./Images/js.gif
+./Images/kc.gif
+./Images/kd.gif
+./Images/kh.gif
+./Images/ks.gif
+./Images/luckyrhino.gif
+./Images/nocard.gif
+./Images/qc.gif
+./Images/qd.gif
+./Images/qh.gif
+./Images/qs.gif

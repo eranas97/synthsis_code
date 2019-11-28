@@ -1,0 +1,13 @@
+#!/bin/csh
+
+if (! -e work) then
+	vlib work
+endif
+
+vlog cache.v
+vlog memory.v
+vlog proc.v
+
+vcom util.vhd
+vcom set.vhd
+vcom top.vhd

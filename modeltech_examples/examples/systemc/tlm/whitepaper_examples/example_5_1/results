@@ -1,0 +1,349 @@
+# do run.do 
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# 
+# Exported modules:
+# 	top
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# vsim top 
+# Loading work/systemc.so
+# Loading work.top
+# ** Warning: (vsim-6543) Object already exists: top/target_export. Latter declaration will be renamed to top/target_export_0
+# ** Warning: (vsim-6543) Object already exists: top/req_rsp. Latter declaration will be renamed to top/req_rsp_0
+# ** Warning: (vsim-6543) Object already exists: top/ts2m. Latter declaration will be renamed to top/ts2m_0
+# Non zero file name
+# top/router : router file name is master.iport.map
+# ** Warning: (vsim-4025) The port '/top/arb/port_1' is of an undebuggable type.
+# ** Warning: (vsim-4025) The port '/top/arb/port_0' is of an undebuggable type.
+# ** Warning: (vsim-4025) The port '/top/ts2m_0/master_port' is of an undebuggable type.
+# ** Warning: (vsim-4025) The port '/top/ts2m/master_port' is of an undebuggable type.
+# objects bound to top/router/router_port
+# 0 : top/slave_0/iport
+# 1 : top/slave_1/iport
+# ** Warning: (vsim-4025) The export '/top/ts2m_0/target_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/slave_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/master_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/get_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/put_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/put_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp_0/get_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/slave_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/put_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/get_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/target_export_0' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/ts2m/target_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/slave_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/master_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/slave_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/put_response_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/get_request_export' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/top/target_export' is of an undebuggable type.
+# Reading master.iport.map
+# top/slave_0/iport : 0,16; 0
+# top/slave_1/iport : 16,32; 1
+# top/master_0 Writing Address 0 value 57
+# top/master_1 Writing Address 17 value 1017
+# top/arb 0 s no pending request on port top/arb/port_1 priority 2
+# top/arb 0 s no pending request on port top/arb/port_0 priority 3
+# top/arb 1 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 1 value 1017
+# top/master_1 Writing Address 19 value 1019
+# top/arb 2 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 3 value 1019
+# top/master_1 Writing Address 21 value 1021
+# top/arb 3 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 5 value 1021
+# top/master_1 Writing Address 23 value 1023
+# top/arb 4 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 7 value 1023
+# top/master_1 Writing Address 25 value 1025
+# top/arb 5 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 9 value 1025
+# top/master_1 Writing Address 27 value 1027
+# top/arb 6 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 11 value 1027
+# top/master_1 Writing Address 29 value 1029
+# top/arb 7 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 13 value 1029
+# top/master_1 Writing Address 31 value 1031
+# top/arb 8 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 writing at 15 value 1031
+# top/master_1 Writing Address 1 value 1033
+# top/arb 9 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 1 value 1033
+# top/master_1 Writing Address 3 value 1035
+# top/arb 10 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 3 value 1035
+# top/master_1 Writing Address 5 value 1037
+# top/arb 11 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 5 value 1037
+# top/master_1 Writing Address 7 value 1039
+# top/arb 12 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 7 value 1039
+# top/master_1 Writing Address 9 value 1041
+# top/arb 13 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 9 value 1041
+# top/master_1 Writing Address 11 value 1043
+# top/arb 14 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 11 value 1043
+# top/master_1 Writing Address 13 value 1045
+# top/arb 15 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 13 value 1045
+# top/master_1 Writing Address 15 value 1047
+# top/arb 16 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 writing at 15 value 1047
+# top/arb 17 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 1 value 1017
+# top/master_1 Read Address 17 got 1017
+# top/arb 18 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 3 value 1019
+# top/master_1 Read Address 19 got 1019
+# top/arb 19 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 5 value 1021
+# top/master_1 Read Address 21 got 1021
+# top/arb 20 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 7 value 1023
+# top/master_1 Read Address 23 got 1023
+# top/arb 21 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 9 value 1025
+# top/master_1 Read Address 25 got 1025
+# top/arb 22 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 11 value 1027
+# top/master_1 Read Address 27 got 1027
+# top/arb 23 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 13 value 1029
+# top/master_1 Read Address 29 got 1029
+# top/arb 24 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_1 reading from 15 value 1031
+# top/master_1 Read Address 31 got 1031
+# top/arb 25 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 1 value 1033
+# top/master_1 Read Address 1 got 1033
+# top/arb 26 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 3 value 1035
+# top/master_1 Read Address 3 got 1035
+# top/arb 27 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 5 value 1037
+# top/master_1 Read Address 5 got 1037
+# top/arb 28 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 7 value 1039
+# top/master_1 Read Address 7 got 1039
+# top/arb 29 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 9 value 1041
+# top/master_1 Read Address 9 got 1041
+# top/arb 30 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 11 value 1043
+# top/master_1 Read Address 11 got 1043
+# top/arb 31 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 13 value 1045
+# top/master_1 Read Address 13 got 1045
+# top/arb 32 ns found pending request on port top/arb/port_1 priority 2
+# top/slave_0 reading from 15 value 1047
+# top/master_1 Read Address 15 got 1047
+# top/master_1 Finished at 32 ns
+# top/arb 33 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 33 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 0 value 57
+# top/master_0 Writing Address 2 value 59
+# top/arb 34 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 34 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 2 value 59
+# top/master_0 Writing Address 4 value 61
+# top/arb 35 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 35 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 4 value 61
+# top/master_0 Writing Address 6 value 63
+# top/arb 36 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 36 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 6 value 63
+# top/master_0 Writing Address 8 value 65
+# top/arb 37 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 37 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 8 value 65
+# top/master_0 Writing Address 10 value 67
+# top/arb 38 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 38 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 10 value 67
+# top/master_0 Writing Address 12 value 69
+# top/arb 39 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 39 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 12 value 69
+# top/master_0 Writing Address 14 value 71
+# top/arb 40 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 40 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 writing at 14 value 71
+# top/master_0 Writing Address 16 value 73
+# top/arb 41 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 41 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 0 value 73
+# top/master_0 Writing Address 18 value 75
+# top/arb 42 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 42 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 2 value 75
+# top/master_0 Writing Address 20 value 77
+# top/arb 43 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 43 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 4 value 77
+# top/master_0 Writing Address 22 value 79
+# top/arb 44 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 44 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 6 value 79
+# top/master_0 Writing Address 24 value 81
+# top/arb 45 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 45 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 8 value 81
+# top/master_0 Writing Address 26 value 83
+# top/arb 46 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 46 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 10 value 83
+# top/master_0 Writing Address 28 value 85
+# top/arb 47 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 47 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 12 value 85
+# top/master_0 Writing Address 30 value 87
+# top/arb 48 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 48 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 writing at 14 value 87
+# top/arb 49 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 49 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 0 value 57
+# top/master_0 Read Address 0 got 57
+# top/arb 50 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 50 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 2 value 59
+# top/master_0 Read Address 2 got 59
+# top/arb 51 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 51 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 4 value 61
+# top/master_0 Read Address 4 got 61
+# top/arb 52 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 52 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 6 value 63
+# top/master_0 Read Address 6 got 63
+# top/arb 53 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 53 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 8 value 65
+# top/master_0 Read Address 8 got 65
+# top/arb 54 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 54 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 10 value 67
+# top/master_0 Read Address 10 got 67
+# top/arb 55 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 55 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 12 value 69
+# top/master_0 Read Address 12 got 69
+# top/arb 56 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 56 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_0 reading from 14 value 71
+# top/master_0 Read Address 14 got 71
+# top/arb 57 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 57 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 0 value 73
+# top/master_0 Read Address 16 got 73
+# top/arb 58 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 58 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 2 value 75
+# top/master_0 Read Address 18 got 75
+# top/arb 59 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 59 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 4 value 77
+# top/master_0 Read Address 20 got 77
+# top/arb 60 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 60 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 6 value 79
+# top/master_0 Read Address 22 got 79
+# top/arb 61 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 61 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 8 value 81
+# top/master_0 Read Address 24 got 81
+# top/arb 62 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 62 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 10 value 83
+# top/master_0 Read Address 26 got 83
+# top/arb 63 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 63 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 12 value 85
+# top/master_0 Read Address 28 got 85
+# top/arb 64 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 64 ns found pending request on port top/arb/port_0 priority 3
+# top/slave_1 reading from 14 value 87
+# top/master_0 Read Address 30 got 87
+# top/master_0 Finished at 64 ns
+# top/arb 65 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 65 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 66 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 66 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 67 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 67 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 68 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 68 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 69 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 69 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 70 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 70 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 71 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 71 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 72 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 72 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 73 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 73 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 74 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 74 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 75 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 75 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 76 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 76 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 77 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 77 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 78 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 78 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 79 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 79 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 80 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 80 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 81 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 81 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 82 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 82 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 83 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 83 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 84 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 84 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 85 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 85 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 86 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 86 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 87 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 87 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 88 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 88 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 89 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 89 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 90 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 90 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 91 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 91 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 92 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 92 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 93 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 93 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 94 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 94 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 95 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 95 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 96 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 96 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 97 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 97 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 98 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 98 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 99 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 99 ns no pending request on port top/arb/port_0 priority 3
+# top/arb 100 ns no pending request on port top/arb/port_1 priority 2
+# top/arb 100 ns no pending request on port top/arb/port_0 priority 3

@@ -1,0 +1,15 @@
+
+The following people were active in the
+the OSCI TLM WG discussions that led to the
+development of the OSCI TLM standard:
+
+Mark Burton, ARM Inc.
+Frank Ghenassia, ST Microelectronics, Inc.
+Serge Goossens, CoWare Inc.
+Mike Meredith, Forte Design Systems, Inc.
+John Pierce, Cadence Design Systems, Inc.
+Jean-Michel Fernandez, Cadence Design Systems, Inc.
+Adam Rose, Cadence Design Systems, Inc.
+Stuart Swan, Cadence Design Systems, Inc.
+Bart Vanthournout, CoWare Inc.
+

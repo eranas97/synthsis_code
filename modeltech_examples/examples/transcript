@@ -1,0 +1,66 @@
+# Reading C:/modeltech64_10.5/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project newanas
+vcd files results1.vcd
+# Error while executing: vcd
+# Usage: vcd add|checkpoint|comment|dumpports|dumpportsall|dumpportsflush|dumpportslimit|dumpportsoff|dumpportson|file|files|flush|limit|off|on
+# Compile of tb_vedic3bit.v was successful.
+vsim -voptargs=+acc work.tb_vedic3bit
+# vsim -voptargs="+acc" work.tb_vedic3bit 
+# Start time: 10:56:24 on Nov 28,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_vedic3bit(fast)
+# Loading work.vedic3bit(fast)
+# Loading work.adder2bit(fast)
+# Loading work.adder3bit(fast)
+vcd files results1.vcd
+add-r /*
+# invalid command name "add-r"
+add-r C:/modeltech64_10.5/examples/tb_vedic3bit.v
+# invalid command name "add-r"
+add -r C:/modeltech64_10.5/examples/tb_vedic3bit.v
+# ** Error: bad option "-r": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+add C:/modeltech64_10.5/examples/tb_vedic3bit.v
+# ** Error: bad option "C:/modeltech64_10.5/examples/tb_vedic3bit.v": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+add-r C:/modeltech64_10.5/examples/tb_vedic3bit.v
+# invalid command name "add-r"
+# End time: 10:59:32 on Nov 28,2019, Elapsed time: 0:03:08
+# Errors: 5, Warnings: 0

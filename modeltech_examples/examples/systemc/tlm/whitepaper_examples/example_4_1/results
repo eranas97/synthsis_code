@@ -1,0 +1,101 @@
+# do run.do 
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# 
+# Exported modules:
+# 	top
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+# vsim top 
+# Loading work/systemc.so
+# Loading work.top
+# Non zero file name
+# top/router : router file name is master.iport.map
+# objects bound to top/router/router_port
+# 0 : top/slave_1/iport
+# 1 : top/slave_2/iport
+# Reading master.iport.map
+# top/slave_1/iport : 0,16; 0
+# top/slave_2/iport : 16,32; 1
+# top/slave_2/iport : 16,32; 1
+# Writing Address 0 value 50
+# top/slave_1 writing at 0 value 50
+# Writing Address 1 value 51
+# top/slave_1 writing at 1 value 51
+# Writing Address 2 value 52
+# top/slave_1 writing at 2 value 52
+# Writing Address 3 value 53
+# top/slave_1 writing at 3 value 53
+# Writing Address 4 value 54
+# top/slave_1 writing at 4 value 54
+# Writing Address 5 value 55
+# top/slave_1 writing at 5 value 55
+# Writing Address 6 value 56
+# top/slave_1 writing at 6 value 56
+# Writing Address 7 value 57
+# top/slave_1 writing at 7 value 57
+# Writing Address 8 value 58
+# top/slave_1 writing at 8 value 58
+# Writing Address 9 value 59
+# top/slave_1 writing at 9 value 59
+# Writing Address 10 value 60
+# top/slave_1 writing at 10 value 60
+# Writing Address 11 value 61
+# top/slave_1 writing at 11 value 61
+# Writing Address 12 value 62
+# top/slave_1 writing at 12 value 62
+# Writing Address 13 value 63
+# top/slave_1 writing at 13 value 63
+# Writing Address 14 value 64
+# top/slave_1 writing at 14 value 64
+# Writing Address 15 value 65
+# top/slave_1 writing at 15 value 65
+# Writing Address 16 value 66
+# top/slave_2 writing at 0 value 66
+# Writing Address 17 value 67
+# top/slave_2 writing at 1 value 67
+# Writing Address 18 value 68
+# top/slave_2 writing at 2 value 68
+# Writing Address 19 value 69
+# top/slave_2 writing at 3 value 69
+# top/slave_1 reading from 0 value 50
+# Read Address 0 got 50
+# top/slave_1 reading from 1 value 51
+# Read Address 1 got 51
+# top/slave_1 reading from 2 value 52
+# Read Address 2 got 52
+# top/slave_1 reading from 3 value 53
+# Read Address 3 got 53
+# top/slave_1 reading from 4 value 54
+# Read Address 4 got 54
+# top/slave_1 reading from 5 value 55
+# Read Address 5 got 55
+# top/slave_1 reading from 6 value 56
+# Read Address 6 got 56
+# top/slave_1 reading from 7 value 57
+# Read Address 7 got 57
+# top/slave_1 reading from 8 value 58
+# Read Address 8 got 58
+# top/slave_1 reading from 9 value 59
+# Read Address 9 got 59
+# top/slave_1 reading from 10 value 60
+# Read Address 10 got 60
+# top/slave_1 reading from 11 value 61
+# Read Address 11 got 61
+# top/slave_1 reading from 12 value 62
+# Read Address 12 got 62
+# top/slave_1 reading from 13 value 63
+# Read Address 13 got 63
+# top/slave_1 reading from 14 value 64
+# Read Address 14 got 64
+# top/slave_1 reading from 15 value 65
+# Read Address 15 got 65
+# top/slave_2 reading from 0 value 66
+# Read Address 16 got 66
+# top/slave_2 reading from 1 value 67
+# Read Address 17 got 67
+# top/slave_2 reading from 2 value 68
+# Read Address 18 got 68
+# top/slave_2 reading from 3 value 69
+# Read Address 19 got 69

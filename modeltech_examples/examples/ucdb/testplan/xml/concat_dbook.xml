@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+"http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<book>
+  <title>testplan</title>
+
+  <chapter>
+    <title>Transmitter</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>The transmitter is able to transmit frames in a number of different
+    modes that need to be verified seperately.</para>
+
+    <section>
+      <title>Bonding_MODE_0</title>
+
+      <para><emphasis role="bold">WEIGHT:</emphasis> 1</para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_fsm_idle_to_neg</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode provides initial parameter negotiation and Directory
+      Number exchange over the master channel then reverts to data
+      transmission without delay equalization. This mode is useful when the
+      calling endpoint requires Directory Numbers but the delay equalization
+      is performed by some other means (e.g. attached video codec).</para>
+    </section>
+
+    <section>
+      <title>Bonding_MODE_1</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_fsm_idle_to_build</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports user data rates that are multiples of the
+      bearer rate. It provides the user data rate with the full available
+      bandwidth but does not provide an in-band monitoring function. The
+      overhead octets are removed after the call is phase aligned. Error
+      conditions on one or more channels that disturb overall system
+      synchronization are not recognized automatically. Recovery from these
+      error conditions requires manual or external intervention. This
+      intervention is outside the scope of these procedures.</para>
+    </section>
+
+    <section>
+      <title>Bonding_MODE_2</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_fsm_idle_to_m2data</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_fsm_add_channel_mode2</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports multiples of 63/64 of the bearer rate. It
+      provides an in-band monitor function as defined in Mode 3 but does not
+      use an extra channel to replace the overhead octets required for
+      monitoring. The user data rate is that bandwidth remaining after the
+      insertion of overhead octets (i.e. 98.4375% or 63/64 of the total
+      network bandwidth).</para>
+    </section>
+
+    <section>
+      <title>Bonding_MODE_3</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_fsm_idle_to_m3data</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_fsm_add_channel_mode3</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>The user data rate is an integral multiple of 8 kbit/s including N
+      x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate.
+      An in-band monitor function provides a continuous check for delay
+      equalization and an end-to-end bit error rate test. (Error rate testing
+      is accomplished by performing a cyclic redundancy check calculation on
+      an octet sequence before transmission and testing the same sequence for
+      errors on the receive end.) The overhead octets required for monitoring
+      are provided by adding bandwidth (most likely an additional bearer
+      channel) thereby preserving the full user data rate. The overhead octets
+      are included in each bearer channel.</para>
+    </section>
+
+    <section>
+      <title>FAW-Frame_Alignment_Word_Generation</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_channel_data:FAW;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Octet 64 in every frame contains the frame alignment word (FAW),
+      which is a constant pattern (01111110).</para>
+    </section>
+
+    <section>
+      <title>CRC_Generation</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_channel_data:CRC;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Octet two fifty six in every frame contains a Cyclic Redundancy
+      Check (CRC). When CRC4 is not used the transmitter shall set the E bit
+      to 0 and the CRC4 bits to 1. When a unit receives E bit set to 0 and
+      CRC4 set to aTll 1's it shall disable the CRC procedure in the receive
+      direction and shall ignore subsequent E bits and CRC4 bits. When an
+      endpoint that implements the CRC procedure receives a CRC4 not set to
+      all 1's it shall enable the CRC procedures.</para>
+    </section>
+
+    <section>
+      <title>Information_Channel_Generation</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_channel_data:CHANNEL;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Information channel frames are framed with a unique ALIGNment
+      pattern (01111111) in the first octet. In addition the first bit (b1) of
+      the subsequent octets is set to one. Bit 8 of every octet is set to one
+      to provide consistency between calls using 56 kbit/s bearer channels and
+      calls using 64 kbit/s bearer channels.</para>
+    </section>
+
+    <section>
+      <title>Frame_Counter_Generation</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_channel_data:FRAME;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Octet 192 in every frame contains a Frame Count (FC) value. The
+      Frame Count is used to measure the relative delay variance between the
+      individual channels of an N x 56/64 call. This 6-bit modulo 64 counter
+      is incremented once every frame and rolls over on a multiframe boundary.
+      The first frame of a multiframe shall contain a Frame count of
+      zero.</para>
+    </section>
+
+    <section>
+      <title>Transmit_FIFOs</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>The transmit FIFO's are used to buffer between uneven data rates.
+      This is because the carrier is reduced by a factor of 63/64 when the
+      information channel is in use.</para>
+
+      <section>
+        <title>FIFO_Overflow</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+        <para><emphasis role="bold">LINK:
+        </emphasis>monitor_fifo_reads:Read_position;</para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Need to ensure that the system can cope with an overflow of
+        data.</para>
+      </section>
+
+      <section>
+        <title>FIFO_Underflow</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+        <para><emphasis role="bold">LINK:
+        </emphasis>monitor_fifo_writes:Write_position;</para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Need to ensure that the system can cope with an underflow of
+        data.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Code_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Instance</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>/concat_tester/CHIPBOND/txproc_inst</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Transmitter Block Code Coverage</para>
+    </section>
+
+    <section>
+      <title>Non_bonding</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Instance</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>/concat_tester/CHIPBOND/txproc_inst</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Test the non-bonding mode of the transmitter</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Pre-processor</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>The pre-processor needs to regonise frame patterns from all the
+    possible modes of operation and then store the data in the frame store
+    memory.</para>
+
+    <section>
+      <title>Bonding_Mode_0</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_channel_data,chana:FRAME;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode provides initial parameter negotiation and Directory
+      Number exchange over the master channel then reverts to data
+      transmission without delay equalization. This mode is useful when the
+      calling endpoint requires Directory Numbers but the delay equalization
+      is performed by some other means (e.g. attached video codec).</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_1</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_frame_state_error_to_found</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports user data rates that are multiples of the
+      bearer rate. It provides the user data rate with the full available
+      bandwidth but does not provide an in-band monitoring function. The
+      overhead octets are removed after the call is phase aligned. Error
+      conditions on one or more channels that disturb overall system
+      synchronization are not recognized automatically. Recovery from these
+      error conditions requires manual or external intervention. This
+      intervention is outside the scope of these procedures.</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_2</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_frame_state_match_to_error</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_frame_state_error_to_match</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports multiples of 63/64 of the bearer rate. It
+      provides an in-band monitor function as defined in Mode 3 but does not
+      use an extra channel to replace the overhead octets required for
+      monitoring. The user data rate is that bandwidth remaining after the
+      insertion of overhead octets (i.e. 98.4375% or 63/64 of the total
+      network bandwidth).</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_3</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_frame_state_found_to_error</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_frame_state_match_to_found</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_frame_state_search_to_match</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>The user data rate is an integral multiple of 8 kbit/s including N
+      x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate.
+      An in-band monitor function provides a continuous check for delay
+      equalization and an end-to-end bit error rate test. (Error rate testing
+      is accomplished by performing a cyclic redundancy check calculation on
+      an octet sequence before transmission and testing the same sequence for
+      errors on the receive end.) The overhead octets required for monitoring
+      are provided by adding bandwidth (most likely an additional bearer
+      channel) thereby preserving the full user data rate. The overhead octets
+      are included in each bearer channel.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Post-processor</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>The Post Processor extacts data from the frame store based on the
+    selected mode of operation.</para>
+
+    <section>
+      <title>Bonding_Mode_0</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>cover_faw_state_seen_once_to_out_of_sync</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_missed_once_to_out_of_sync</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_missed_twice_to_out_of_sync</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_missed_once_to_missed_twice</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_in_sync_to_missed_once</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_seen_twice_to_in_sync</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_seen_once_to_seen_twice</para>
+
+      <para><emphasis role="bold">LINK:</emphasis>
+      cover_faw_state_out_of_sync_to_seen_once</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode provides initial parameter negotiation and Directory
+      Number exchange over the master channel then reverts to data
+      transmission without delay equalization. This mode is useful when the
+      calling endpoint requires Directory Numbers but the delay equalization
+      is performed by some other means (e.g. attached video codec).</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_1</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      monitor_channel_data,chana:FAW;</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports user data rates that are multiples of the
+      bearer rate. It provides the user data rate with the full available
+      bandwidth but does not provide an in-band monitoring function. The
+      overhead octets are removed after the call is phase aligned. Error
+      conditions on one or more channels that disturb overall system
+      synchronization are not recognized automatically. Recovery from these
+      error conditions requires manual or external intervention. This
+      intervention is outside the scope of these procedures.</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_2</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      monitor_channel_data,chana:FRAME;</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This mode supports multiples of 63/64 of the bearer rate. It
+      provides an in-band monitor function as defined in Mode 3 but does not
+      use an extra channel to replace the overhead octets required for
+      monitoring. The user data rate is that bandwidth remaining after the
+      insertion of overhead octets (i.e. 98.4375% or 63/64 of the total
+      network bandwidth).</para>
+    </section>
+
+    <section>
+      <title>Bonding_Mode_3</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      monitor_channel_data,chanb:CHANNEL;</emphasis></emphasis></para>
+
+      <para><emphasis><emphasis><emphasis role="bold">LINK:</emphasis>
+      monitor_channel_data,chanb:CRC;</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>The user data rate is an integral multiple of 8 kbit/s including N
+      x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate.
+      An in-band monitor function provides a continuous check for delay
+      equalization and an end-to-end bit error rate test. (Error rate testing
+      is accomplished by performing a cyclic redundancy check calculation on
+      an octet sequence before transmission and testing the same sequence for
+      errors on the receive end.) The overhead octets required for monitoring
+      are provided by adding bandwidth (most likely an additional bearer
+      channel) thereby preserving the full user data rate. The overhead octets
+      are included in each bearer channel.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Frame_Store_Arbitrator</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>The arbitrator function sits between the BONDING chip and the Frame
+    store and controls the access to the memory from the chip itself and the
+    microprocessor. All accesses to the Frame Store have to go via the
+    arbitrator.</para>
+
+    <section>
+      <title>Processor_RD_During_Pre-processor</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      cover_pre_proc_ints_cpu_read</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Processor Reads will be delayed by adding wait states while the
+      pre-processor is accessing the frame store.</para>
+    </section>
+
+    <section>
+      <title>Processor_WR_During_Pre-processor</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      cover_pre_proc_ints_cpu_write</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Processor Reads will be delayed by adding wait states while the
+      post processor is accessing the frame store.</para>
+    </section>
+
+    <section>
+      <title>Processor_RD_During_Post_processor</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      cover_post_proc_ints_cpu_read</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Processor Reads will be delayed by adding wait states while the
+      post processor is accessing the frame store.</para>
+    </section>
+
+    <section>
+      <title>Processor WR During Post processor</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      cover_post_proc_ints_cpu_write</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Processor Writes will be delayed by adding wait states while the
+      post processor is accessing the frame store.</para>
+    </section>
+
+    <section>
+      <title>Frame_Store_Accesses</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Directive</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      cover_cpu_write</emphasis></emphasis></para>
+
+      <para><emphasis><emphasis><emphasis role="bold">LINK:</emphasis>
+      cover_cpu_read</emphasis></emphasis></para>
+
+      <para><emphasis><emphasis><emphasis role="bold">LINK:</emphasis>
+      cover_post_proc_read</emphasis></emphasis></para>
+
+      <para><emphasis><emphasis><emphasis role="bold">LINK:</emphasis>
+      cover_pre_proc_write</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>The CPU, Post Processor and Pre-Processor need to have access to
+      the Frame store.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Micro-processor_Interface</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>The micro processor interface is used to set-up the chip and read
+    back its status.</para>
+
+    <section>
+      <title>Write_Registers</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Controls functions within the chip.</para>
+
+      <section>
+        <title>Bit0_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit0</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 0 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit1_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 1 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit2_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit2</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 2 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit3_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit3</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 3 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit4_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit4</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 4 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit5_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit5</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 5 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit6_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit6</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 6 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Bit7_Cross</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> Cross</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        RegXbit7</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Bit 7 exercised in all Registers.</para>
+      </section>
+
+      <section>
+        <title>Write_All_Registers</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        monitor_registers:ADDRESS;</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Written all Registers</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Read_Registers</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Shows Status of all functions within the chip.</para>
+
+      <section>
+        <title>Read_all_Registers</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        read_registers:ADDRESS;</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Read all Registers</para>
+      </section>
+
+      <section>
+        <title>Code_Coverage</title>
+
+        <para><emphasis role="bold">WEIGHT:<emphasis>
+        1</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+        <para><emphasis role="bold">TYPE:</emphasis> DU</para>
+
+        <para><emphasis role="bold">LINK:<emphasis>
+        micro(rtl)</emphasis></emphasis></para>
+
+        <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+        <para>Code Coverage for design unit</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>All_Code_Coverage</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>Code coverage results from the design.</para>
+
+    <section>
+      <title>Toggle_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Toggle</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      /concat_tester/CHIPBOND/*</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Top Level Toggle Coverage.</para>
+    </section>
+
+    <section>
+      <title>FSM_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> FSM</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      /concat_tester/CHIPBOND/*</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Top Level FSM Coverage.</para>
+    </section>
+
+    <section>
+      <title>Branch_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Branch</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      /concat_tester/CHIPBOND/*</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Top Level Branch Coverage.</para>
+    </section>
+
+    <section>
+      <title>Condition_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Condition</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      /concat_tester/CHIPBOND/*</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Top Level Condition Coverage.</para>
+    </section>
+
+    <section>
+      <title>Expression_Coverage</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Expression</para>
+
+      <para><emphasis role="bold">LINK:<emphasis>
+      /concat_tester/CHIPBOND/*</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Top Level Expression Coverage.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Directed_Tests</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>This section details the directed tests that need to be run on the
+    chip.</para>
+
+    <section>
+      <title>IntialTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:IntialTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>This is the initialization test.</para>
+    </section>
+
+    <section>
+      <title>ModeTwoTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:ModeTwoTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Tests the chip in mode two.</para>
+    </section>
+
+    <section>
+      <title>DataTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:DataTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Runs Data from end point to end point.</para>
+    </section>
+
+    <section>
+      <title>FifoTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:FifoTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Tests the FIFOs overflows.</para>
+    </section>
+
+    <section>
+      <title>CPURegisterTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:CPURegisterTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Tests the micro interface to the host.</para>
+    </section>
+
+    <section>
+      <title>VariableTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:VariableTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Checks the user RAM.</para>
+    </section>
+
+    <section>
+      <title>TxDataTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:TxDataTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Transmit only test.</para>
+    </section>
+
+    <section>
+      <title>SyncTest</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:SyncTest;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Sync test from end to end.</para>
+    </section>
+
+    <section>
+      <title>ShutDownMode</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:ShutDownMode;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Tests the shutdown mode of the chip.</para>
+    </section>
+
+    <section>
+      <title>PowerSaveMode</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> CoverPoint</para>
+
+      <para><emphasis role="bold">LINK:
+      </emphasis>monitor_tests:PowerSaveMode;</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Tests the power saving mode of the chip.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>All_Assertions</title>
+
+    <para><emphasis role="bold">WEIGHT:<emphasis>
+    1</emphasis></emphasis></para>
+
+    <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+    <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+    <para>This section details all the assertion sin the design.</para>
+
+    <section>
+      <title>Assertions</title>
+
+      <para><emphasis role="bold">WEIGHT:<emphasis>
+      1</emphasis></emphasis></para>
+
+      <para><emphasis role="bold">GOAL:</emphasis> 100</para>
+
+      <para><emphasis role="bold">TYPE:</emphasis> Assertion</para>
+
+      <para><emphasis role="bold">LINK: </emphasis>assert_*</para>
+
+      <para><emphasis role="bold">DESCRIPTION:</emphasis></para>
+
+      <para>Assertions within the device</para>
+    </section>
+  </chapter>
+</book>

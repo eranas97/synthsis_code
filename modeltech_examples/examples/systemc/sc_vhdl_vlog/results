@@ -1,0 +1,100 @@
+# do run.do 
+
+# Model Technology ModelSim SE vcom PROJ-vhdl2008 2181981 Compiler 2010.03 Mar 21 2010
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Loading package std_logic_arith
+
+# -- Loading package STD_LOGIC_UNSIGNED
+
+# -- Compiling entity control
+
+# -- Compiling architecture RTL of control
+
+# Model Technology ModelSim SE vlog PROJ-vhdl2008 2181981 Compiler 2010.03 Mar 21 2010
+
+# -- Compiling module retrieve
+
+# -- Compiling module store
+
+# 
+
+# Top level modules:
+
+# 	retrieve
+
+# 	store
+
+# 
+
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+
+# 
+
+# Exported modules:
+
+# 	test_ringbuf
+
+# 
+
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+
+# vsim test_ringbuf 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# //  ModelSim SE PROJ-vhdl2008 2181981 Mar 21 2010 Linux 2.6.16.60-0.21-smp
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //              All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+
+# //  AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/sc_vhdl_vlog/work/_sc/linux_gcc-4.3.3/systemc.so
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/sc_vhdl_vlog/work.test_ringbuf
+
+# Loading std.standard
+
+# Loading std.textio(body)
+
+# Loading ieee.std_logic_1164(body)
+
+# Loading ieee.std_logic_arith(body)
+
+# Loading ieee.std_logic_unsigned(body)
+
+# Loading work.control(rtl)
+
+# Loading work.store(fast)
+
+# Loading work.retrieve(fast)
+
+# 1
+
+# 
+
+# ** NOTICE  ** at 99800 ns: Data value not expected.
+
+# 
+
+# ** RESTORED ** at 202800 ns: Data returned to expected value.
+

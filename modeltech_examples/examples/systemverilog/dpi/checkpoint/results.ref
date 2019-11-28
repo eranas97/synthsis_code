@@ -1,0 +1,66 @@
+# vsim -do run.do -l vsim.log -c top 
+# ** Note: (vsim-3812) Design is being optimized...
+# //
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading ./cimports.so
+# do run.do 
+# 
+# run 100
+# register_dpi_callback() is called
+# run() is called
+# checkpoint checkpt100.dat
+# Before save: 
+# 	long_data = 57, str_data = hello 
+# Before save  's1 and s2': 
+# 	f1 = 'x', f2 = 11 
+# 	f1 = 'd', f2 = 77 
+# Before save  'heap_data1 and heap_data2': 
+# 	f1 = 'a', f2 = 10 
+# 	f1 = 'b', f2 = 5 
+# 
+# warm restore run
+# restore checkpt100.dat
+# Loading checkpoint/restore data from file "checkpt100.dat"
+# After restore: 
+# 	long_data = 57, str_data = hello 
+# After restore 's1 and s2': 
+# 	f1 = 'x', f2 = 11 
+# 	f1 = 'd', f2 = 77 
+# After restore 'heap_data1 and heap_data2': 
+# 	f1 = 'a', f2 = 10 
+# 	f1 = 'b', f2 = 5 
+# Restoring state at time 100 ns, iteration 0
+# echo $now
+# 100 
+# quit -sim
+# 
+# cold restore run
+# vsim -restore checkpt100.dat
+# Loading checkpoint/restore data from file "checkpt100.dat"
+# Loading ./cimports.so
+# After restore: 
+# 	long_data = 57, str_data = hello 
+# After restore 's1 and s2': 
+# 	f1 = 'x', f2 = 11 
+# 	f1 = 'd', f2 = 77 
+# reading checkpoint file checkpt100.dat ...
+# After restore 'heap_data1 and heap_data2': 
+# 	f1 = 'a', f2 = 10 
+# 	f1 = 'b', f2 = 5 
+# Restoring state at time 100 ns, iteration 0
+# Simulation kernel restore completed
+# Restoring graphical user interface: definitions of virtuals; contents of list and wave windows 
+# transcript on
+# env sim:/top
+# sim:/top
+# quit -sim
+# 
+# quit -f

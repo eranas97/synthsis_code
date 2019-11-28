@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drill version="1.0">
+  <config type="dashboard" instance="demo">
+    <parameter name="config">{
+  "title": "Drill Metric Driven Verification Dashboard",
+  "layout": "demoLayout",
+  "demoLayoutData": {
+    "columns": 3
+  },
+  "widgetlist": {
+    "widget0": {
+      "type": "dashSelect",
+      "title": "Sticky Control Widget",
+      "sticky": true,
+      "canEdit": false,
+      "canClose": false,
+      "borderColor": "green",
+      "widgetColor": "black"
+    },
+    "widget1": {
+      "type": "twoAxisChart",
+      "title": "Widget1 line Chart",
+      "column": 0,
+      "plotCfg": {
+        "axes": {
+          "xaxis": {
+            "rendererType": "date",
+            "tickOptions": {
+              "formatString": "%b %#d, %y "
+            }
+          }
+        },
+        "seriesDefaults": {
+          "lineWidth": "2",
+          "markerOptions": {
+            "show": false,
+            "style": ""
+          },
+          "rendererType": "line"
+        },
+        "series": [
+          {
+            "query": "bugaboo.summary.active"
+          },
+          {
+            "query": "bugaboo.summary.opened"
+          }
+        ],
+        "cursor": {
+          "showTooltip": false,
+          "followMouse": false,
+          "zoom": true,
+          "clickReset": true
+        }
+      },
+      "widgetColor": "white",
+      "borderColor": "red"
+    },
+    "widget2": {
+      "title": "widget2",
+      "type": "twoAxisChart",
+      "widgetColor": "white",
+      "borderColor": "red",
+      "plotCfg": {
+        "series": [
+          {
+            "query": "subzero.Source+Files"
+          },
+          {
+            "query": "subzero.Source+Lines"
+          }
+        ],
+        "seriesDefaults": {
+          "lineWidth": "1",
+          "markerOptions": {
+            "style": "",
+            "show": false
+          },
+          "rendererType": "line"
+        },
+        "axes": {
+          "xaxis": {
+            "rendererType": "date",
+            "tickOptions": {
+              "formatString": "%b %#d, %y "
+            }
+          }
+        },
+        "cursor": {
+          "showTooltip": false,
+          "followMouse": false,
+          "zoom": true,
+          "clickReset": true
+        }
+      }
+    },
+    "widget3": {
+      "title": "widget3",
+      "type": "twoAxisChart",
+      "widgetColor": "white",
+      "borderColor": "green",
+      "plotCfg": {
+        "series": [
+          {
+            "query": "subzero.Source+Lines"
+          }
+        ],
+        "seriesDefaults": {
+          "lineWidth": "3",
+          "markerOptions": {
+            "style": "",
+            "show": false
+          },
+          "rendererType": "line"
+        },
+        "axes": {
+          "xaxis": {}
+        },
+        "cursor": {
+          "showTooltip": false,
+          "followMouse": false,
+          "zoom": true,
+          "clickReset": true
+        },
+        "xquery": "subzero.Source+Files"
+      }
+    },
+    "widget4": {
+      "title": "widget4",
+      "type": "staticHtml",
+      "widgetColor": "white",
+      "borderColor": "blue",
+      "url": "/pages/welcome.html"
+    },
+    "widget5": {
+      "title": "widget5",
+      "type": "twoAxisChart",
+      "widgetColor": "white",
+      "borderColor": "red",
+      "plotCfg": {
+        "series": [
+          {
+            "query": "bugaboo.Active+Bugs"
+          },
+          {
+            "query": "subzero.Source+Lines"
+          }
+        ],
+        "seriesDefaults": {
+          "lineWidth": "1",
+          "markerOptions": {
+            "style": "",
+            "show": false
+          },
+          "rendererType": "bar"
+        },
+        "axes": {
+          "xaxis": {
+            "rendererType": "date",
+            "tickOptions": {
+              "formatString": "%b %#d, %y "
+            }
+          }
+        },
+        "cursor": {
+          "showTooltip": false,
+          "followMouse": false,
+          "zoom": true,
+          "clickReset": true
+        }
+      }
+    }
+  },
+  "columns": 2
+}</parameter>
+  </config>
+</drill>

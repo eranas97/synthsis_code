@@ -1,0 +1,1759 @@
+library (std_cell) {
+    voltage_map(VDD1, 0.99);
+    voltage_map(GND1, 0.0);
+    /*---------------------------------------*
+     * Cell: buffer                          *
+     *---------------------------------------*/
+    cell (BUF) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "I";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: inverter                        *
+     *---------------------------------------*/
+    cell (INV) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!I)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input AND                     *
+     *---------------------------------------*/
+    cell (AND2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(A1 A2)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input AND                     *
+     *---------------------------------------*/
+    cell (AND3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((A1 A2) A3)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input AND                     *
+     *---------------------------------------*/
+    cell (AND4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A4) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(((A1 A2) A3) A4)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input NAND                    *
+     *---------------------------------------*/
+    cell (NAND2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(A1 A2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input NAND                    *
+     *---------------------------------------*/
+    cell (NAND3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1 A2) A3))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input NAND                    *
+     *---------------------------------------*/
+    cell (NAND4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A4) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1 A2) A3) A4))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input NOR                     *
+     *---------------------------------------*/
+    cell (NOR2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(A1+A2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input NOR                     *
+     *---------------------------------------*/
+    cell (NOR3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1+A2)+A3))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input NOR                     *
+     *---------------------------------------*/
+    cell (NOR4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A4) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1+A2)+A3)+A4))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input OR                      *
+     *---------------------------------------*/
+    cell (OR2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(A1+A2)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input OR                      *
+     *---------------------------------------*/
+    cell (OR3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((A1+A2)+A3)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input OR                      *
+     *---------------------------------------*/
+    cell (OR4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A4) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(((A1+A2)+A3)+A4)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input XNOR                    *
+     *---------------------------------------*/
+    cell (XNOR2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(A1^A2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input XOR                     *
+     *---------------------------------------*/
+    cell (XOR2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(A1^A2)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input inverted NAND           *
+     *---------------------------------------*/
+    cell (I_NAND2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((!A1) B1))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input inverted NAND           *
+     *---------------------------------------*/
+    cell (I_NAND3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((!A1) B1) B2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input inverted NAND           *
+     *---------------------------------------*/
+    cell (I_NAND4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((((!A1) B1) B2) B3))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-input inverted NOR            *
+     *---------------------------------------*/
+    cell (I_NOR2) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((!A1)+B1))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-input inverted NOR            *
+     *---------------------------------------*/
+    cell (I_NOR3) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((!A1)+B1)+B2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-input inverted NOR            *
+     *---------------------------------------*/
+    cell (I_NOR4) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((((!A1)+B1)+B2)+B3))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: D Flip-Flop                     *
+     *---------------------------------------*/
+    cell (DFF) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clocked_on : "CP";
+            next_state : "D";
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+            direction : input;
+            nextstate_type : data;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: D Flip-Flop with reset          *
+     *---------------------------------------*/
+    cell (DFF_RST) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clear : "(!CDN)";
+            clocked_on : "CP";
+            next_state : "D";
+        }
+        pin(CDN) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+            direction : input;
+            nextstate_type : data;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: D Flip-Flop with set            *
+     *---------------------------------------*/
+    cell (DFF_SET) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clocked_on : "CP";
+            next_state : "D";
+            preset : "(!SDN)";
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+            direction : input;
+            nextstate_type : data;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: D Flip-Flop with enable         *
+     *---------------------------------------*/
+    cell (DFF_EN) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clocked_on : "CP";
+            next_state : "((E D) + (!E IQ))";
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+            direction : input;
+            nextstate_type : data;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(E) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: D Flip-Flop with enable & reset *
+     *---------------------------------------*/
+    cell (DFF_EN_RST) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clear : "(!CDN)";
+            clocked_on : "CP";
+            next_state : "((E D) + (!E IQ))";
+        }
+        pin(CDN) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+            direction : input;
+            nextstate_type : data;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(E) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 2-to-1 multiplexer              *
+     *---------------------------------------*/
+    cell (MUX21) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I0) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((S I1) + (!S I0))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 3-to-1 multiplexer              *
+     *---------------------------------------*/
+    cell (MUX31) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I0) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S0) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((S1 I2) + (!S1 ((S0 I1) + (!S0 I0))))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: 4-to-1 multiplexer              *
+     *---------------------------------------*/
+    cell (MUX41) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I0) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(I3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S0) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((S1 ((S0 I3) + (!S0 I2))) + (!S1 ((S0 I1) + (!S0 I0)))))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: half-adder                      *
+     *---------------------------------------*/
+    cell (HALF_ADD) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(CO) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(A B)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(S) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(A^B)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic  AO21       *
+     *---------------------------------------*/
+    cell (AO21) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((A1 A2)+B)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AO211       *
+     *---------------------------------------*/
+    cell (AO211) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(((A1 A2)+B)+C)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AO22        *
+     *---------------------------------------*/
+    cell (AO22) {
+        pg_pin (VDD) {
+            pg_type : primary_power; 
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((B1 B2)+(A1 A2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AO222       *
+     *---------------------------------------*/
+    cell (AO222) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(((C1 C2)+(B1 B2))+(A1 A2))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AO31        *
+     *---------------------------------------*/
+    cell (AO31) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(((A1 A2) A3)+B)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AOI21       *
+     *---------------------------------------*/
+    cell (AOI21) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1 A2)+B))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AOI211      *
+     *---------------------------------------*/
+    cell (AOI211) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1 A2)+B)+C))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AOI22       *
+     *---------------------------------------*/
+    cell (AOI22) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1 A2)+(B1 B2)))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AOI222      *
+     *---------------------------------------*/
+    cell (AOI222) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1 A2)+(C1 C2))+(B1 B2)))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic AOI31       *
+     *---------------------------------------*/
+    cell (AOI31) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1 A2) A3)+B))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic IOA21       *
+     *---------------------------------------*/
+    cell (IOA21) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((!(A1 A2)) B))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic OAI21       *
+     *---------------------------------------*/
+    cell (OAI21) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1+A2) B))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic OAI22       *
+     *---------------------------------------*/
+    cell (OAI22) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((A1+A2) (B1+B2)))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic OAI221      *
+     *---------------------------------------*/
+    cell (OAI221) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(C) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1+A2) (B1+B2)) C))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Combinational logic OAI31       *
+     *---------------------------------------*/
+    cell (OAI31) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A3) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!(((A1+A2)+A3) B))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*---------------------------------------*
+     * Cell: Modified combinational OAI22    *
+     *---------------------------------------*/
+    cell (MOAI22) {
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(A1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(A2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B1) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(B2) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ZN) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(!((!(B1 B2)) (A1+A2)))";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+}

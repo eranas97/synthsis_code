@@ -1,0 +1,37 @@
+library modelsim_lib;
+vunit check_top_unit(tb(behav))
+{
+  -- This is an example of using SignalSpy for hierarchical references
+  -- for PSL-VHDL.
+  use modelsim_lib.util.all;
+  signal tb_cntrl_refresh : std_logic;
+
+  init_signal_spy( "/tb/cntrl/refresh", "tb_cntrl_refresh" );
+
+  default clock is rose(clk);
+
+  -- How many times was the memory refreshed?
+  sequence cover_refresh is {rose(tb_cntrl_refresh)};
+  c_refresh : cover {cover_refresh};
+
+  -- Check how many times the controller is reset
+  sequence s_reset_state is {rose(reset); (ras_n and cas_n and (not ack))};
+  c_reset : cover {s_reset_state};
+
+  -- Check for reset
+  property reset_state is always {rose(reset)} |=> { ras_n and cas_n and not ack};
+  assert reset_state;
+
+  -- check for memory response
+  property test_read_response is always {rose(as) and rw = '1'} |=> {[*5 to 12]; ack}; 
+  property test_write_response is always {rose(as) and rw = '0'} |=> {[*5 to 12]; ack};
+
+  assert test_read_response;
+  assert test_write_response;
+
+  -- Check if address strobe is deasserted after acknowledge from memory
+  property check_as_deasserts is always {rose(as)} |=> {[*5 to 12]; ack; not as};
+  assert check_as_deasserts;
+
+}
+

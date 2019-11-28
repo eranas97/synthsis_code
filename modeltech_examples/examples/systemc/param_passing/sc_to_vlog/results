@@ -1,0 +1,20 @@
+# do run.do 
+# Model Technology ModelSim SE vcom <VERSION> Compiler <DATE>
+# -- Compiling module ringbuf
+# 
+# Top level modules:
+# 	ringbuf
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# 
+# Exported modules:
+# 	test_ringbuf
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# vsim test_ringbuf 
+# Loading work/systemc.so
+# Loading work.test_ringbuf
+# Loading work.ringbuf
+# int_param=4
+# real_param=2.6
+# str_param=Hello
+# bit_param=0
+# lv_param=01xz

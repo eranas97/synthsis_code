@@ -1,0 +1,21 @@
+This example shows the Xprop feature:
+
+The example is a simple Greatest Common Divisor (GCD) that is modeled in Verilog. The design contains several multiplexors and flip-flops which are important sources for X propagation.Due to SystemVerilog X-pessimism, the critical code sections are instrumented by Xprop utility in order to verify X-propagation in RTL simulation.
+
+For more information regarding X propagation in simulation and different Xprop modes, please refer to User's Manual, Advanced Simulation Techniques chapter, X Propagation in Simulation section.
+
+By running the example, user can view Xprop instrumented assertions by the tool which fire when the signal in any critical code section goes to X. User can further debug the assertions and identify the source of X.
+
+Resolve mode is less pessimistic than Pass mode,as it also evaluates the possible output values from all branches to impart X propagation. If all possible output values are same, the output will be driven to this known value even if the sel/if condition is 'x'. If the possible values are different then output will be driven to 'x'.
+
+Example:
+
+# ** Error: XPROP_COMB_75: 'select' goes X.
+#    Time: 13 ns  Scope: tb.T1.G1.B_mux File: mux_ff.v Line: 75
+
+@13 ns, "select" goes to X in the following expression:
+
+   case (select)
+       0 : q = d1;
+       1 : q = d2;
+   endcase

@@ -1,0 +1,98 @@
+
+INSTALLATION
+
+This code works with SystemC 2.0.1, SystemC 2.1 and IUS53. To work with an OSCI
+simulator, you will need to set SYSTEMC_HOME to the top level of your SystemC
+installation. If you use 2.0.1 you will not be able to use nb_notify_got(
+const sc_time & , tlm_finish_get_type , tlm_tag<T> *t = 0 ), since its 
+implementation uses dynamic processes which are only available in SystemC 2.1
+onwards.
+
+SHARED_DIRECTORIES
+
+../tlm :
+
+The tlm directory contains all the tlm headers. Something goes in here if it's
+a part of the proposed standard, subject to the "Notes to the LRM writer" in 
+the README in that directory.
+
+../utils :
+
+Useful, more or less generic stuff, not part of the standard. address_map,
+router, and various arbitration aids go in here.
+
+user :
+
+In here, there is a master and mem_slave which are common to all the examples
+except the pipelined example_4_4.
+
+PROTOCOL DIRECTORIES
+
+basic_protocol :
+
+Everything protocol specific goes in here. This protocol is templated, and 
+convenience functions are supplied in basic_initiator_port.h and
+basic_slave_base.h.
+
+pipelined_protocol :
+
+Similar to basic protocol but for the pipeline in example_4_4
+
+REFINEMENT EXAMPLES
+
+example_3_1 ( PV master to PV slave ) :
+
+This is just about the simplest example possible. A master uses transport to
+read and write to a memory slave.
+
+example_3_2 ( PV master / tlm_channel / fifo slave ) :
+
+Same as master_slave_transport but uses a channel. Point is to show simple
+refinement ( and that the master doesn't change from one to the other ).
+
+example_3_3 ( PV master / transactor / rtl slave ) :
+
+The fifo slave in 3.2 is replaced with a transactor, which manages the signal
+level communicatio with an rtl slave
+
+example_3_4 ( rtl master / rtl slave ) :
+
+The master and transactor in the example above are replaced by an rtl master.
+
+SOC MODELING EXAMPLES
+
+example_4_1 ( router ) :
+
+This shows a 1 master -> 2 mem slave router arrangement, reading the mapping
+in from an external file.
+
+example_4_2 ( arbiter )
+
+This shows a 2 master -> 1 mem slave arbiter arrangement. The arbitration
+algorithm deliberately starves the low priority slaves.
+
+example_4_3 ( decentralised decode ) :
+
+This shows a 1 master / 2 mem slave arrangement, where the decode is local to 
+each slave. To do this, we use the extended interface's PEEK and POP
+
+example_4_4 ( pipelined ) :
+
+This shows a simple address phase / data phase pipeline.
+
+ARCHITECTURAL EXPLORATION EXAMPLES
+
+example_5_1
+
+This example shows how to make a 2 to 2 hub and spoke switch out of arbiters,
+routers and tlm_req_rsp_channels.
+
+example_5_2
+
+This example shows how to make a 2 to 2 cross bar switch out of out of
+arbiters, routers and tlm_req_rsp_channels. 
+
+
+
+
+

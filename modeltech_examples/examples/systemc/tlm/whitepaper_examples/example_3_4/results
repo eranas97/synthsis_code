@@ -1,0 +1,600 @@
+# do run.do 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# 
+
+# Exported modules:
+
+# 	top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# vsim top 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# Loading work/systemc.so
+
+# Loading work.top
+
+# ** Warning: (vsim-4025) The port '/top/ts2m/master_port' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/ts2m/target_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/slave_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/master_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/slave_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/put_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/get_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/target_export' is of an undebuggable type.
+
+# Writing Address 0 value 50
+
+# top/transactor 50 ns sending request Write request 0 50
+
+# top/transactor 60 ns sending request Write request 0 50
+
+# top/slave 60 ns no ack 0 1
+
+# top/transactor 70 ns sending request Write request 0 50
+
+# top/slave 70 ns writing 50 to 0
+
+# top/transactor 80 ns got response Write response 
+
+# Writing Address 1 value 51
+
+# top/transactor 100 ns sending request Write request 1 51
+
+# top/transactor 110 ns sending request Write request 1 51
+
+# top/slave 110 ns no ack 1 1
+
+# top/transactor 120 ns sending request Write request 1 51
+
+# top/slave 120 ns writing 51 to 1
+
+# top/transactor 130 ns got response Write response 
+
+# Writing Address 2 value 52
+
+# top/transactor 150 ns sending request Write request 2 52
+
+# top/transactor 160 ns sending request Write request 2 52
+
+# top/slave 160 ns no ack 2 1
+
+# top/transactor 170 ns sending request Write request 2 52
+
+# top/slave 170 ns writing 52 to 2
+
+# top/transactor 180 ns got response Write response 
+
+# Writing Address 3 value 53
+
+# top/transactor 200 ns sending request Write request 3 53
+
+# top/transactor 210 ns sending request Write request 3 53
+
+# top/slave 210 ns no ack 3 1
+
+# top/transactor 220 ns sending request Write request 3 53
+
+# top/slave 220 ns writing 53 to 3
+
+# top/transactor 230 ns got response Write response 
+
+# Writing Address 4 value 54
+
+# top/transactor 250 ns sending request Write request 4 54
+
+# top/transactor 260 ns sending request Write request 4 54
+
+# top/slave 260 ns no ack 4 1
+
+# top/transactor 270 ns sending request Write request 4 54
+
+# top/slave 270 ns writing 54 to 4
+
+# top/transactor 280 ns got response Write response 
+
+# Writing Address 5 value 55
+
+# top/transactor 300 ns sending request Write request 5 55
+
+# top/transactor 310 ns sending request Write request 5 55
+
+# top/slave 310 ns no ack 5 1
+
+# top/transactor 320 ns sending request Write request 5 55
+
+# top/slave 320 ns writing 55 to 5
+
+# top/transactor 330 ns got response Write response 
+
+# Writing Address 6 value 56
+
+# top/transactor 350 ns sending request Write request 6 56
+
+# top/transactor 360 ns sending request Write request 6 56
+
+# top/slave 360 ns no ack 6 1
+
+# top/transactor 370 ns sending request Write request 6 56
+
+# top/slave 370 ns writing 56 to 6
+
+# top/transactor 380 ns got response Write response 
+
+# Writing Address 7 value 57
+
+# top/transactor 400 ns sending request Write request 7 57
+
+# top/transactor 410 ns sending request Write request 7 57
+
+# top/slave 410 ns no ack 7 1
+
+# top/transactor 420 ns sending request Write request 7 57
+
+# top/slave 420 ns writing 57 to 7
+
+# top/transactor 430 ns got response Write response 
+
+# Writing Address 8 value 58
+
+# top/transactor 450 ns sending request Write request 8 58
+
+# top/transactor 460 ns sending request Write request 8 58
+
+# top/slave 460 ns no ack 8 1
+
+# top/transactor 470 ns sending request Write request 8 58
+
+# top/slave 470 ns writing 58 to 8
+
+# top/transactor 480 ns got response Write response 
+
+# Writing Address 9 value 59
+
+# top/transactor 500 ns sending request Write request 9 59
+
+# top/transactor 510 ns sending request Write request 9 59
+
+# top/slave 510 ns no ack 9 1
+
+# top/transactor 520 ns sending request Write request 9 59
+
+# top/slave 520 ns writing 59 to 9
+
+# top/transactor 530 ns got response Write response 
+
+# Writing Address 10 value 60
+
+# top/transactor 550 ns sending request Write request 10 60
+
+# top/transactor 560 ns sending request Write request 10 60
+
+# top/slave 560 ns no ack 10 1
+
+# top/transactor 570 ns sending request Write request 10 60
+
+# top/slave 570 ns writing 60 to 10
+
+# top/transactor 580 ns got response Write response 
+
+# Writing Address 11 value 61
+
+# top/transactor 600 ns sending request Write request 11 61
+
+# top/transactor 610 ns sending request Write request 11 61
+
+# top/slave 610 ns no ack 11 1
+
+# top/transactor 620 ns sending request Write request 11 61
+
+# top/slave 620 ns writing 61 to 11
+
+# top/transactor 630 ns got response Write response 
+
+# Writing Address 12 value 62
+
+# top/transactor 650 ns sending request Write request 12 62
+
+# top/transactor 660 ns sending request Write request 12 62
+
+# top/slave 660 ns no ack 12 1
+
+# top/transactor 670 ns sending request Write request 12 62
+
+# top/slave 670 ns writing 62 to 12
+
+# top/transactor 680 ns got response Write response 
+
+# Writing Address 13 value 63
+
+# top/transactor 700 ns sending request Write request 13 63
+
+# top/transactor 710 ns sending request Write request 13 63
+
+# top/slave 710 ns no ack 13 1
+
+# top/transactor 720 ns sending request Write request 13 63
+
+# top/slave 720 ns writing 63 to 13
+
+# top/transactor 730 ns got response Write response 
+
+# Writing Address 14 value 64
+
+# top/transactor 750 ns sending request Write request 14 64
+
+# top/transactor 760 ns sending request Write request 14 64
+
+# top/slave 760 ns no ack 14 1
+
+# top/transactor 770 ns sending request Write request 14 64
+
+# top/slave 770 ns writing 64 to 14
+
+# top/transactor 780 ns got response Write response 
+
+# Writing Address 15 value 65
+
+# top/transactor 800 ns sending request Write request 15 65
+
+# top/transactor 810 ns sending request Write request 15 65
+
+# top/slave 810 ns no ack 15 1
+
+# top/transactor 820 ns sending request Write request 15 65
+
+# top/slave 820 ns writing 65 to 15
+
+# top/transactor 830 ns got response Write response 
+
+# Writing Address 16 value 66
+
+# top/transactor 850 ns sending request Write request 16 66
+
+# top/transactor 860 ns sending request Write request 16 66
+
+# top/slave 860 ns no ack 16 1
+
+# top/transactor 870 ns sending request Write request 16 66
+
+# top/slave 870 ns error 
+
+# top/transactor 880 ns got response Write response : ERROR
+
+# Writing Address 17 value 67
+
+# top/transactor 900 ns sending request Write request 17 67
+
+# top/transactor 910 ns sending request Write request 17 67
+
+# top/slave 910 ns no ack 17 1
+
+# top/transactor 920 ns sending request Write request 17 67
+
+# top/slave 920 ns error 
+
+# top/transactor 930 ns got response Write response : ERROR
+
+# Writing Address 18 value 68
+
+# top/transactor 950 ns sending request Write request 18 68
+
+# top/transactor 960 ns sending request Write request 18 68
+
+# top/slave 960 ns no ack 18 1
+
+# top/transactor 970 ns sending request Write request 18 68
+
+# top/slave 970 ns error 
+
+# top/transactor 980 ns got response Write response : ERROR
+
+# Writing Address 19 value 69
+
+# top/transactor 1 us sending request Write request 19 69
+
+# top/transactor 1010 ns sending request Write request 19 69
+
+# top/slave 1010 ns no ack 19 1
+
+# top/transactor 1020 ns sending request Write request 19 69
+
+# top/slave 1020 ns error 
+
+# top/transactor 1030 ns got response Write response : ERROR
+
+# top/transactor 1050 ns sending request Read request 0
+
+# top/transactor 1060 ns sending request Read request 0
+
+# top/slave 1060 ns no ack 0 1
+
+# top/transactor 1070 ns sending request Read request 0
+
+# top/slave 1070 ns reading 50 from 0
+
+# top/transactor 1080 ns got response Read response 50
+
+# Read Address 0 got 50
+
+# top/transactor 1100 ns sending request Read request 1
+
+# top/transactor 1110 ns sending request Read request 1
+
+# top/slave 1110 ns no ack 1 1
+
+# top/transactor 1120 ns sending request Read request 1
+
+# top/slave 1120 ns reading 51 from 1
+
+# top/transactor 1130 ns got response Read response 51
+
+# Read Address 1 got 51
+
+# top/transactor 1150 ns sending request Read request 2
+
+# top/transactor 1160 ns sending request Read request 2
+
+# top/slave 1160 ns no ack 2 1
+
+# top/transactor 1170 ns sending request Read request 2
+
+# top/slave 1170 ns reading 52 from 2
+
+# top/transactor 1180 ns got response Read response 52
+
+# Read Address 2 got 52
+
+# top/transactor 1200 ns sending request Read request 3
+
+# top/transactor 1210 ns sending request Read request 3
+
+# top/slave 1210 ns no ack 3 1
+
+# top/transactor 1220 ns sending request Read request 3
+
+# top/slave 1220 ns reading 53 from 3
+
+# top/transactor 1230 ns got response Read response 53
+
+# Read Address 3 got 53
+
+# top/transactor 1250 ns sending request Read request 4
+
+# top/transactor 1260 ns sending request Read request 4
+
+# top/slave 1260 ns no ack 4 1
+
+# top/transactor 1270 ns sending request Read request 4
+
+# top/slave 1270 ns reading 54 from 4
+
+# top/transactor 1280 ns got response Read response 54
+
+# Read Address 4 got 54
+
+# top/transactor 1300 ns sending request Read request 5
+
+# top/transactor 1310 ns sending request Read request 5
+
+# top/slave 1310 ns no ack 5 1
+
+# top/transactor 1320 ns sending request Read request 5
+
+# top/slave 1320 ns reading 55 from 5
+
+# top/transactor 1330 ns got response Read response 55
+
+# Read Address 5 got 55
+
+# top/transactor 1350 ns sending request Read request 6
+
+# top/transactor 1360 ns sending request Read request 6
+
+# top/slave 1360 ns no ack 6 1
+
+# top/transactor 1370 ns sending request Read request 6
+
+# top/slave 1370 ns reading 56 from 6
+
+# top/transactor 1380 ns got response Read response 56
+
+# Read Address 6 got 56
+
+# top/transactor 1400 ns sending request Read request 7
+
+# top/transactor 1410 ns sending request Read request 7
+
+# top/slave 1410 ns no ack 7 1
+
+# top/transactor 1420 ns sending request Read request 7
+
+# top/slave 1420 ns reading 57 from 7
+
+# top/transactor 1430 ns got response Read response 57
+
+# Read Address 7 got 57
+
+# top/transactor 1450 ns sending request Read request 8
+
+# top/transactor 1460 ns sending request Read request 8
+
+# top/slave 1460 ns no ack 8 1
+
+# top/transactor 1470 ns sending request Read request 8
+
+# top/slave 1470 ns reading 58 from 8
+
+# top/transactor 1480 ns got response Read response 58
+
+# Read Address 8 got 58
+
+# top/transactor 1500 ns sending request Read request 9
+
+# top/transactor 1510 ns sending request Read request 9
+
+# top/slave 1510 ns no ack 9 1
+
+# top/transactor 1520 ns sending request Read request 9
+
+# top/slave 1520 ns reading 59 from 9
+
+# top/transactor 1530 ns got response Read response 59
+
+# Read Address 9 got 59
+
+# top/transactor 1550 ns sending request Read request 10
+
+# top/transactor 1560 ns sending request Read request 10
+
+# top/slave 1560 ns no ack 10 1
+
+# top/transactor 1570 ns sending request Read request 10
+
+# top/slave 1570 ns reading 60 from 10
+
+# top/transactor 1580 ns got response Read response 60
+
+# Read Address 10 got 60
+
+# top/transactor 1600 ns sending request Read request 11
+
+# top/transactor 1610 ns sending request Read request 11
+
+# top/slave 1610 ns no ack 11 1
+
+# top/transactor 1620 ns sending request Read request 11
+
+# top/slave 1620 ns reading 61 from 11
+
+# top/transactor 1630 ns got response Read response 61
+
+# Read Address 11 got 61
+
+# top/transactor 1650 ns sending request Read request 12
+
+# top/transactor 1660 ns sending request Read request 12
+
+# top/slave 1660 ns no ack 12 1
+
+# top/transactor 1670 ns sending request Read request 12
+
+# top/slave 1670 ns reading 62 from 12
+
+# top/transactor 1680 ns got response Read response 62
+
+# Read Address 12 got 62
+
+# top/transactor 1700 ns sending request Read request 13
+
+# top/transactor 1710 ns sending request Read request 13
+
+# top/slave 1710 ns no ack 13 1
+
+# top/transactor 1720 ns sending request Read request 13
+
+# top/slave 1720 ns reading 63 from 13
+
+# top/transactor 1730 ns got response Read response 63
+
+# Read Address 13 got 63
+
+# top/transactor 1750 ns sending request Read request 14
+
+# top/transactor 1760 ns sending request Read request 14
+
+# top/slave 1760 ns no ack 14 1
+
+# top/transactor 1770 ns sending request Read request 14
+
+# top/slave 1770 ns reading 64 from 14
+
+# top/transactor 1780 ns got response Read response 64
+
+# Read Address 14 got 64
+
+# top/transactor 1800 ns sending request Read request 15
+
+# top/transactor 1810 ns sending request Read request 15
+
+# top/slave 1810 ns no ack 15 1
+
+# top/transactor 1820 ns sending request Read request 15
+
+# top/slave 1820 ns reading 65 from 15
+
+# top/transactor 1830 ns got response Read response 65
+
+# Read Address 15 got 65
+
+# top/transactor 1850 ns sending request Read request 16
+
+# top/transactor 1860 ns sending request Read request 16
+
+# top/slave 1860 ns no ack 16 1
+
+# top/transactor 1870 ns sending request Read request 16
+
+# top/slave 1870 ns error 
+
+# top/transactor 1880 ns got response Read response 65: ERROR
+
+# Read Address 16 got 65
+
+# top/transactor 1900 ns sending request Read request 17
+
+# top/transactor 1910 ns sending request Read request 17
+
+# top/slave 1910 ns no ack 17 1
+
+# top/transactor 1920 ns sending request Read request 17
+
+# top/slave 1920 ns error 
+
+# top/transactor 1930 ns got response Read response 65: ERROR
+
+# Read Address 17 got 65
+
+# top/transactor 1950 ns sending request Read request 18
+
+# top/transactor 1960 ns sending request Read request 18
+
+# top/slave 1960 ns no ack 18 1
+
+# top/transactor 1970 ns sending request Read request 18
+
+# top/slave 1970 ns error 
+
+# top/transactor 1980 ns got response Read response 65: ERROR
+
+# Read Address 18 got 65
+
+# top/transactor 2 us sending request Read request 19
+

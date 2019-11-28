@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/synthesis codes/multiplier/tb_vedic3bit_isim_beh.exe" -prj "D:/synthesis codes/multiplier/tb_vedic3bit_beh.prj" "work.tb_vedic3bit" "work.glbl" 

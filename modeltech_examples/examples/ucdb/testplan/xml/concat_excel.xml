@@ -1,0 +1,866 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>darronm</Author>
+  <LastAuthor>ECS</LastAuthor>
+  <Created>2006-10-02T07:59:43Z</Created>
+  <LastSaved>2007-03-08T03:23:08Z</LastSaved>
+  <Company>Mentor Graphics (Ireland) Ltd.</Company>
+  <Version>11.8122</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9060</WindowHeight>
+  <WindowWidth>11355</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>90</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Font x:Family="Swiss" ss:Size="16" ss:Bold="1" ss:Underline="Single"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s36">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Vertical="Top"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s39">
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="73" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:AutoFitWidth="0" ss:Width="24.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="117.75" ss:Span="1"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="306"/>
+   <Column ss:AutoFitWidth="0" ss:Width="216"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="72.75" ss:Span="1"/>
+   <Row ss:AutoFitHeight="0" ss:Height="20.25">
+    <Cell ss:Index="2" ss:StyleID="s21"><Data ss:Type="String">Verification Plan For Concat Device</Data></Cell>
+    <Cell ss:StyleID="s21"/>
+    <Cell ss:Index="5" ss:StyleID="s22"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="5" ss:StyleID="s22"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="18.75">
+    <Cell ss:Index="2" ss:StyleID="s23"><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Section</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Link</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Weight</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Goal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Transmitter</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The transmitter is able to transmit frames in a number of different modes that need to be verified seperately.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_MODE_0</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode provides initial parameter negotiation and Directory Number exchange over the master channel then reverts to data transmission without delay equalization. This mode is useful when the calling endpoint requires Directory Numbers but the delay equalization is performed by some other means (e.g. attached video codec).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_fsm_idle_to_neg</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_MODE_1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode supports user data rates that are multiples of the bearer rate. It provides the user data rate with the full available bandwidth but does not provide an in-band monitoring function. The overhead octets are removed after the call is phase aligned. Error conditions on one or more channels that disturb overall system synchronization are not recognized automatically. Recovery from these error conditions requires manual or external intervention. This intervention is outside the scope of these procedures.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_fsm_idle_to_build</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">1.3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bonding_MODE_2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">This mode supports multiples of 63/64 of the bearer rate. It provides an in-band monitor function as defined in Mode 3 but does not use an extra channel to replace the overhead octets required for monitoring. The user data rate is that bandwidth remaining after the insertion of overhead octets (i.e. 98.4375% or 63/64 of the total network bandwidth).</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">cover_fsm_idle_to_m2data cover_fsm_add_channel_mode2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="141">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_MODE_3</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The user data rate is an integral multiple of 8 kbit/s including N x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate. An in-band monitor function provides a continuous check for delay equalization and an end-to-end bit error rate test. (Error rate testing is accomplished by performing a cyclic redundancy check calculation on an octet sequence before transmission and testing the same sequence for errors on the receive end.) The overhead octets required for monitoring are provided by adding bandwidth (most likely an additional bearer channel) thereby preserving the full user data rate. The overhead octets are included in each bearer channel.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_fsm_idle_to_m3data cover_fsm_add_channel_mode3</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.5</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">FAW-Frame_Alignment_Word_Generation</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Octet 64 in every frame contains the frame alignment word (FAW), which is a constant pattern (01111110).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data:FAW;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.6</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">CRC_Generation</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Octet two fifty six in every frame contains a Cyclic Redundancy Check (CRC). When CRC4 is not used the transmitter shall set the E bit to 0 and the CRC4 bits to 1. When a unit receives E bit set to 0 and CRC4 set to aTll 1's it shall disable the CRC procedure in the receive direction and shall ignore subsequent E bits and CRC4 bits. When an endpoint that implements the CRC procedure receives a CRC4 not set to all 1's it shall enable the CRC procedures.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data:CRC;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.7</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Information_Channel_Generation</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Information channel frames are framed with a unique ALIGNment pattern (01111111) in the first octet. In addition the first bit (b1) of the subsequent octets is set to one. Bit 8 of every octet is set to one to provide consistency between calls using 56 kbit/s bearer channels and calls using 64 kbit/s bearer channels.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data:CHANNEL;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.8</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Frame_Counter_Generation</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Octet 192 in every frame contains a Frame Count (FC) value. The Frame Count is used to measure the relative delay variance between the individual channels of an N x 56/64 call. This 6-bit modulo 64 counter is incremented once every frame and rolls over on a multiframe boundary. The first frame of a multiframe shall contain a Frame count of zero.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data:FRAME;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.9</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Transmit_FIFOs</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The transmit FIFO's are used to buffer between uneven data rates. This is because the carrier is reduced by a factor of 63/64 when the information channel is in use.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.9.1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">FIFO_Overflow</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Need to ensure that the system can cope with an overflow of data.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_fifo_reads:Read_position;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.9.2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">FIFO_Underflow</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">Need to ensure that the system can cope with an underflow of data.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_fifo_writes:Write_position;</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.10</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Code_Coverage</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Transmitter Block Code Coverage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">/concat_tester/CHIPBOND/txproc_inst</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Instance</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">1.11</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Non_bonding</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Test the non-bonding mode of the transmitter</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data:NONBOND;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Pre-processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The pre-processor needs to regonise frame patterns from all the possible modes of operation and then store the data in the frame store memory.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">2.1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_0</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode provides initial parameter negotiation and Directory Number exchange over the master channel then reverts to data transmission without delay equalization. This mode is useful when the calling endpoint requires Directory Numbers but the delay equalization is performed by some other means (e.g. attached video codec).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data,chana:FRAME;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">2.2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode supports user data rates that are multiples of the bearer rate. It provides the user data rate with the full available bandwidth but does not provide an in-band monitoring function. The overhead octets are removed after the call is phase aligned. Error conditions on one or more channels that disturb overall system synchronization are not recognized automatically. Recovery from these error conditions requires manual or external intervention. This intervention is outside the scope of these procedures.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_frame_state_match_to_error cover_frame_state_error_to_match</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">2.3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_2</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode supports multiples of 63/64 of the bearer rate. It provides an in-band monitor function as defined in Mode 3 but does not use an extra channel to replace the overhead octets required for monitoring. The user data rate is that bandwidth remaining after the insertion of overhead octets (i.e. 98.4375% or 63/64 of the total network bandwidth).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_frame_state_found_to_error cover_frame_state_match_to_found cover_frame_state_search_to_match</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="141">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">2.4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_3</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The user data rate is an integral multiple of 8 kbit/s including N x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate. An in-band monitor function provides a continuous check for delay equalization and an end-to-end bit error rate test. (Error rate testing is accomplished by performing a cyclic redundancy check calculation on an octet sequence before transmission and testing the same sequence for errors on the receive end.) The overhead octets required for monitoring are provided by adding bandwidth (most likely an additional bearer channel) thereby preserving the full user data rate. The overhead octets are included in each bearer channel.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_frame_state_error_to_found</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Post-processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The Post Processor extacts data from the frame store based on the selected mode of operation.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="204.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">3.1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_0</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode provides initial parameter negotiation and Directory Number exchange over the master channel then reverts to data transmission without delay equalization. This mode is useful when the calling endpoint requires Directory Numbers but the delay equalization is performed by some other means (e.g. attached video codec).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_faw_state_seen_once_to_out_of_sync cover_faw_state_missed_once_to_out_of_sync cover_faw_state_missed_twice_to_out_of_sync cover_faw_state_missed_once_to_missed_twice cover_faw_state_in_sync_to_missed_once cover_faw_state_seen_twice_to_in_sync cover_faw_state_seen_once_to_seen_twice cover_faw_state_out_of_sync_to_seen_once</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">3.2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode supports user data rates that are multiples of the bearer rate. It provides the user data rate with the full available bandwidth but does not provide an in-band monitoring function. The overhead octets are removed after the call is phase aligned. Error conditions on one or more channels that disturb overall system synchronization are not recognized automatically. Recovery from these error conditions requires manual or external intervention. This intervention is outside the scope of these procedures.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data,chana:FAW;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">3.3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_2</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This mode supports multiples of 63/64 of the bearer rate. It provides an in-band monitor function as defined in Mode 3 but does not use an extra channel to replace the overhead octets required for monitoring. The user data rate is that bandwidth remaining after the insertion of overhead octets (i.e. 98.4375% or 63/64 of the total network bandwidth).</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data,chana:FRAME;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="141">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">3.4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonding_Mode_3</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The user data rate is an integral multiple of 8 kbit/s including N x 56 and N x 64 kbit/sec. All channels use the same bearer channel rate. An in-band monitor function provides a continuous check for delay equalization and an end-to-end bit error rate test. (Error rate testing is accomplished by performing a cyclic redundancy check calculation on an octet sequence before transmission and testing the same sequence for errors on the receive end.) The overhead octets required for monitoring are provided by adding bandwidth (most likely an additional bearer channel) thereby preserving the full user data rate. The overhead octets are included in each bearer channel.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">monitor_channel_data,chanb:CHANNEL; monitor_channel_data,chanb:CRC;</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Frame_Store_Arbitrator</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The arbitrator function sits between the BONDING chip and the Frame store and controls the access to the memory from the chip itself and the microprocessor. All accesses to the Frame Store have to go via the arbitrator.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4.1</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Processor_RD_During_Pre-processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Processor Reads will be delayed by adding wait states while the pre-processor is accessing the frame store.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_pre_proc_ints_cpu_read</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4.2</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Processor_WR_During_Pre-processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Processor Reads will be delayed by adding wait states while the post processor is accessing the frame store.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_pre_proc_ints_cpu_write</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4.3</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Processor_RD_During_Post_processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Processor Reads will be delayed by adding wait states while the post processor is accessing the frame store.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_post_proc_ints_cpu_read</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4.4</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Processor WR During Post processor</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Processor Writes will be delayed by adding wait states while the post processor is accessing the frame store.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_post_proc_ints_cpu_write</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">4.5</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Frame_Store_Accesses</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The CPU, Post Processor and Pre-Processor need to have access to the Frame store.</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">cover_cpu_write cover_cpu_read cover_post_proc_read cover_pre_proc_write</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Directive</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s37"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">5</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Micro-processor_Interface</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">The micro processor interface is used to set-up the chip and read back its status.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Write_Registers</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Controls functions within the chip.</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s33"/>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit0_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 0 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit0</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.2</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit1_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 1 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit2_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 2 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.4</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit3_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 3 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit3</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.5</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit4_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 4 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit4</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.6</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit5_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 5 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit5</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.7</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit6_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 26exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit6</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.8</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Bit7_Cross</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Bit 7 exercised in all Registers.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">RegXbit7</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Cross</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.1.9</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Write_All_Registers</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Written all Registers</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_registers:ADDRESS;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.2</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Read_Registers</Data></Cell>
+    <Cell ss:StyleID="s33"/>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s33"/>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.2.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Read_all_Registers</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Read all Registers</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">read_registers:ADDRESS;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">5.3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Code_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Code Coverage for design unit</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">micro(rtl)</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">DU</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="5" ss:StyleID="s22"/>
+    <Cell ss:StyleID="s39"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">6</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">All_Code_Coverage</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">6.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Toggle_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Top Level Toggle Coverage</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">/concat_tester/CHIPBOND/*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Toggle</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">6.2</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">FSM_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">FSM Coverage</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">/concat_tester/CHIPBOND/*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">FSM</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">6.3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Branch_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Branch Coverage</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">/concat_tester/CHIPBOND/*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Branch</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">6.4</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Condition_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Condition Coverage</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">/concat_tester/CHIPBOND/*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Condition</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">6.5</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Expression_Coverage</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Expression Coverage</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">/concat_tester/CHIPBOND/*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Expression</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:Index="5" ss:StyleID="s22"/>
+    <Cell ss:StyleID="s39"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">7</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Directed_Tests</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">This section details the directed tests that need to be run on the chip.</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">IntialTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">This is the initialization test.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:IntialTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.2</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ModeTwoTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Tests the chip in mode two.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:ModeTwoTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.3</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">DataTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Runs Data from end point to end point.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:DataTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.4</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">FifoTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Tests the FIFOs overflows.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:FifoTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.5</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">CPURegisterTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Tests the micro interface to the host.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:CPURegisterTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.6</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">VariableTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Checks the user RAM.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:VariableTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.7</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">TxDataTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Transmit only test.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:TxDataTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.8</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">SyncTest</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Sync test from end to end.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:SyncTest;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.9</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ShutDownMode</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Tests the shutdown mode of the chip.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:ShutDownMode;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">7.10</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">PowerSaveMode</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Tests the power saving mode of the chip.</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">monitor_tests:PowerSaveMode;</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">CoverPoint</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
+    <Cell ss:Index="2" ss:StyleID="s26"><Data ss:Type="String">8</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">All_Assertions</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="44.25">
+    <Cell ss:Index="2" ss:StyleID="s31"><Data ss:Type="String">8.1</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Assertions</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Assertions within the device</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">assert_*</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Assertion</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>67</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>69</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

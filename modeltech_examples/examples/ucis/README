@@ -1,0 +1,7 @@
+The UCIS standard examples (from Annex A).
+
+To run the test, set the MTI_HOME environment variable to point to the
+Questa or ModelSim installation directory. Then source the doit.sh file.
+
+Note that some of the examples use databases created by earlier examples.
+

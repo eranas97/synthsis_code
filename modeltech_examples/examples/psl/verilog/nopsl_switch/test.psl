@@ -1,0 +1,11 @@
+// Vunit has an assertion and always block.
+vunit v1(tb)
+{
+	default clock = (posedge clk);
+	A_V:assert always {b0} |=> b1;
+	cover {b0; b1};
+
+	always @(posedge clk)
+		$display($time, " VUNIT : posedge clk.");
+}
+

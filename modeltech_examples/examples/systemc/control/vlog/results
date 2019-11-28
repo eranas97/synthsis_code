@@ -1,0 +1,132 @@
+# do run.do 
+
+# Model Technology ModelSim SE vlog DEV Compiler 2003.05 Sep 12 2007
+
+# -- Compiling module control
+
+# -- Compiling module retrieve
+
+# -- Compiling module ringbuf
+
+# -- Compiling module store
+
+# 
+
+# Top level modules:
+
+# 	ringbuf
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Sep 12 2007
+
+# 
+
+# Exported modules:
+
+# 	test_ringbuf
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Sep 12 2007
+
+# vsim -voptargs=+acc test_ringbuf 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# //  ModelSim SE DEV Sep 12 2007 Linux 2.4.21-32.EL
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //              All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+
+# //  AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading /home/gverma/projects/testing/dpisc/tests_systemc/systemc_demo/control/vlog/work/systemc.so
+
+# Loading /home/gverma/projects/testing/dpisc/tests_systemc/systemc_demo/control/vlog/work.test_ringbuf
+
+# Loading work.ringbuf(fast)
+
+# Loading work.control(fast)
+
+# Loading work.store(fast)
+
+# Loading work.retrieve(fast)
+
+# 1
+
+# SC drives sig1=true, sig2=1, sig3=0101, sig4(0)=false
+
+# sig1=0
+
+# sig2=x
+
+# sig3=xxxx
+
+# sig4=0zz
+
+# sig3=0101
+
+# sig1=1
+
+# sig2=1
+
+# SC drives sig1=false, sig2=X, sig3=1111, sig4(0)=true
+
+# sig3=1111
+
+# sig1=0
+
+# sig2=x
+
+# sig4=1zz
+
+# SC drives sig1=true, sig2=Z, sig3=0000, sig4(0)=false
+
+# sig3=0000
+
+# sig1=1
+
+# sig2=z
+
+# sig4=0zz
+
+# SC drives sig1=true, sig2=1, sig3=0101, sig4(0)=false
+
+# sig3=0101
+
+# sig2=1
+
+# SC drives sig1=false, sig2=X, sig3=1111, sig4(0)=true
+
+# sig3=1111
+
+# sig1=0
+
+# sig2=x
+
+# sig4=1zz
+
+# SC drives sig1=true, sig2=Z, sig3=0000, sig4(0)=false
+
+# sig3=0000
+
+# sig1=1
+
+# sig2=z
+
+# sig4=0zz
+

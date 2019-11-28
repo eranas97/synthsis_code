@@ -1,0 +1,53 @@
+vunit check_dram_controller(dram_control)
+{
+  default clock = (posedge clk);
+
+  // Cover the case that refresh is signaled and we are not
+  // in a read or write cycle
+  sequence s_refresh_not_during_rw = {rose(refresh) && (mem_state == IDLE)};
+  c_refresh_not_during_rw : cover {s_refresh_not_during_rw};
+
+  // Cover the case that refresh is signaled during a read or write
+  sequence s_refresh_during_rw = {rose(refresh) && ((mem_state == ACCESS) ||
+                                                    (mem_state == SWITCH) ||
+                                                    (mem_state == RAS_CAS))};
+  c_refresh_during_rw : cover {s_refresh_during_rw};
+
+  // declare refresh sequence check
+  sequence refresh_sequence = 
+    {~cas_n & ras_n & we_n; [*1]; (~cas_n & ~ras_n & we_n)[*2]; cas_n & ras_n};
+  
+  property check_refresh = always ({rose(refresh)} |->
+               {(mem_state != IDLE)[*0:14]; (mem_state == IDLE); refresh_sequence}
+               abort fell(reset_n));
+
+  assert check_refresh;
+  
+  // declare refresh rate check
+  sequence signal_refresh = {[*24]; rose(refresh)};
+  property refresh_rate = always ({rose(reset_n) || rose(refresh)} |=>
+                                    {signal_refresh} abort fell(reset_n));
+
+  assert refresh_rate;
+
+
+  // Check the write cycle 
+  property check_write = always {fell(as_n) && ~rw} |=> {
+          [*0:5];
+          (~ras_n && cas_n && (addr_out == addr_in[7:4])); 
+          (~ras_n && cas_n && (addr_out == addr_in[3:0]))[*2]; 
+          (~ras_n && ~cas_n)[*2]; 
+          ack};
+
+  assert check_write;
+
+  // check the read cycle 
+  property check_read = always {fell(as_n) && rw} |=> {
+          [*0:5];
+          (~ras_n && cas_n && (addr_out == addr_in[7:4])); 
+          (~ras_n && cas_n && (addr_out == addr_in[3:0]))[*2];
+          (~ras_n && ~cas_n)[*3];
+          ack};
+
+  assert check_read;
+}

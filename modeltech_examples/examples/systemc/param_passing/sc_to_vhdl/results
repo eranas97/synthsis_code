@@ -1,0 +1,38 @@
+# do run.do 
+# Model Technology ModelSim SE vcom PROJ-vhdl2008 2181981 Compiler 2010.03 Mar 21 2010
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ringbuf
+# -- Compiling architecture RTL of ringbuf
+# 
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+# 
+# Exported modules:
+# 	test_ringbuf
+# 
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+# vsim test_ringbuf 
+# //  ModelSim SE PROJ-vhdl2008 2181981 Mar 21 2010 Linux 2.6.16.60-0.21-smp
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/param_passing/sc_to_vhdl/work/_sc/linux_gcc-4.3.3/systemc.so
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/param_passing/sc_to_vhdl/work.test_ringbuf
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ringbuf(rtl)
+# int_param=4
+# real_param=2.600000e+00
+# str_param=Hello
+# bool_param=FALSE
+# char_param=Y
+# bit_param=0
+# bv_param=010

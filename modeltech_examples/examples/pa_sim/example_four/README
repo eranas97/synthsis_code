@@ -1,0 +1,47 @@
+This example shows the following Power Aware feature:
+
+    * Mixed RTL-GLS flow
+
+Preliminary Information
+-----------------------
+For information about mixed RTL-GLS flow, please visit the Power Aware User 
+Manual, Chapter 3, "Power Intent Application to Mixed RTL and Gate-level Designs" 
+section.
+
+
+Running the example
+-------------------
+A do file "run.do" has been included with this example in order to help you compile, 
+optimize, and simulate the design. There is no option required to enable this flow.
+
+This example contains an isolation strategy "mem_ctrl_iso_1", this strategy is applied 
+on "/interleaver_tester/dut/mc0/web" and "/interleaver_tester/dut/mc0/ceb" ports. The 
+isolation cell "ISOCELL" is inferred for the "/interleaver_tester/dut/mc0/ceb" port. 
+Due to the mixed RTL-GLS flow, the tool should detect that there are isolation cells are 
+inferred for the "/interleaver_tester/dut/mc0/ceb" port while the 
+"/interleaver_tester/dut/mc0/web" port doesn't have isolation cells; so, the tool should 
+insert isolation cell for this port.
+
+To run the simulation, Invoke the ModelSim, then enter "do run.do" in the transcript
+window. After simulation, open the report.pa.txt, the tool reports the following:
+
+Isolation Strategy: mem_ctrl_iso_1, File: rtl_top.upf(113).
+	Isolation Supplies:
+		power  : /interleaver_tester/dut/VDD_0d99
+		ground : /interleaver_tester/dut/VSS
+	Isolation Control (/interleaver_tester/dut/mc_iso_c), Isolation Sense (HIGH), Clamp Value (1), Location (parent)
+	Isolated Signals:
+		1. Signal : /interleaver_tester/dut/mc0/web
+	Signals with -instance isolation cells:
+		1. Signal : /interleaver_tester/dut/mc0/ceb[0], isolation cell : /interleaver_tester/dut/ceb_iso_0
+		2. Signal : /interleaver_tester/dut/mc0/ceb[1], isolation cell : /interleaver_tester/dut/ceb_iso_1
+		3. Signal : /interleaver_tester/dut/mc0/ceb[2], isolation cell : /interleaver_tester/dut/ceb_iso_2
+		4. Signal : /interleaver_tester/dut/mc0/ceb[3], isolation cell : /interleaver_tester/dut/ceb_iso_3
+
+This snapshot shows that the tool inserts an isolation cell for "/interleaver_tester/dut/mc0/web" 
+port while the "/interleaver_tester/dut/mc0/ceb" port has its isolation cells.
+The same behavior is applied for "mem_ctrl_ls_out" level shifter strategy.
+ 
+
+
+

@@ -1,0 +1,64 @@
+library (test_lib) {
+
+cell (register_1)  {
+	is_macro_cell : true;
+	pg_pin (pwr_sup) {
+	        pg_type : primary_power;
+	}
+	pg_pin (gnd_sup) {
+	        pg_type : primary_ground;
+	}
+	pin (clk)  {
+		direction : input;
+		related_power_pin : pwr_sup ;
+		related_ground_pin : pwr_sup ;
+	}   
+	pin (reset)  {
+	        direction : input;
+		related_power_pin : pwr_sup ;
+		related_ground_pin : pwr_sup ;
+	}
+	bus (d ){
+		bus_type :  bus0 ;
+		pin (d[0] ) { 
+			direction : input;
+			related_power_pin : pwr_sup ;
+			related_ground_pin : pwr_sup ;
+		}
+		pin (d[1]) {
+			direction : input;
+			related_power_pin : pwr_sup ;
+			related_ground_pin : pwr_sup ;
+		}
+		pin (d[2]) {
+			direction : input;
+			related_power_pin : pwr_sup ;
+			related_ground_pin : pwr_sup ;
+		}
+		pin (d[3]) {
+			direction : input;
+			related_power_pin : pwr_sup ;
+			related_ground_pin : pwr_sup ;
+		}
+	}  
+	bus (q) {
+		bus_type :  bus0 ;
+		pin (q[0]) {
+			direction : output;
+			power_down_function : "!pwr_sup + gnd_sup";
+		}
+		pin (q[1]) {
+			direction : output;
+			power_down_function : "!pwr_sup + gnd_sup";
+		}
+		pin (q[2]) {
+			direction : output;
+			power_down_function : "!pwr_sup + gnd_sup";
+		}
+		pin (q[3]) {
+			direction : output;
+			power_down_function : "!pwr_sup + gnd_sup";
+		}
+    	}
+}
+}

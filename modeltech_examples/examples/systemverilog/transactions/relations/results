@@ -1,0 +1,8 @@
+# do run.do 
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim top 
+# Loading work.top

@@ -1,0 +1,1020 @@
+# do run.do 
+
+# Model Technology ModelSim SE vlog DEV Compiler 2003.05 May 31 2006
+
+# -- Compiling module top
+
+# 
+
+# Top level modules:
+
+# 	top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 May 31 2006
+
+# 
+
+# Exported modules:
+
+# 	scdpi_types_top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 May 31 2006
+
+# vsim top 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# Loading /u/huiyin/dev_fresh/modeltech/linux/../sv_std.mti_scdpi
+
+# Loading /u/huiyin/dev_fresh/modeltech/linux/../sv_std.std
+
+# Loading work.top(fast)
+
+# Loading work/systemc.so
+
+# Loading work.scdpi_types_top
+
+# ******************  sc_fix TYPE ********************** 
+
+# param1 = -5.25
+
+# param2 = -4.25
+
+# from sc_fix_func param1 | param2 = -4.25
+
+# from sc_fix_func param1 & param2 = -5.25
+
+# from sc_fix_func param1 ^ param2 = 1
+
+# from vlog fix_func_out-----> 000100 
+
+# ******************  sc_fix_fast TYPE ********************** 
+
+# param1 = -5.25
+
+# param2 = -4.25
+
+# from sc_fix_fast_func param1 | param2 = -4.25
+
+# from sc_fix_fast_func param1 & param2 = -5.25
+
+# from sc_fix_fast_func param1 ^ param2 = 1
+
+# from vlog fix_fast_func_out-----> 000100 
+
+# ******************  sc_ufix TYPE ********************** 
+
+# param1 = 3.25
+
+# param2 = 2.25
+
+# from sc_ufix_func param1 | param2 = 3.25
+
+# from sc_ufix_func param1 & param2 = 2.25
+
+# from sc_ufix_func param1 ^ param2 = 1
+
+# from vlog ufix_func_out-----> 000100 
+
+# ******************  sc_ufix_fast TYPE ********************** 
+
+# param1 = 10.75
+
+# param2 = 11.75
+
+# from sc_ufix_func param1 | param2 = 11.75
+
+# from sc_ufix_func param1 & param2 = 10.75
+
+# from sc_ufix_func param1 ^ param2 = 1
+
+# from vlog ufix_fast_func_out-----> 000100 
+
+# ******************  sc_fixed TYPE ********************** 
+
+# param1 = -5.25
+
+# param2 = -4.25
+
+# from sc_fixed param1 | param2 = -4.25
+
+# from sc_fixed param1 & param2 = -5.25
+
+# from sc_fixed param1 ^ param2 = 1
+
+# from vlog fixed_func_out-----> 000100 
+
+# ******************  sc_ufixed TYPE ********************** 
+
+# param1 = 10.75
+
+# param2 = 11.75
+
+# from sc_ufixed param1 | param2 = 11.75
+
+# from sc_ufixed param1 & param2 = 10.75
+
+# from sc_ufixed param1 ^ param2 = 1
+
+# from vlog ufixed_func_out-----> 000100 
+
+# ******************  sc_fixed_fast TYPE ********************** 
+
+# param1 = -5.25
+
+# param2 = -4.25
+
+# from sc_fixed param1 | param2 = -4.25
+
+# from sc_fixed param1 & param2 = -5.25
+
+# from sc_fixed param1 ^ param2 = 1
+
+# from vlog fixed_fast_func_out-----> 000100 
+
+# ******************  sc_ufixed_fast TYPE ********************** 
+
+# param1 = 10.75
+
+# param2 = 11.75
+
+# from sc_fixed param1 | param2 = 11.75
+
+# from sc_fixed param1 & param2 = 10.75
+
+# from sc_fixed param1 ^ param2 = 1
+
+# from vlog ufixed_fast_func_out-----> 000100 
+
+# ******************  sc_signed TYPE ********************** 
+
+# param1 = -9
+
+# param2 = -8
+
+# from sc_signed param1 | param2 = -1
+
+# from sc_signed param1 & param2 = -16
+
+# from sc_signed param1 ^ param2 = 15
+
+# from vlog signed_func_out-----> 00001111 
+
+# ******************  sc_unsigned TYPE ********************** 
+
+# param1 = 6
+
+# param2 = 7
+
+# from sc_unsigned param1 | param2 = 7
+
+# from sc_unsigned param1 & param2 = 6
+
+# from sc_unsigned param1 ^ param2 = 1
+
+# from vlog unsigned_func_out-----> 00000001 
+
+# ******************  sc_int TYPE ********************** 
+
+# param1 = -3
+
+# param2 = -4
+
+# from sc_int param1 | param2 = -3
+
+# from sc_int param1 & param2 = -4
+
+# from sc_int param1 ^ param2 = 1
+
+# from vlog int_func_out-----> 00000001 
+
+# ******************  sc_uint TYPE ********************** 
+
+# param1 = 6
+
+# param2 = 5
+
+# from sc_unsigned param1 | param2 = 7
+
+# from sc_unsigned param1 & param2 = 4
+
+# from sc_unsigned param1 ^ param2 = 3
+
+# from vlog uint_func_out-----> 00000011 
+
+# ******************  sc_bigint TYPE ********************** 
+
+# param1 = 11471211998
+
+# param2 = 11471211999
+
+# from sc_bigint param1 | param2 = 11471211999
+
+# from sc_bigint param1 & param2 = 11471211998
+
+# from sc_bigint param1 ^ param2 = 1
+
+# from vlog bigint_func_out-----> 0000000000000000000000000000000000000001 
+
+# ******************  sc_biguint TYPE ********************** 
+
+# param1 = 11471211994
+
+# param2 = 11471211995
+
+# from sc_unsigned param1 | param2 = 11471211995
+
+# from sc_unsigned param1 & param2 = 11471211994
+
+# from sc_unsigned param1 ^ param2 = 1
+
+# from vlog biguint_func_out-----> 0000000000000000000000000000000000000001 
+
+# ******************  sc_bit TYPE ********************** 
+
+# param1 = 0
+
+# param2 = 1
+
+# from sc func_out -----------------> = 0
+
+# from sc func_out -----------------> = 1
+
+# from sc_bit param1 | param2 = 1
+
+# from sc_bit param1 & param2 = 0
+
+# from sc_bit param1 ^ param2 = 1
+
+# from vlog bit_func_out-----> 1 
+
+# ******************  sc_bv TYPE ********************** 
+
+# param1 = 1011
+
+# param2 = 1100
+
+# from sc_unsigned param1 | param2 = 1111
+
+# from sc_unsigned param1 & param2 = 1000
+
+# from sc_unsigned param1 ^ param2 = 0111
+
+# from vlog bv_func_out-----> 0111 
+
+# ******************  sc_logic TYPE ********************** 
+
+# param1 = 0
+
+# param2 = 1
+
+# from sc_logic param1 | param2 = 1
+
+# from sc_logic param1 & param2 = 0
+
+# from sc_logic param1 ^ param2 = 1
+
+# from vlog logic_func_out-----> 1 
+
+# ******************  sc_lv TYPE ********************** 
+
+# param1 = 1010
+
+# param2 = 1001
+
+# from sc_unsigned param1 | param2 = 1011
+
+# from sc_unsigned param1 & param2 = 1000
+
+# from sc_unsigned param1 ^ param2 = 0011
+
+# from vlog lv_func_out-----> 0011 
+
+# ******************  sc_fix TYPE ********************** 
+
+# op1 value = -3.75
+
+# op2 value = -1.25
+
+# from sc_fix_task op1 & op2---> 110001
+
+# from sc_fix_task op1 | op2---> 111011
+
+# from sc_fix_task ~(op1 | op2)---> 000100
+
+# from sc_fix_task op1 ^ op2 ---> 001010
+
+# from sc_fix_task op2 << 2 = 101100
+
+# from sc_fix_task op2 >> 2 = 001110
+
+# op1 + op2 = 
+
+# -5
+
+# op1 - op2 = 
+
+# -2.5
+
+# op1 * op2 = 
+
+# 4.6875
+
+# op1 / op2 = 
+
+# -3.75
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_fix_fast TYPE ********************** 
+
+# op1 value = -3.75
+
+# op2 value = -2.25
+
+# from sc_fix_fast_task op1 & op2---> 110001
+
+# from sc_fix_fast_task op1 | op2---> 110111
+
+# from sc_fix_fast_task ~(op1 | op2)---> 001000
+
+# from sc_fix_fast_task op1 ^ op2 ---> 000110
+
+# from sc_fix_fast_task op2 << 2 = 011100
+
+# from sc_fix_fast_task op2 >> 2 = 001101
+
+# op1 + op2 = 
+
+# -6
+
+# op1 - op2 = 
+
+# -1.5
+
+# op1 * op2 = 
+
+# 8.4375
+
+# op1 / op2 = 
+
+# -2
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_ufix TYPE ********************** 
+
+# op1 value = 3.75
+
+# op2 value = 2.25
+
+# from sc_ufix_task op1 & op2> 001001
+
+# from sc_ufix_task op1 | op2---> 001111
+
+# from sc_ufix_task ~(op1 | op2)---> 110000
+
+# from sc_ufix_task op1 ^ op2 ---> 000110
+
+# from sc_ufix_task op2 << 2 = 100100
+
+# from sc_ufix_task op2 >> 2 = 000010
+
+# op1 + op2 = 
+
+# 6
+
+# op1 - op2 = 
+
+# 1.5
+
+# op1 * op2 = 
+
+# 8.4375
+
+# op1 / op2 = 
+
+# 2
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_ufix_fast TYPE ********************** 
+
+# op1 value = 3.75
+
+# op2 value = 2.25
+
+# from sc_ufix_fast_task op1 & op2> 001001
+
+# from sc_ufix_fast_task op1 | op2---> 001111
+
+# from sc_ufix_fast_task ~(op1 | op2)---> 110000
+
+# from sc_ufix_fast_task op1 ^ op2 ---> 000110
+
+# from sc_ufix_fast_task op2 << 2 = 100100
+
+# from sc_ufix_fast_task op2 >> 2 = 000010
+
+# op1 + op2 = 
+
+# 6
+
+# op1 - op2 = 
+
+# 1.5
+
+# op1 * op2 = 
+
+# 8.4375
+
+# op1 / op2 = 
+
+# 2
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_fixed TYPE ********************** 
+
+# op1 value = 3.75
+
+# op2 value = -1.75
+
+# from sc_fixed_task op1 & op2> 001001
+
+# from sc_fixed_task op1 | op2---> 111111
+
+# from sc_fixed_task ~(op1 | op2)---> 000000
+
+# from sc_fixed_task op1 ^ op2 ---> 110110
+
+# from sc_fixed_task op2 << 2 = 100100
+
+# from sc_fixed_task op2 >> 2 = 001110
+
+# op1 + op2 = 
+
+# 2
+
+# op1 - op2 = 
+
+# 5.5
+
+# op1 * op2 = 
+
+# -6.5625
+
+# op1 / op2 = 
+
+# -2.5
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_fixed_fast TYPE ********************** 
+
+# op1 value = 3.5
+
+# op2 value = -1.25
+
+# from sc_fixed_fast_task op1 & op2> 001010
+
+# from sc_fixed_fast_task op1 | op2---> 111111
+
+# from sc_fixed_fast_task ~(op1 | op2)---> 000000
+
+# from sc_fixed_fast_task op1 ^ op2 ---> 110101
+
+# from sc_fixed_fast_task op2 << 2 = 101100
+
+# from sc_fixed_fast_task op2 >> 2 = 001110
+
+# op1 + op2 = 
+
+# 2.25
+
+# op1 - op2 = 
+
+# 4.75
+
+# op1 * op2 = 
+
+# -4.375
+
+# op1 / op2 = 
+
+# -3.75
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_ufixed TYPE ********************** 
+
+# op1 value = 5.75
+
+# op2 value = 3.75
+
+# from sc_ufixed_task op1 & op2> 000111
+
+# from sc_ufixed_task op1 | op2---> 011111
+
+# from sc_ufixed_task ~(op1 | op2)---> 100000
+
+# from sc_ufixed_task op1 ^ op2 ---> 011000
+
+# from sc_ufixed_task op2 << 2 = 111100
+
+# from sc_ufixed_task op2 >> 2 = 000011
+
+# op1 + op2 = 
+
+# 9.5
+
+# op1 - op2 = 
+
+# 2
+
+# op1 * op2 = 
+
+# 21.5625
+
+# op1 / op2 = 
+
+# 1.25
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_ufixed_fast TYPE ********************** 
+
+# op1 value = 7.25
+
+# op2 value = 2.5
+
+# from sc_ufixed_fast_task op1 & op2> 001000
+
+# from sc_ufixed_fast_task op1 | op2---> 011111
+
+# from sc_ufixed_fast_task ~(op1 | op2)---> 100000
+
+# from sc_ufixed_fast_task op1 ^ op2 ---> 010111
+
+# from sc_ufixed_fast_task op2 << 2 = 101000
+
+# from sc_ufixed_fast_task op2 >> 2 = 000010
+
+# op1 + op2 = 
+
+# 9.75
+
+# op1 - op2 = 
+
+# 4.75
+
+# op1 * op2 = 
+
+# 18.125
+
+# op1 / op2 = 
+
+# 1.75
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# ******************  sc_signed TYPE ********************** 
+
+# op1 value = -20
+
+# op2 value = -5
+
+# from sc_signed_task op1 & op2---> 11101000
+
+# from sc_signed_task op1 | op2---> 11111111
+
+# from sc_signed_task ~(op1 | op2)---> 00000000
+
+# from sc_signed_task op1 ^ op2 ---> 00010111
+
+# from sc_signed_task op2 << 2 = 11101100
+
+# from sc_signed_task op2 >> 2 = 00111110
+
+# op1 + op2 = 
+
+# -25
+
+# op1 - op2 = 
+
+# -15
+
+# op1 * op2 = 
+
+# 100
+
+# op1 / op2 = 
+
+# 4
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_unsigned TYPE ********************** 
+
+# op1 value = 16
+
+# op2 value = 8
+
+# from sc_unsigned_task op1 & op2---> 00000000
+
+# from sc_unsigned_task op1 | op2---> 00011000
+
+# from sc_unsigned_task ~(op1 | op2)---> 11100111
+
+# from sc_unsigned_task op1 ^ op2 ---> 00011000
+
+# from sc_unsigned_task op2 << 2 = 00100000
+
+# from sc_unsigned_task op2 >> 2 = 00000010
+
+# op1 + op2 = 
+
+# 24
+
+# op1 - op2 = 
+
+# 8
+
+# op1 * op2 = 
+
+# 128
+
+# op1 / op2 = 
+
+# 2
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_int TYPE ********************** 
+
+# op1 value = -15
+
+# op2 value = -5
+
+# from sc_int_task op1 & op2---> 11110001
+
+# from sc_int_task op1 | op2---> 11111011
+
+# from sc_int_task ~(op1 | op2)---> 00000100
+
+# from sc_int_task op1 ^ op2 ---> 00001010
+
+# from sc_int_task op2 << 2 = 11101100
+
+# from sc_int_task op2 >> 2 = 00111110
+
+# op1 + op2 = 
+
+# -20
+
+# op1 - op2 = 
+
+# -10
+
+# op1 * op2 = 
+
+# 75
+
+# op1 / op2 = 
+
+# 3
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_unsigned TYPE ********************** 
+
+# op1 value = 12
+
+# op2 value = 4
+
+# from sc_uint_task op1 & op2---> 00000100
+
+# from sc_uint_task op1 | op2---> 00001100
+
+# from sc_uint_task ~(op1 | op2)---> 11110011
+
+# from sc_uint_task op1 ^ op2 ---> 00001000
+
+# from sc_uint_task op2 << 2 = 00010000
+
+# from sc_uint_task op2 >> 2 = 00000001
+
+# op1 + op2 = 
+
+# 16
+
+# op1 - op2 = 
+
+# 8
+
+# op1 * op2 = 
+
+# 48
+
+# op1 / op2 = 
+
+# 3
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_bigint TYPE ********************** 
+
+# op1 value = -101665525214
+
+# op2 value = -170385001950
+
+# from sc_bigint_task op1 & op2---> 1100100001010100010000110011001000100010
+
+# from sc_bigint_task op1 | op2---> 1111100001010100010000110011001000100010
+
+# from sc_bigint_task ~(op1 | op2)---> 0000011110101011101111001100110111011101
+
+# from sc_bigint_task op1 ^ op2 ---> 0011000000000000000000000000000000000000
+
+# from sc_bigint_task op2 << 2 = 0110000101010001000011001100100010001000
+
+# from sc_bigint_task op2 >> 2 = 0011011000010101000100001100110010001000
+
+# op1 + op2 = 
+
+# -272050527164
+
+# op1 - op2 = 
+
+# 68719476736
+
+# op1 * op2 = 
+
+# 17322280711835164167300
+
+# op1 / op2 = 
+
+# 0
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_biguint TYPE ********************** 
+
+# op1 value = 15766179294
+
+# op2 value = 11471211998
+
+# from sc_biguint_task op1 & op2---> 0000001010101011101111001100110111011110
+
+# from sc_biguint_task op1 | op2---> 0000001110101011101111001100110111011110
+
+# from sc_biguint_task ~(op1 | op2)---> 1111110001010100010000110011001000100001
+
+# from sc_biguint_task op1 ^ op2 ---> 0000000100000000000000000000000000000000
+
+# from sc_biguint_task op2 << 2 = 0000101010101110111100110011011101111000
+
+# from sc_biguint_task op2 >> 2 = 0000000010101010111011110011001101110111
+
+# op1 + op2 = 
+
+# 27237391292
+
+# op1 - op2 = 
+
+# 4294967296
+
+# op1 * op2 = 
+
+# 180857185079951969412
+
+# op1 / op2 = 
+
+# 1
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_bit TYPE ********************** 
+
+# op1 value = 1
+
+# op2 value = 1
+
+# from sc_bit_task op1 & op2---> 1
+
+# from sc_bit_task op1 | op2---> 1
+
+# from sc_bit_task ~(op1 | op2)---> 0
+
+# from sc_bit_task op1 ^ op2 ---> 0
+
+# task_out is not assigned a value !!!!!!
+
+# task_out is not assigned a value !!!!!!
+
+# op1 + op2 = 
+
+# 0
+
+# op1 - op2 = 
+
+# 0
+
+# op1 * op2 = 
+
+# 1
+
+# op1 / op2 = 
+
+# 1
+
+# task_out is not assigned a value !!!!!!
+
+# ******************  sc_bv TYPE ********************** 
+
+# op1 value = 1100
+
+# op2 value = 0100
+
+# from sc_bv_task op1 & op2---> 0100
+
+# from sc_bv_task op1 | op2---> 1100
+
+# from sc_bv_task ~(op1 | op2)---> 0011
+
+# from sc_bv_task op1 ^ op2 ---> 1000
+
+# from sc_bv_task op2 << 2 = 0000
+
+# from sc_bv_task op2 >> 2 = 0001
+
+# op1 + op2 = 
+
+# 00010000
+
+# op1 - op2 = 
+
+# 00001000
+
+# op1 * op2 = 
+
+# 00110000
+
+# op1 / op2 = 
+
+# 00000011
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+
+# ******************  sc_logic TYPE ********************** 
+
+# op1 value = 1
+
+# op2 value = 1
+
+# from sc_logic_task op1 & op2---> 1
+
+# from sc_logic_task op1 | op2---> 1
+
+# from sc_logic_task ~(op1 | op2)---> 0
+
+# from sc_logic_task op1 ^ op2 ---> 0
+
+# task_out is not assigned a value !!!!!!
+
+# task_out is not assigned a value !!!!!!
+
+# op1 + op2 = 
+
+# 0
+
+# op1 - op2 = 
+
+# 0
+
+# op1 * op2 = 
+
+# 1
+
+# op1 / op2 = 
+
+# 1
+
+# task_out is not assigned a value !!!!!!
+
+# ******************  sc_lv TYPE ********************** 
+
+# op1 value = 1100
+
+# op2 value = 0100
+
+# from sc_lv_task op1 & op2---> 0100
+
+# from sc_lv_task op1 | op2---> 1100
+
+# from sc_lv_task ~(op1 | op2)---> 0011
+
+# from sc_lv_task op1 ^ op2 ---> 1000
+
+# from sc_lv_task op2 << 2 = 0000
+
+# from sc_lv_task op2 >> 2 = 0001
+
+# op1 + op2 = 
+
+# 00010000
+
+# op1 - op2 = 
+
+# 00001000
+
+# op1 * op2 = 
+
+# 00110000
+
+# op1 / op2 = 
+
+# 00000011
+
+# testing != operator -----PASS
+
+# testing -- operator -----PASS
+
+# testing ++ operator -----PASS
+
+# testing bit select [] operator  -----PASS
+

@@ -1,0 +1,56 @@
+# do run.do 
+
+# Model Technology ModelSim SE vlog DEV Compiler 2003.05 May 31 2006
+
+# -- Compiling module hello_top
+
+# 
+
+# Top level modules:
+
+# 	hello_top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 May 31 2006
+
+# 
+
+# Exported modules:
+
+# 	hello_sc_top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 May 31 2006
+
+# vsim hello_top hello_sc_top 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# Loading /u/huiyin/dev_fresh/modeltech/linux/../sv_std.std
+
+# Loading work.hello_top(fast)
+
+# Loading work/systemc.so
+
+# Loading work.hello_sc_top
+
+#                   0 starting test.
+
+#                  10 hello from verilog_task.
+
+#	0 s hello from sc_task(). 
+
+#                  30 hello from verilog_task.
+
+#                  40 hello from verilog_task.
+
+#                  60 hello from verilog_task.
+
+#	60 ns hello from sc_task(). 
+
+#                  70 hello from verilog_task.
+
+#                  90 hello from verilog_task.
+
+# ** Note: $finish    : hello.sv(20)
+
+#    Time: 2060 ns  Iteration: 0  Instance: /hello_top
+

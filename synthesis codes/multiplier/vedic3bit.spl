@@ -1,0 +1,9 @@
+[Inputs]
+=A[2:0]=
+=B[2:0]=
+[Outputs]
+=mul[5:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel vedic3bit
+

@@ -1,0 +1,17 @@
+onerror {resume}
+set PrefMain(colorizeTranscript) 1
+set StdArithNoWarnings 1
+set NumericStdNoWarnings 1
+
+view wave
+log -r *
+view assertions
+view coverdirectives
+view covergroups
+fcover configure -enable -weight 4 -at_least 100 /interleaver_tester/interleaver1/interleaver_props_bind/cover__s_interleave_sm
+fcover configure -enable -weight 4 -at_least 100 /interleaver_tester/sva_top_props_bind/cover__s_hs_more_10
+fcover configure -enable -weight 4 -at_least 100 /interleaver_tester/sva_top_props_bind/cover__s_hs_more_10__1
+fcover configure -enable -at_least 250 /interleaver_tester/sva_top_props_bind/cover__s_hs_less_10
+fcover configure -enable -at_least 250 /interleaver_tester/sva_top_props_bind/cover__s_hs_less_10__1
+assertion fail -action break -r *
+do wave.do

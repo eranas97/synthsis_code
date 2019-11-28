@@ -1,0 +1,148 @@
+$date
+   Thu Nov 28 14:41:20 2019
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module tb_vedic3bit $end
+$scope module uut $end
+$var wire 1 ! A [2] $end
+$var wire 1 " A [1] $end
+$var wire 1 # A [0] $end
+$var wire 1 $ B [2] $end
+$var wire 1 % B [1] $end
+$var wire 1 & B [0] $end
+$var wire 1 ' mul [5] $end
+$var wire 1 P mul [4] $end
+$var wire 1 L mul [3] $end
+$var wire 1 G mul [2] $end
+$var wire 1 = mul [1] $end
+$var wire 1 , mul [0] $end
+$var wire 1 < temp1 [1] $end
+$var wire 1 ; temp1 [0] $end
+$var wire 1 J temp3 [1] $end
+$var wire 1 I temp3 [0] $end
+$var wire 1 D temp2 [2] $end
+$var wire 1 @ temp2 [1] $end
+$var wire 1 ? temp2 [0] $end
+$var wire 1 Q carry [4] $end
+$var wire 1 O carry [3] $end
+$var wire 1 K carry [2] $end
+$var wire 1 F carry [1] $end
+$var wire 1 A carry [0] $end
+$var wire 1 N a $end
+$var wire 1 E b $end
+$scope module P0 $end
+$var wire 1 ; A $end
+$var wire 1 < B $end
+$var wire 1 = sum $end
+$var wire 1 A carry $end
+$upscope $end
+$scope module P1 $end
+$var wire 1 ? A $end
+$var wire 1 @ B $end
+$var wire 1 A C $end
+$var wire 1 E sum $end
+$var wire 1 F carry $end
+$upscope $end
+$scope module P2 $end
+$var wire 1 D A $end
+$var wire 1 E B $end
+$var wire 1 F C $end
+$var wire 1 G sum $end
+$var wire 1 K carry $end
+$upscope $end
+$scope module P3 $end
+$var wire 1 I A $end
+$var wire 1 J B $end
+$var wire 1 K C $end
+$var wire 1 L sum $end
+$var wire 1 O carry $end
+$upscope $end
+$scope module P4 $end
+$var wire 1 N A $end
+$var wire 1 O B $end
+$var wire 1 P sum $end
+$var wire 1 Q carry $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0G
+0L
+0P
+0'
+1;
+0<
+0I
+0J
+0?
+0@
+0D
+0A
+0F
+0,
+1=
+0N
+0O
+0E
+0K
+0Q
+1#
+0"
+0&
+0!
+0$
+1%
+$end
+#1000
+1L
+0;
+1J
+0=
+0#
+1"
+1$
+0%
+#2000
+1G
+0L
+1P
+0J
+1?
+1N
+1E
+0"
+1&
+1!
+#3000
+1L
+1;
+1I
+0?
+1@
+1=
+1#
+0&
+1%
+#4000
+0G
+0P
+1'
+0;
+1<
+1J
+1?
+0@
+1D
+1O
+1K
+1Q
+0#
+1"
+1&

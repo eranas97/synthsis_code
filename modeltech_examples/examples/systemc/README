@@ -1,0 +1,52 @@
+             Copyright 1991-2016 Mentor Graphics Corporation
+                        All Rights Reserved.
+
+    This document contains information that is proprietary to
+    Mentor Graphics Corporation. The original recipient of this
+    document may duplicate this document in whole or in part for
+    internal business purposes only, provided that this entire
+    notice appears in all copies. In duplicating any part of this
+    document, the recipient agrees to make every reasonable
+    effort to prevent the unauthorized use and distribution of the
+    proprietary information.
+
+    Trademarks that appear in Mentor Graphics product
+    publications that are not owned by Mentor Graphics are
+    trademarks of their respective owners.
+
+This directory contains different versions of the same design:
+
+- pure vhdl                    <-- ./vhdl
+- pure verilog                 <-- ./vlog
+- pure systemc                 <-- ./sc
+- systemc-vhdl                 <-- ./sc_vhdl
+- systemc-vhdl-vlog            <-- ./sc_vhdl_vlog
+- systemc-verilog              <-- ./sc_vlog
+- vhdl-systemc                 <-- ./vhdl_sc
+- verilog-systemc              <-- ./vlog_sc
+- verilog-systemc-verilog      <-- ./vlog_sc_vlog
+- systemc-verilog-systemc      <-- ./sc_vlog_sc
+- ringbuf with logic types     <-- ./ringbuf_logic
+
+examples of parameter passing
+- systemc-vhdl                 <-- ./param_passing/sc_to_vhdl
+- systemc-vlog                 <-- ./param_passing/sc_to_vlog
+- vlog-systemc                 <-- ./param_passing/vlog_to_sc
+
+examples of control of vhdl/vlog signals from systemc
+- systemc-vhdl                 <-- ./control/vhdl
+- systemc-vlog                 <-- ./control/vlog
+
+examples of observation of vhdl/vlog signals from systemc
+- systemc-vhdl                 <-- ./control/vhdl
+- systemc-vlog                 <-- ./control/vlog
+
+examples of the SystemC Verification Standard library
+- pure systemc                 <-- ./scv
+
+examples of using the OSCI TLM Standard
+- TLM - examples               <-- ./tlm
+
+Each of the above test directories have a README in them
+explaining the configuration of the testcase and how to
+compile and run the design.

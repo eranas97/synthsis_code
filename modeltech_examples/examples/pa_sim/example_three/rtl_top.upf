@@ -1,0 +1,81 @@
+#--------------------------------------------------------------------
+# This sets the design top level 
+#--------------------------------------------------------------------
+upf_version 2.0
+set_scope /alu_tester/dut
+
+#--------------------------------------------------------------------
+# Create power domains
+#--------------------------------------------------------------------
+create_power_domain PD_TOP 
+create_power_domain PD_IN -elements {in1_reg in2_reg}
+create_power_domain PD_MUX -elements {alu_inst/mux_gate}
+
+#--------------------------------------------------------------------
+# Create top level power domain supply ports
+#--------------------------------------------------------------------
+create_supply_port MAIN_PWR
+create_supply_port MAIN_GND
+
+#--------------------------------------------------------------------
+# Create power domain supply nets
+#--------------------------------------------------------------------
+create_supply_net MAIN_PWR
+create_supply_net VDD_TOP_net -domain PD_TOP
+create_supply_net GND_TOP_net -domain PD_TOP
+create_supply_net VDD_IN_net -domain PD_IN
+create_supply_net GND_IN_net -domain PD_IN
+create_supply_net VDD_MUX_net -domain PD_MUX
+create_supply_net GND_MUX_net -domain PD_MUX
+create_supply_net VDD_TOP_net -domain PD_MUX -reuse
+
+#--------------------------------------------------------------------
+# Connect top level power domain supply ports to supply nets
+#--------------------------------------------------------------------
+connect_supply_net VDD_TOP_net -ports MAIN_PWR
+connect_supply_net GND_TOP_net -ports MAIN_GND
+connect_supply_net GND_MUX_net -ports MAIN_GND
+connect_supply_net GND_IN_net -ports MAIN_GND
+
+#--------------------------------------------------------------------
+# Create supply sets
+#--------------------------------------------------------------------
+
+create_supply_set PD_TOP_ss -function {power VDD_TOP_net} -function {ground GND_TOP_net}
+create_supply_set PD_MUX_ss -function {power VDD_TOP_net} -function {ground GND_MUX_net}
+create_supply_set PD_IN_ss -function {power VDD_IN_net} -function {ground GND_IN_net}
+
+#--------------------------------------------------------------------
+# Update the power domains with their supply sets
+#--------------------------------------------------------------------
+
+create_power_domain PD_TOP -update -supply {primary PD_TOP_ss}
+create_power_domain PD_MUX -update -supply {primary PD_MUX_ss}
+create_power_domain PD_IN -update -supply {primary PD_IN_ss}
+
+#--------------------------------------------------------------------
+# Create power switch for primary power, primary ground, nwell, and pwell supplies
+#--------------------------------------------------------------------
+create_power_switch IN_sw \
+    -domain PD_IN \
+    -output_supply_port {vout_p VDD_IN_net} \
+    -input_supply_port {vin_p MAIN_PWR} \
+    -control_port {ctrl_p IN_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+create_power_switch MUX_sw \
+    -domain PD_MUX \
+    -output_supply_port {vout_p VDD_MUX_net} \
+    -input_supply_port {vin_p MAIN_PWR} \
+    -control_port {ctrl_p MUX_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+#--------------------------------------------------------------------
+# Connect supply net with MUX supply ports
+#--------------------------------------------------------------------
+
+set_design_attributes -models {mux_cell} -attribute {UPF_is_macro_cell TRUE}
+
+connect_supply_net VDD_MUX_net -ports alu_inst/mux_gate/pwr_sup

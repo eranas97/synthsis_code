@@ -1,0 +1,43 @@
+tran {Delay (\d+) is (.*)} -name delayIs {
+    field msg      {Delay <time> is $2}
+    field time     {$1}
+}
+
+tran {(.*) from scope (\S+) at time (\d+)} -name fromAt {
+    field msg      {$1 from scope <scope> at time <time>}
+    field instance {$2}
+    field time     {$3}
+}
+
+tran {(.*) on port (\S+) at time (\d+)} -name portAt {
+    field msg      {$1 on port <port> at time <time>}
+    field category {PortError}
+    field port     {$2}
+    field time     {$3}
+}
+
+tran {Scope (\S+) is monitoring port (\S+)} -name scopeIsPort {
+    field msg      {Scope <scope> is monitoring port <port>}
+    field instance {$1}
+    field port     {$2}
+}
+
+tran {Loading initial microcode image\n\s*contact (\S+) for more information} -name contactWho {
+	field msg      {Contact support about microcode}
+	field who      {[string toupper $1]}
+}
+
+# This one *must* be second-to-last, being a superset of other transforms
+
+tran {(.*) at time (\d+)} -name atTime {
+    field msg      {$1 at time <time>}
+    field time     {$2}
+}
+
+# This one *must* be last, since it's a catch-all transform
+
+tran {(.*)} -name catchAll {
+	field msg      {$1}
+	field severity Note
+	field category MISC
+}

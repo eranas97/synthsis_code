@@ -1,0 +1,65 @@
+-----------------------------------------------------------------------------
+SIMPLE EXAMPLE FOR TEST PLAN IMPORT, TEST TRACEABILITY, AND COVERAGE ANALYSIS
+-----------------------------------------------------------------------------
+
+The GUI supports Test Plan Import from a variety of formats presupposing that
+third-party tools export to XML.  The xml2ucdb utility then converts the test
+plan into a UCDB file which must be merged with coverage results.  An example
+of that flow is shown in the sibling "testplan" directory.
+
+This flow is a less sophisticated one that illustrates the building of the test
+plan UCDB itself in code that you yourself may modify.  It is the csv2ucdb
+executable that does the conversion in this example.
+
+The ".csv" file is a "comma-separated values" file that could be created from a
+spreadsheet (or could be typed in directly).  In the example shown, all fields
+of the spreadsheet are text fields.
+
+Once you build the csv2ucdb executable, its -help gives its usage and the
+formatting expectations of the .csv file:
+
+Usage: csv2ucdb <file>.csv
+    Output in <file>.ucdb; "csv" can be any extension.
+
+Convert comma- or tab-separated spreadsheet text file for test plan to:
+   * UCDB file with testplan hierarchy: <file>.ucdb
+     UCDB file has implicit tagging commands imbedded that automatically
+     associate testplan and coverage during the merge.
+
+    <file>.ext contains lines like the following:
+        "1.1","Title","-cvgmatch cvg1; -cvgmatch cvg2"
+    Note that the field separator does not matter, but all fields must be
+    double-quoted strings.
+    The third field must contain valid arguments to the 'coverage tag'
+    such as could be executed in vsim -viewcov loading the merged result.
+    Multiple sets of arguments must be separated by ';'
+
+The general flow of verification and coverage analysis is this:
+
+1.  Create the test plan and convert to a UCDB file.  In this example, this
+    occurs with csv2ucdb.  In this example, it is the third column of the test
+    plan rows that associates each section of the test plan with one or two
+    covergroups.
+2.  Run tests, capturing coverage from each in a UCDB file.  It is crucial that
+    the test name for each test be different (otherwise you will not be able to
+    distinguish between tests when they are reported in per-test analysis.)  In
+    this example, test names are set with a Tcl variable set in the -do option
+    to vsim, and this name is used for the UCDB file base name.  By default,
+    the test name is the same as the UCDB file base name.
+3.  Merge the test plan UCDB file and the coverage UCDB files from each run.
+    Because of the way the test plan UCDB was annotated by csv2ucdb, the
+    "coverage tag" command runs implicitly during the merge and links test plan
+    sections with the covergroups.  In the UCDB data model, objects which share
+    the same tag name are considered to be linked together.
+4.  Load the UCDB file with -viewcov mode.  The coverage analysis command
+    relies on data structures created only when a UCDB file is loaded
+    completely into memory, which only occurs in viewcov mode.  This is why
+    coverage analysis is not available in vsim (simulation) or vcover (the
+    standalone batch utility.)  In vsim simulation, UCDB files are only created
+    on disk and never exist in memory; in the vcover batch utility, inputs are
+    never completely loaded into memory and instead use the "read streaming
+    mode" which is much more memory efficient.
+5.  Use the "coverage analyze" command, the Verification Management Tracker
+    GUI, or Analysis Pane GUI to analyze coverage and the test plan .  The
+    simple_merge.do file in this example -- which incorporates #3, #4, and #5
+    in this list -- shows various ways to use the coverage analyze command.

@@ -1,0 +1,30 @@
+set_design_top rtl_top
+
+#--------------------------------------------------------------------
+# Create power domian for memory controller
+#--------------------------------------------------------------------
+create_power_domain PD_mem_ctrl -elements {mc0}
+
+#--------------------------------------------------------------------
+# Constrain required retention elements
+#--------------------------------------------------------------------
+set_retention_elements mem_ctrl_ret_list \
+    -elements { mc0/present_state mc0/addr}
+
+#--------------------------------------------------------------------
+# Constrain ioslation clamp values for PD ports
+#--------------------------------------------------------------------
+set_port_attributes -ports {mc0/ceb mc0/web} -clamp_value 1
+set_port_attributes -ports {mc0/do_acpt mc0/addr} -clamp_value 0
+
+#--------------------------------------------------------------------
+# Define basin ON power state only for PD_mem_ctrl power domain. This
+# domain must be created prior to loading this constraint UPF file.
+# To early to know if power or ground supply will be switched off 
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl.primary \
+   -state ON { \
+      -supply_expr { \
+         ( power == FULL_ON ) && ( ground == FULL_ON ) \
+      } -simstate NORMAL \
+   }

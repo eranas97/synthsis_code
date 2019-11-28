@@ -1,0 +1,11 @@
+
+Input #1       => 55zzzz5555xxxx55
+Input #2       => ffff0000ffff0000
+
+4-state answer => aaxxxx55aaxxxx55
+xor_logicvec64 => aaxxxx55aaxxxx55
+
+2-state answer => aaff0055aaff0055
+xor_longint    => aaff0055aaff0055
+xor_bitvec64   => aaff0055aaff0055
+

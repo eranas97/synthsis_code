@@ -1,0 +1,58 @@
+vunit check_dram_controller(dram_control(RTL))
+{
+  default clock is (rising_edge(clk));
+
+  -- Cover the case that refresh is signaled and we are not
+  -- in a read or write cycle
+  sequence s_refresh_not_during_rw is {rose(refresh) and (mem_state = IDLE)};
+  c_refresh_not_during_rw : cover {s_refresh_not_during_rw};
+
+  -- Cover the case that refresh is signaled during a read or write
+  sequence s_refresh_during_rw is {rose(refresh) and ((mem_state = MEM_ACCESS) or
+                                                      (mem_state = SWITCH) or
+                                                      (mem_state = RAS_CAS))};
+  c_refresh_during_rw : cover {s_refresh_during_rw};
+
+  -- declare refresh sequence check
+  sequence refresh_sequence  is 
+    {not cas_n and ras_n and we_n; [*1]; (not cas_n and not ras_n and we_n)[*2]; cas_n and ras_n};
+  
+  property check_refresh is always (({rose(refresh)} |->
+               {(mem_state /= IDLE)[*0 to 14]; (mem_state = IDLE); refresh_sequence})
+               abort fell(reset_n));
+
+  assert check_refresh;
+  
+  -- declare refresh rate check
+  sequence signal_refresh is {[*24]; rose(refresh)};
+  property refresh_rate is always (({rose(reset_n) or rose(refresh)} |=> {signal_refresh})
+                                   abort fell(reset_n));
+
+  assert refresh_rate;
+
+
+  -- Check the write cycle 
+  property check_write  is always {fell(as_n) and (rw = '0')} |=> {
+          [*0 to 5];
+          (ras_n = '0' and cas_n = '1' and (addr_out = addr_in(7 downto 4))); 
+          (ras_n = '0' and cas_n = '1' and (addr_out = addr_in(3 downto 0)))[*2]; 
+          (ras_n = '0' and cas_n = '0')[*2]; 
+          ack};
+
+  assert check_write;
+
+  -- check the read cycle 
+  property check_read is always {fell(as_n) and (rw = '1')} |=> {
+          [*0 to 5];
+          (ras_n = '0' and cas_n = '1' and (addr_out = addr_in(7 downto 4))); 
+          (ras_n = '0' and cas_n = '1' and (addr_out = addr_in(3 downto 0)))[*2];
+          (ras_n = '0' and cas_n = '0')[*3];
+          ack};
+
+  assert check_read;
+}
+
+-- property check_refresh is always
+--    ( ({rose(refresh)}   |->
+--         {(mem_state /= IDLE)[*0 to 14]; (mem_state = IDLE); refresh_sequence})
+--         abort (not reset_n));

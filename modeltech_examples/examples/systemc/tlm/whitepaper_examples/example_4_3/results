@@ -1,0 +1,212 @@
+# do run.do 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# 
+
+# Exported modules:
+
+# 	top
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 24 2006
+
+# vsim top 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# Loading work/systemc.so
+
+# Loading work.top
+
+# ** Warning: (vsim-4025) The port '/top/ts2m/master_port' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/ts2m/target_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/slave_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/master_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/put_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/req_rsp/get_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/slave_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/put_response_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/get_request_export' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/top/target_export' is of an undebuggable type.
+
+# Writing Address 0 value 50
+
+# top/even_slave written 50 to 0
+
+# Writing Address 1 value 51
+
+# top/odd_slave written 51 to 0
+
+# Writing Address 2 value 52
+
+# top/even_slave written 52 to 1
+
+# Writing Address 3 value 53
+
+# top/odd_slave written 53 to 1
+
+# Writing Address 4 value 54
+
+# top/even_slave written 54 to 2
+
+# Writing Address 5 value 55
+
+# top/odd_slave written 55 to 2
+
+# Writing Address 6 value 56
+
+# top/even_slave written 56 to 3
+
+# Writing Address 7 value 57
+
+# top/odd_slave written 57 to 3
+
+# Writing Address 8 value 58
+
+# top/even_slave written 58 to 4
+
+# Writing Address 9 value 59
+
+# top/odd_slave written 59 to 4
+
+# Writing Address 10 value 60
+
+# top/even_slave written 60 to 5
+
+# Writing Address 11 value 61
+
+# top/odd_slave written 61 to 5
+
+# Writing Address 12 value 62
+
+# top/even_slave written 62 to 6
+
+# Writing Address 13 value 63
+
+# top/odd_slave written 63 to 6
+
+# Writing Address 14 value 64
+
+# top/even_slave written 64 to 7
+
+# Writing Address 15 value 65
+
+# top/odd_slave written 65 to 7
+
+# Writing Address 16 value 66
+
+# top/even_slave written 66 to 8
+
+# Writing Address 17 value 67
+
+# top/odd_slave written 67 to 8
+
+# Writing Address 18 value 68
+
+# top/even_slave written 68 to 9
+
+# Writing Address 19 value 69
+
+# top/odd_slave written 69 to 9
+
+# top/even_slave read 50 from 0
+
+# Read Address 0 got 50
+
+# top/odd_slave read 51 from 0
+
+# Read Address 1 got 51
+
+# top/even_slave read 52 from 1
+
+# Read Address 2 got 52
+
+# top/odd_slave read 53 from 1
+
+# Read Address 3 got 53
+
+# top/even_slave read 54 from 2
+
+# Read Address 4 got 54
+
+# top/odd_slave read 55 from 2
+
+# Read Address 5 got 55
+
+# top/even_slave read 56 from 3
+
+# Read Address 6 got 56
+
+# top/odd_slave read 57 from 3
+
+# Read Address 7 got 57
+
+# top/even_slave read 58 from 4
+
+# Read Address 8 got 58
+
+# top/odd_slave read 59 from 4
+
+# Read Address 9 got 59
+
+# top/even_slave read 60 from 5
+
+# Read Address 10 got 60
+
+# top/odd_slave read 61 from 5
+
+# Read Address 11 got 61
+
+# top/even_slave read 62 from 6
+
+# Read Address 12 got 62
+
+# top/odd_slave read 63 from 6
+
+# Read Address 13 got 63
+
+# top/even_slave read 64 from 7
+
+# Read Address 14 got 64
+
+# top/odd_slave read 65 from 7
+
+# Read Address 15 got 65
+
+# top/even_slave read 66 from 8
+
+# Read Address 16 got 66
+
+# top/odd_slave read 67 from 8
+
+# Read Address 17 got 67
+
+# top/even_slave read 68 from 9
+
+# Read Address 18 got 68
+
+# top/odd_slave read 69 from 9
+
+# Read Address 19 got 69
+

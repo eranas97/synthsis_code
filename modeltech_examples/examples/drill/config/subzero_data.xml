@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<drill>
+  <sample type="subzero" version="1.0" timestamp="2009-11-24T23:28:12">
+    <table name="summary">
+      <row><lines>0</lines><files>0</files><commits>0</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-11-25T23:28:12">
+    <table name="summary">
+      <row><opened>0</opened><closed>0</closed><active>0</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-11-27T23:28:12">
+    <table name="summary">
+      <row><opened>6</opened><closed>0</closed><active>6</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-11-27T23:28:12">
+    <table name="summary">
+      <row><lines>59</lines><files>1</files><commits>7</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-11-28T23:28:12">
+    <table name="summary">
+      <row><lines>99</lines><files>2</files><commits>10</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-11-29T23:28:12">
+    <table name="summary">
+      <row><opened>12</opened><closed>1</closed><active>11</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-01T23:28:12">
+    <table name="summary">
+      <row><opened>14</opened><closed>6</closed><active>8</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-01T23:28:12">
+    <table name="summary">
+      <row><lines>101</lines><files>2</files><commits>11</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-02T23:28:12">
+    <table name="summary">
+      <row><lines>105</lines><files>2</files><commits>20</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-03T23:28:12">
+    <table name="summary">
+      <row><opened>16</opened><closed>13</closed><active>3</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-05T23:28:12">
+    <table name="summary">
+      <row><opened>19</opened><closed>15</closed><active>4</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-05T23:28:12">
+    <table name="summary">
+      <row><lines>106</lines><files>2</files><commits>28</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-06T23:28:12">
+    <table name="summary">
+      <row><lines>162</lines><files>2</files><commits>31</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-07T23:28:12">
+    <table name="summary">
+      <row><opened>22</opened><closed>18</closed><active>4</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-09T23:28:12">
+    <table name="summary">
+      <row><opened>25</opened><closed>19</closed><active>6</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-09T23:28:12">
+    <table name="summary">
+      <row><lines>173</lines><files>2</files><commits>40</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-10T23:28:12">
+    <table name="summary">
+      <row><lines>179</lines><files>2</files><commits>42</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-11T23:28:12">
+    <table name="summary">
+      <row><opened>30</opened><closed>20</closed><active>10</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-13T23:28:12">
+    <table name="summary">
+      <row><opened>34</opened><closed>27</closed><active>7</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-13T23:28:12">
+    <table name="summary">
+      <row><lines>187</lines><files>2</files><commits>46</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-14T23:28:12">
+    <table name="summary">
+      <row><lines>215</lines><files>2</files><commits>54</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-15T23:28:12">
+    <table name="summary">
+      <row><opened>37</opened><closed>27</closed><active>10</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-17T23:28:12">
+    <table name="summary">
+      <row><opened>39</opened><closed>34</closed><active>5</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-17T23:28:12">
+    <table name="summary">
+      <row><lines>236</lines><files>2</files><commits>63</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-18T23:28:12">
+    <table name="summary">
+      <row><lines>273</lines><files>3</files><commits>72</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-19T23:28:12">
+    <table name="summary">
+      <row><opened>42</opened><closed>36</closed><active>6</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-21T23:28:12">
+    <table name="summary">
+      <row><opened>46</opened><closed>41</closed><active>5</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-21T23:28:12">
+    <table name="summary">
+      <row><lines>340</lines><files>3</files><commits>80</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-22T23:28:12">
+    <table name="summary">
+      <row><lines>405</lines><files>3</files><commits>87</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-23T23:28:12">
+    <table name="summary">
+      <row><opened>49</opened><closed>41</closed><active>8</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-25T23:28:12">
+    <table name="summary">
+      <row><opened>52</opened><closed>41</closed><active>11</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-25T23:28:12">
+    <table name="summary">
+      <row><lines>390</lines><files>4</files><commits>96</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-26T23:28:12">
+    <table name="summary">
+      <row><lines>436</lines><files>4</files><commits>104</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-27T23:28:12">
+    <table name="summary">
+      <row><opened>54</opened><closed>47</closed><active>7</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-29T23:28:12">
+    <table name="summary">
+      <row><opened>57</opened><closed>47</closed><active>10</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-29T23:28:12">
+    <table name="summary">
+      <row><lines>452</lines><files>4</files><commits>107</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2009-12-30T23:28:12">
+    <table name="summary">
+      <row><lines>501</lines><files>4</files><commits>111</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2009-12-31T23:28:12">
+    <table name="summary">
+      <row><opened>59</opened><closed>56</closed><active>3</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-02T23:28:12">
+    <table name="summary">
+      <row><opened>61</opened><closed>57</closed><active>4</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-02T23:28:12">
+    <table name="summary">
+      <row><lines>479</lines><files>4</files><commits>117</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-03T23:28:12">
+    <table name="summary">
+      <row><lines>516</lines><files>4</files><commits>121</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-04T23:28:12">
+    <table name="summary">
+      <row><opened>63</opened><closed>59</closed><active>4</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-06T23:28:12">
+    <table name="summary">
+      <row><opened>65</opened><closed>60</closed><active>5</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-06T23:28:12">
+    <table name="summary">
+      <row><lines>514</lines><files>4</files><commits>130</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-07T23:28:12">
+    <table name="summary">
+      <row><lines>483</lines><files>4</files><commits>139</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-08T23:28:12">
+    <table name="summary">
+      <row><opened>67</opened><closed>60</closed><active>7</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-10T23:28:12">
+    <table name="summary">
+      <row><opened>69</opened><closed>62</closed><active>7</active></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-10T23:28:12">
+    <table name="summary">
+      <row><lines>477</lines><files>4</files><commits>144</commits></row>
+    </table>
+  </sample>
+  <sample type="subzero" version="1.0" timestamp="2010-01-11T23:28:12">
+    <table name="summary">
+      <row><lines>494</lines><files>4</files><commits>144</commits></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" instance="subzero" version="1.0" timestamp="2010-01-12T23:28:12">
+    <table name="summary">
+      <row><opened>71</opened><closed>65</closed><active>6</active></row>
+    </table>
+  </sample>
+</drill>

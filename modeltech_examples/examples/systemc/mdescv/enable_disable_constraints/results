@@ -1,0 +1,102 @@
+# do run.do 
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jun 27 2008
+
+# 
+
+# Exported modules:
+
+# 	sctop
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jun 27 2008
+
+# vsim sctop 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# Warning: CONSTRAINT_WARNING_IGNORE_SOFT_CONSTRAINT: Soft constraints for over-constrained  object 'addr' will be ignored. 
+
+# Warning: CONSTRAINT_WARNING_IGNORE_SOFT_CONSTRAINT: Soft constraints for over-constrained  object 'addr' will be ignored. 
+
+# //  ModelSim SE DEV Jun 27 2008 Linux 2.4.21-40.EL
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //              All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+
+# //  AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading /export/home/projects/mdescv/tests_systemc/systemc_demo/mdescv/enable_disable_constraints/work/_sc/linux_gcc-4.1.2/systemc.so
+
+# Loading /export/home/projects/mdescv/tests_systemc/systemc_demo/mdescv/enable_disable_constraints/work.sctop
+
+# CALLING CONSTRUCTOR
+
+#  DISABLING CONSTRAINT myconst2 :: 0
+
+# is_defined myconst45 (should be 0) :: 0
+
+# is_defined myconst3 (should be 1) :: 1
+
+# DISABLING CONSTRAINT myconst2 :: 1
+
+# addr.row = 12
+
+# addr.col = 25
+
+# 
+
+# ENABLING CONSTRAINT myconst2 :: 1
+
+# Warning: CONSTRAINT_WARNING_IGNORE_SOFT_CONSTRAINT: Soft constraints for over-constrained  object 'addr' will be ignored. 
+
+# addr.row = 60
+
+# addr.col = 75
+
+# 
+
+# DISABLING CONSTRAINT myconst2 :: 0
+
+# addr.row = 25
+
+# addr.col = 125
+
+# 
+
+# ENABLING CONSTRAINT myconst2 :: 1
+
+# Warning: CONSTRAINT_WARNING_IGNORE_SOFT_CONSTRAINT: Soft constraints for over-constrained  object 'addr' will be ignored. 
+
+# addr.row = 171
+
+# addr.col = 175
+
+# 
+
+# DISABLING CONSTRAINT myconst2 :: 0
+
+# addr.row = 43
+
+# addr.col = 225
+
+# 
+
+# 
+

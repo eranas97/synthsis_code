@@ -1,0 +1,52 @@
+# do run.do 
+
+# quit -f
+
+# Model Technology ModelSim SE vcom PROJ-vhdl2008 2181981 Compiler 2010.03 Mar 21 2010
+
+# -- Loading package standard
+
+# -- Compiling entity top
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Loading package Transactions
+
+# -- Compiling architecture arch of top
+
+# vsim top 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# //  ModelSim SE PROJ-vhdl2008 2181981 Mar 21 2010 Linux 2.6.16.60-0.21-smp
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //              All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+
+# //  AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading std.standard
+
+# Loading std.textio(body)
+
+# Loading ieee.std_logic_1164(body)
+
+# Loading modelsim_lib.transactions(body)
+
+# Loading work.top(arch)#1
+

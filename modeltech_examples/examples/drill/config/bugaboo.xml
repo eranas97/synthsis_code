@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drill version="1.0">
+  <!--
+    These configuration variables illustrate multi-instance support.
+    -->
+  <config type="bugaboo">
+    <parameter name="dataSourceName">Bugaboo UnInstance</parameter>
+  </config>
+  <config type="bugaboo" instance="subzero">
+    <parameter name="dataSourceName">Bugaboo w/subzero</parameter>
+  </config>
+  <config type="bugaboo" instance="bugsA">
+    <parameter name="username">bugrootA</parameter>
+    <parameter name="password">mentor</parameter>
+    <parameter name="dataSourceName">Bugaboo Instance A</parameter>
+  </config>
+  <config type="bugaboo" instance="bugsB">
+    <parameter name="username">bugrootB</parameter>
+    <parameter name="password">mentor</parameter>
+    <parameter name="dataSourceName">Bugaboo Instance B</parameter>
+  </config>
+  <config type="bugaboo2" instance="bugsA2">
+    <parameter name="username">bugrootA</parameter>
+    <parameter name="password">mentor</parameter>
+  </config>
+  <!--
+    This is the REAL data model configuration for bugaboo.
+    -->
+  <config type="bugaboo" version="1.0">
+    <parameter name="dataModel">
+      <dataModel version="1">
+        <versionUp>
+          <createTable name="summary" key="timestamp">
+            <addColumn name="opened" type="int" alias="Opened Bugs"/><!-- number of bugs opened -->
+            <addColumn name="closed" type="int" alias="Closed Bugs"/><!-- number of bugs closed -->
+            <addColumn name="active" type="int" alias="Active Bugs"/><!-- number of bugs currently active -->
+          </createTable>
+        </versionUp>
+        <versionDown>
+          <dropTable name="bugaboo"/>
+        </versionDown>
+      </dataModel>
+    </parameter>
+  </config>
+  <config type="bugaboo" version="2.0">
+    <parameter name="dataModel">
+      <dataModel version="2">
+        <versionUp>
+          <modifyTable name="summary">
+            <addColumn name="reject" type="integer"/><!-- number of bugs rejected (added later) -->
+          </modifyTable>
+        </versionUp>
+        <versionDown>
+          <modifyTable name="summary">
+            <dropColumn name="reject"/>
+          </modifyTable>
+        </versionDown>
+      </dataModel>
+    </parameter>
+  </config>
+  <config type="bugaboo2" version="1.0">
+    <parameter name="dataModel">
+      <dataModel version="1">
+        <versionUp>
+          <createTable name="summary" key="timestamp">
+            <addColumn name="opened" type="int"/><!-- number of bugs opened -->
+            <addColumn name="closed" type="int"/><!-- number of bugs closed -->
+            <addColumn name="active" type="int"/><!-- number of bugs currently active -->
+          </createTable>
+        </versionUp>
+        <versionDown>
+          <dropTable name="bugaboo"/>
+        </versionDown>
+      </dataModel>
+    </parameter>
+  </config>
+  <config type="bugaboo" version="2.0">
+    <parameter name="dataModel">
+      <dataModel version="2">
+        <versionUp>
+          <modifyTable name="summary">
+            <addColumn name="reject" type="integer"/><!-- number of bugs rejected (added later) -->
+          </modifyTable>
+        </versionUp>
+        <versionDown>
+          <modifyTable name="summary">
+            <dropColumn name="reject"/>
+          </modifyTable>
+        </versionDown>
+      </dataModel>
+    </parameter>
+  </config>
+
+</drill>

@@ -1,0 +1,5186 @@
+# do run.do 
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Exported modules:
+
+# 	sc_main
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# 
+
+# Model Technology ModelSim SE sccom DEV compiler 2003.05 Jan 18 2012
+
+# vsim sc_main 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# ** Warning: (vopt-3834) sc_export object 'target_socket' might be undebuggable.
+
+# //  ModelSim SE DEV Jan 18 2012 Linux 2.6.32.12-0.7-default
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //  All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/tlm2.0/lt_dmi/work/_sc/linux_gcc-4.5.0/systemc.so
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/tlm2.0/lt_dmi/work.sc_main
+
+# ** Warning: (vsim-3834) sc_export object 'target_socket' might be undebuggable.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_lt_dmi_target_2/memory_socket_2_port_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_lt_dmi_target_1/memory_socket_1_port_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_bus/simple_initiator_socket_tagged_1' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_bus/simple_initiator_socket_tagged_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_bus/simple_target_socket_tagged_1_port_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The port '/sc_main/top/m_bus/simple_target_socket_tagged_0_port_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_initiator_2/m_lt_dmi_initiator/initiator_socket_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_initiator_2/top_initiator_socket_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_initiator_1/m_lt_dmi_initiator/initiator_socket_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_initiator_1/top_initiator_socket_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_bus/simple_initiator_socket_tagged_1_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_bus/simple_initiator_socket_tagged_0_export_0' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_bus/simple_target_socket_tagged_1' is of an undebuggable type.
+
+# ** Warning: (vsim-4025) The export '/sc_main/top/m_bus/simple_target_socket_tagged_0' is of an undebuggable type.
+
+# Info: lt_dmi_target.cpp: 0 s - toggle_dmi_method
+
+#       Target: 201 invalidate_direct_ptr (0, 4096);
+
+# Info: dmi_memory.cpp: 0 s - invalidate_dmi_ptr
+
+#       Initiator:101 DMI Pointer not invalidated for (0, 4096)
+
+# Info: dmi_memory.cpp: 0 s - invalidate_dmi_ptr
+
+#       Initiator:102 DMI Pointer not invalidated for (0, 4096)
+
+# Info: lt_dmi_target.cpp: 0 s - toggle_dmi_method
+
+#       Target: 202 invalidate_direct_ptr (0, 4096);
+
+# Info: dmi_memory.cpp: 0 s - invalidate_dmi_ptr
+
+#       Initiator:101 DMI Pointer not invalidated for (268435456, 268439552)
+
+# Info: dmi_memory.cpp: 0 s - invalidate_dmi_ptr
+
+#       Initiator:102 DMI Pointer not invalidated for (268435456, 268439552)
+
+# Info: traffic_generator.cpp: 0 s - traffic_generator_thread
+
+#       Initiator: 101 Starting Traffic
+
+# Info: traffic_generator.cpp: 0 s - traffic_generator_thread
+
+#       Initiator: 102 Starting Traffic
+
+# Info: lt_dmi_initiator.cpp: 0 s - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 0 s - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 0 s - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0x00000000
+
+# Info: lt_dmi_target.cpp: 0 s - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 0 s - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 0 s - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 0 s - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 0 s - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0x00000000
+
+# Info: lt_dmi_target.cpp: 0 s - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 0 s - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 35 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 35 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0x00000004
+
+# Info: lt_dmi_target.cpp: 35 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 35 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 35 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0x00000004
+
+# Info: lt_dmi_target.cpp: 35 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 35 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 70 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 70 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0x00000008
+
+# Info: lt_dmi_target.cpp: 70 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 70 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 70 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0x00000008
+
+# Info: lt_dmi_target.cpp: 70 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 70 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_target.cpp: 100 ns - toggle_dmi_method
+
+#       Target: 202 DMI has been enabled in this target
+
+# Info: lt_dmi_target.cpp: 100 ns - toggle_dmi_method
+
+#       Target: 201 DMI has been enabled in this target
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 105 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 105 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000000C Data: 0x0000000C
+
+# Info: lt_dmi_target.cpp: 105 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 105 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 105 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000000C Data: 0x0000000C
+
+# Info: lt_dmi_target.cpp: 105 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 105 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 140 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 140 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 140 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 140 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 140 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0x00000010
+
+# Info: lt_dmi_target.cpp: 140 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 140 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0x00000010
+
+# Info: lt_dmi_target.cpp: 140 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 140 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 175 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 175 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 175 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 175 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 175 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0x00000014
+
+# Info: lt_dmi_target.cpp: 175 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 175 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0x00000014
+
+# Info: lt_dmi_target.cpp: 175 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 175 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 210 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 210 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 210 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 210 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 210 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0x00000018
+
+# Info: lt_dmi_target.cpp: 210 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 210 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0x00000018
+
+# Info: lt_dmi_target.cpp: 210 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 210 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 245 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 245 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 245 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 245 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 245 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000001C Data: 0x0000001C
+
+# Info: lt_dmi_target.cpp: 245 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 245 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000001C Data: 0x0000001C
+
+# Info: lt_dmi_target.cpp: 245 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 245 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 280 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 280 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 280 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 280 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 280 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0x00000020
+
+# Info: lt_dmi_target.cpp: 280 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 280 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0x00000020
+
+# Info: lt_dmi_target.cpp: 280 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 280 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 315 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 315 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 315 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 315 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 315 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0x00000024
+
+# Info: lt_dmi_target.cpp: 315 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 315 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0x00000024
+
+# Info: lt_dmi_target.cpp: 315 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 315 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 350 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 350 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 350 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 350 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 350 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0x00000028
+
+# Info: lt_dmi_target.cpp: 350 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 350 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0x00000028
+
+# Info: lt_dmi_target.cpp: 350 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 350 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 385 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 385 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 385 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 385 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 385 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000002C Data: 0x0000002C
+
+# Info: lt_dmi_target.cpp: 385 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 385 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000002C Data: 0x0000002C
+
+# Info: lt_dmi_target.cpp: 385 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 385 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 420 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 420 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 420 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 420 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 420 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0x00000030
+
+# Info: lt_dmi_target.cpp: 420 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 420 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0x00000030
+
+# Info: lt_dmi_target.cpp: 420 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 420 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 455 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 455 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 455 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 455 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 455 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0x00000034
+
+# Info: lt_dmi_target.cpp: 455 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 455 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0x00000034
+
+# Info: lt_dmi_target.cpp: 455 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 455 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 490 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 490 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 490 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 490 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 490 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0x00000038
+
+# Info: lt_dmi_target.cpp: 490 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 490 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0x00000038
+
+# Info: lt_dmi_target.cpp: 490 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 490 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 525 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 525 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 525 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 525 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 525 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000003C Data: 0x0000003C
+
+# Info: lt_dmi_target.cpp: 525 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 525 ns - print
+
+#       ID: 201 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000003C Data: 0x0000003C
+
+# Info: lt_dmi_target.cpp: 525 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 15 ns = 35 ns
+
+# Info: lt_dmi_initiator.cpp: 525 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 35 ns
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 560 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 560 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 560 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 560 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 560 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0x00000000
+
+# Info: lt_dmi_target.cpp: 560 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 560 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0x00000000
+
+# Info: lt_dmi_target.cpp: 560 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 560 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 600 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 600 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 600 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 600 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 600 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0x00000004
+
+# Info: lt_dmi_target.cpp: 600 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 600 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0x00000004
+
+# Info: lt_dmi_target.cpp: 600 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 600 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 640 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 640 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 640 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 640 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 640 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0x00000008
+
+# Info: lt_dmi_target.cpp: 640 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 640 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0x00000008
+
+# Info: lt_dmi_target.cpp: 640 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 640 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 680 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 680 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 680 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 680 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 680 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000000C Data: 0x0000000C
+
+# Info: lt_dmi_target.cpp: 680 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 680 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000000C Data: 0x0000000C
+
+# Info: lt_dmi_target.cpp: 680 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 680 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 720 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 720 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 720 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 720 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 720 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0x00000010
+
+# Info: lt_dmi_target.cpp: 720 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 720 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0x00000010
+
+# Info: lt_dmi_target.cpp: 720 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 720 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 760 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 760 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 760 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 760 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 760 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0x00000014
+
+# Info: lt_dmi_target.cpp: 760 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 760 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0x00000014
+
+# Info: lt_dmi_target.cpp: 760 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 760 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 800 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 800 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 800 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 800 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 800 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0x00000018
+
+# Info: lt_dmi_target.cpp: 800 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 800 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0x00000018
+
+# Info: lt_dmi_target.cpp: 800 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 800 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 840 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 840 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 840 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 840 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 840 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000001C Data: 0x0000001C
+
+# Info: lt_dmi_target.cpp: 840 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 840 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000001C Data: 0x0000001C
+
+# Info: lt_dmi_target.cpp: 840 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 840 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 880 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 880 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 880 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 880 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 880 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0x00000020
+
+# Info: lt_dmi_target.cpp: 880 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 880 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0x00000020
+
+# Info: lt_dmi_target.cpp: 880 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 880 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 920 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 920 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 920 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 920 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 920 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0x00000024
+
+# Info: lt_dmi_target.cpp: 920 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 920 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0x00000024
+
+# Info: lt_dmi_target.cpp: 920 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 920 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 960 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 960 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 960 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 960 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 960 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0x00000028
+
+# Info: lt_dmi_target.cpp: 960 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 960 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0x00000028
+
+# Info: lt_dmi_target.cpp: 960 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 960 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1 us - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1 us - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1 us - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1 us - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1 us - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000002C Data: 0x0000002C
+
+# Info: lt_dmi_target.cpp: 1 us - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1 us - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000002C Data: 0x0000002C
+
+# Info: lt_dmi_target.cpp: 1 us - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1 us - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1040 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1040 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1040 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1040 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1040 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0x00000030
+
+# Info: lt_dmi_target.cpp: 1040 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1040 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0x00000030
+
+# Info: lt_dmi_target.cpp: 1040 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1040 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1080 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1080 ns - print
+
+#       Initiator: 101
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1080 ns - get_direct_mem_ptr
+
+#       Target: 201 passing DMI pointer back to initiator
+
+# Info: dmi_memory.cpp: 1080 ns - print
+
+#       Initiator: 102
+
+#       start addr     = 0
+
+#       end addr       = 4096
+
+#       read latency   = 20 ns
+
+#       write latency  = 15 ns
+
+#       granted access = 3
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1080 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0x00000034
+
+# Info: lt_dmi_target.cpp: 1080 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1080 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0x00000034
+
+# Info: lt_dmi_target.cpp: 1080 ns - custom_b_transport
+
+#       Target: 201 has set dmi_allowed 
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1080 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_target.cpp: 1100 ns - toggle_dmi_method
+
+#       Target: 201 invalidate_direct_ptr (0, 4096);
+
+# Info: dmi_memory.cpp: 1100 ns - invalidate_dmi_ptr
+
+#       Initiator:101 DMI Pointer invalidated for (0, 4096)
+
+# Info: dmi_memory.cpp: 1100 ns - invalidate_dmi_ptr
+
+#       Initiator:102 DMI Pointer invalidated for (0, 4096)
+
+# Info: lt_dmi_target.cpp: 1100 ns - toggle_dmi_method
+
+#       Target: 202 invalidate_direct_ptr (0, 4096);
+
+# Info: dmi_memory.cpp: 1100 ns - invalidate_dmi_ptr
+
+#       Initiator:101 DMI Pointer invalidated for (268435456, 268439552)
+
+# Info: dmi_memory.cpp: 1100 ns - invalidate_dmi_ptr
+
+#       Initiator:102 DMI Pointer invalidated for (268435456, 268439552)
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 set up dmi for next access to this target
+
+#       Initiator: 102 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1120 ns - get_direct_mem_ptr
+
+#       Target: 201 DMI not enabled, not expecting call 
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 DMI access refused even though dmi_allowed was set
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 1
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 set up dmi for next access to this target
+
+#       Initiator: 101 requesting DMI pointer
+
+# Info: lt_dmi_target.cpp: 1120 ns - get_direct_mem_ptr
+
+#       Target: 201 DMI not enabled, not expecting call 
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 DMI access refused even though dmi_allowed was set
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1120 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0x00000038
+
+# Info: lt_dmi_target.cpp: 1120 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1120 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0x00000038
+
+# Info: lt_dmi_target.cpp: 1120 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1120 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1160 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000003C Data: 0x0000003C
+
+# Info: lt_dmi_target.cpp: 1160 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: memory.cpp: 1160 ns - print
+
+#       ID: 201 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000003C Data: 0x0000003C
+
+# Info: lt_dmi_target.cpp: 1160 ns - custom_b_transport
+
+#       Target: 201 returned delay of 0 s + 20 ns + 20 ns = 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1160 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 40 ns
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1200 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1200 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0xEFFFFFFF
+
+# Info: lt_dmi_target.cpp: 1200 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1200 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1200 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0xEFFFFFFF
+
+# Info: lt_dmi_target.cpp: 1200 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1200 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1250 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1250 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0xEFFFFFFB
+
+# Info: lt_dmi_target.cpp: 1250 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1250 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1250 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0xEFFFFFFB
+
+# Info: lt_dmi_target.cpp: 1250 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1250 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1300 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1300 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0xEFFFFFF7
+
+# Info: lt_dmi_target.cpp: 1300 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1300 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1300 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0xEFFFFFF7
+
+# Info: lt_dmi_target.cpp: 1300 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1300 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1350 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1350 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000000C Data: 0xEFFFFFF3
+
+# Info: lt_dmi_target.cpp: 1350 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1350 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1350 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000000C Data: 0xEFFFFFF3
+
+# Info: lt_dmi_target.cpp: 1350 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1350 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1400 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1400 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0xEFFFFFEF
+
+# Info: lt_dmi_target.cpp: 1400 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1400 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1400 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0xEFFFFFEF
+
+# Info: lt_dmi_target.cpp: 1400 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1400 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1450 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1450 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0xEFFFFFEB
+
+# Info: lt_dmi_target.cpp: 1450 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1450 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1450 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0xEFFFFFEB
+
+# Info: lt_dmi_target.cpp: 1450 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1450 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1500 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1500 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0xEFFFFFE7
+
+# Info: lt_dmi_target.cpp: 1500 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1500 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1500 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0xEFFFFFE7
+
+# Info: lt_dmi_target.cpp: 1500 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1500 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1550 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1550 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000001C Data: 0xEFFFFFE3
+
+# Info: lt_dmi_target.cpp: 1550 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1550 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1550 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000001C Data: 0xEFFFFFE3
+
+# Info: lt_dmi_target.cpp: 1550 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1550 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1600 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1600 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0xEFFFFFDF
+
+# Info: lt_dmi_target.cpp: 1600 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1600 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1600 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0xEFFFFFDF
+
+# Info: lt_dmi_target.cpp: 1600 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1600 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1650 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1650 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0xEFFFFFDB
+
+# Info: lt_dmi_target.cpp: 1650 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1650 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1650 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0xEFFFFFDB
+
+# Info: lt_dmi_target.cpp: 1650 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1650 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1700 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1700 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0xEFFFFFD7
+
+# Info: lt_dmi_target.cpp: 1700 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1700 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1700 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0xEFFFFFD7
+
+# Info: lt_dmi_target.cpp: 1700 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1700 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1750 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1750 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000002C Data: 0xEFFFFFD3
+
+# Info: lt_dmi_target.cpp: 1750 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1750 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1750 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000002C Data: 0xEFFFFFD3
+
+# Info: lt_dmi_target.cpp: 1750 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1750 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1800 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1800 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0xEFFFFFCF
+
+# Info: lt_dmi_target.cpp: 1800 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1800 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1800 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0xEFFFFFCF
+
+# Info: lt_dmi_target.cpp: 1800 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1800 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1850 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1850 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0xEFFFFFCB
+
+# Info: lt_dmi_target.cpp: 1850 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1850 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1850 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0xEFFFFFCB
+
+# Info: lt_dmi_target.cpp: 1850 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1850 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1900 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1900 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0xEFFFFFC7
+
+# Info: lt_dmi_target.cpp: 1900 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1900 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1900 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0xEFFFFFC7
+
+# Info: lt_dmi_target.cpp: 1900 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1900 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1950 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 1950 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000003C Data: 0xEFFFFFC3
+
+# Info: lt_dmi_target.cpp: 1950 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 1950 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 1950 ns - print
+
+#       ID: 202 COMMAND: WRITE Length: 04
+
+#       Addr: 0x000000000000003C Data: 0xEFFFFFC3
+
+# Info: lt_dmi_target.cpp: 1950 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 30 ns = 50 ns
+
+# Info: lt_dmi_initiator.cpp: 1950 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 50 ns
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2 us - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2 us - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0xEFFFFFFF
+
+# Info: lt_dmi_target.cpp: 2 us - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2 us - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2 us - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000000 Data: 0xEFFFFFFF
+
+# Info: lt_dmi_target.cpp: 2 us - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2 us - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2070 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2070 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0xEFFFFFFB
+
+# Info: lt_dmi_target.cpp: 2070 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2070 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2070 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000004 Data: 0xEFFFFFFB
+
+# Info: lt_dmi_target.cpp: 2070 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2070 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2140 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2140 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0xEFFFFFF7
+
+# Info: lt_dmi_target.cpp: 2140 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2140 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2140 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000008 Data: 0xEFFFFFF7
+
+# Info: lt_dmi_target.cpp: 2140 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2140 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2210 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2210 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000000C Data: 0xEFFFFFF3
+
+# Info: lt_dmi_target.cpp: 2210 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2210 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2210 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000000C Data: 0xEFFFFFF3
+
+# Info: lt_dmi_target.cpp: 2210 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2210 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2280 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2280 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0xEFFFFFEF
+
+# Info: lt_dmi_target.cpp: 2280 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2280 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2280 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000010 Data: 0xEFFFFFEF
+
+# Info: lt_dmi_target.cpp: 2280 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2280 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2350 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2350 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0xEFFFFFEB
+
+# Info: lt_dmi_target.cpp: 2350 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2350 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2350 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000014 Data: 0xEFFFFFEB
+
+# Info: lt_dmi_target.cpp: 2350 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2350 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2420 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2420 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0xEFFFFFE7
+
+# Info: lt_dmi_target.cpp: 2420 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2420 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2420 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000018 Data: 0xEFFFFFE7
+
+# Info: lt_dmi_target.cpp: 2420 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2420 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2490 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2490 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000001C Data: 0xEFFFFFE3
+
+# Info: lt_dmi_target.cpp: 2490 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2490 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2490 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000001C Data: 0xEFFFFFE3
+
+# Info: lt_dmi_target.cpp: 2490 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2490 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2560 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2560 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0xEFFFFFDF
+
+# Info: lt_dmi_target.cpp: 2560 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2560 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2560 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000020 Data: 0xEFFFFFDF
+
+# Info: lt_dmi_target.cpp: 2560 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2560 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2630 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2630 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0xEFFFFFDB
+
+# Info: lt_dmi_target.cpp: 2630 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2630 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2630 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000024 Data: 0xEFFFFFDB
+
+# Info: lt_dmi_target.cpp: 2630 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2630 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2700 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2700 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0xEFFFFFD7
+
+# Info: lt_dmi_target.cpp: 2700 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2700 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2700 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000028 Data: 0xEFFFFFD7
+
+# Info: lt_dmi_target.cpp: 2700 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2700 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2770 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2770 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000002C Data: 0xEFFFFFD3
+
+# Info: lt_dmi_target.cpp: 2770 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2770 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2770 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000002C Data: 0xEFFFFFD3
+
+# Info: lt_dmi_target.cpp: 2770 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2770 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2840 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2840 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0xEFFFFFCF
+
+# Info: lt_dmi_target.cpp: 2840 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2840 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2840 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000030 Data: 0xEFFFFFCF
+
+# Info: lt_dmi_target.cpp: 2840 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2840 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2910 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2910 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0xEFFFFFCB
+
+# Info: lt_dmi_target.cpp: 2910 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2910 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2910 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000034 Data: 0xEFFFFFCB
+
+# Info: lt_dmi_target.cpp: 2910 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2910 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2980 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 2980 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0xEFFFFFC7
+
+# Info: lt_dmi_target.cpp: 2980 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 2980 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 2980 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x0000000000000038 Data: 0xEFFFFFC7
+
+# Info: lt_dmi_target.cpp: 2980 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 2980 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 101 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 3050 ns - is_address_dmi
+
+#       Initiator:101 address is not a dmi address
+
+# Info: memory.cpp: 3050 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000003C Data: 0xEFFFFFC3
+
+# Info: lt_dmi_target.cpp: 3050 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 101 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 102 b_transport with delay of 0 s);
+
+# Info: dmi_memory.cpp: 3050 ns - is_address_dmi
+
+#       Initiator:102 address is not a dmi address
+
+# Info: memory.cpp: 3050 ns - print
+
+#       ID: 202 COMMAND: READ Length: 04
+
+#       Addr: 0x000000000000003C Data: 0xEFFFFFC3
+
+# Info: lt_dmi_target.cpp: 3050 ns - custom_b_transport
+
+#       Target: 202 returned delay of 0 s + 20 ns + 50 ns = 70 ns
+
+# Info: lt_dmi_initiator.cpp: 3050 ns - initiator_thread
+
+#       Initiator: 102 b_transport returned a delay of 70 ns
+
+# Info: lt_dmi_initiator.cpp: 3120 ns - initiator_thread
+
+#       Initiator: 102 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 3120 ns - initiator_thread
+
+#       Initiator: 102 End of processing
+
+# Info: lt_dmi_initiator.cpp: 3120 ns - initiator_thread
+
+#       Initiator: 101 gp_tpr was returned with dmi_allowed set to 0
+
+# Info: lt_dmi_initiator.cpp: 3120 ns - initiator_thread
+
+#       Initiator: 101 End of processing
+
+# Info: traffic_generator.cpp: 3120 ns - traffic_generator_thread
+
+#       Traffic Generator : 101
+
+# =========================================================
+
+#             ####  Traffic Generator Complete  #### 
+
+# Info: traffic_generator.cpp: 3120 ns - traffic_generator_thread
+
+#       Traffic Generator : 102
+
+# =========================================================
+
+#             ####  Traffic Generator Complete  #### 
+

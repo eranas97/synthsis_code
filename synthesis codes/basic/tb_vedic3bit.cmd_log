@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/synthesis codes/basic/tb_vedic3bit.xst" -ofn "D:/synthesis codes/basic/tb_vedic3bit.syr" 
+xst -intstyle ise -ifn "D:/synthesis codes/basic/tb_vedic3bit.xst" -ofn "D:/synthesis codes/basic/tb_vedic3bit.syr" 
+xst -intstyle ise -ifn "D:/synthesis codes/basic/tb_vedic3bit.xst" -ofn "D:/synthesis codes/basic/tb_vedic3bit.syr" 
+xst -intstyle ise -ifn "D:/synthesis codes/basic/tb_vedic3bit.xst" -ofn "D:/synthesis codes/basic/tb_vedic3bit.syr" 

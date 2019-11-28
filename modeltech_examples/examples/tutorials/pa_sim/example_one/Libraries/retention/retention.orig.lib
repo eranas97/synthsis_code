@@ -1,0 +1,87 @@
+library (ret_lib) {
+    voltage_map(VDD1, 0.81);
+    voltage_map(GND1, 0.0);
+    voltage_map(VDD2, 0.81);
+    voltage_map(GND2, 0.0);
+    /*--------------------------*
+     * Retention model          *
+     *--------------------------*/
+    cell (DFF_RET) {
+        power_gating_cell : "DFF_RET_XXX";
+        pg_pin (TVSS) {
+            pg_type : backup_ground;
+            voltage_name : GND2;
+        }
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        ff (IQ,IQN) {
+            clear : "!CDN";
+            clear_preset_var1 : L;
+            clear_preset_var2 : L;
+            clocked_on : "CP";
+            next_state : "((D !SE) + (SE SI)) (NRESTORE !SAVE)";
+            preset : "!SDN";
+        }
+        pin(CDN) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(CP) {
+            clock : true;
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(D) {
+          direction : input;
+          nextstate_type : data;
+          related_ground_pin : VSS;
+          related_power_pin : VDD;
+        }
+        pin(NRESTORE) {
+            direction : input;
+            retention_pin (restore, "1");
+            always_on : true;
+            related_ground_pin : TVSS;
+            related_power_pin : VDD;
+        }
+        pin(Q) {
+            direction : output;
+            power_down_function : "!VDD + TVSS + VSS";
+            function : "IQ";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(SAVE) {
+            direction : input;
+            retention_pin (save, "0");
+            always_on : true;
+            related_ground_pin : TVSS;
+            related_power_pin : VDD;
+        }
+        pin(SDN) {
+            direction : input;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(SE) {
+            direction : input;
+            nextstate_type : scan_enable;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(SI) {
+            direction : input;
+            nextstate_type : scan_in;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+}

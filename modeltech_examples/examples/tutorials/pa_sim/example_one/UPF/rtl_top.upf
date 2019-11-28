@@ -1,0 +1,116 @@
+set upf_dir ./UPF
+
+#--------------------------------------------------------------------
+# This sets the design top level 
+#--------------------------------------------------------------------
+set_design_top rtl_top
+
+load_upf $upf_dir/mem_ctrl_config.upf
+
+#--------------------------------------------------------------------
+# add supply_sets still no voltage information needed
+#--------------------------------------------------------------------
+create_supply_set power_0d99_ss
+create_supply_set power_0d81_ss
+create_supply_set power_0d81_sw_ss
+
+#--------------------------------------------------------------------
+# designate primary supples for all domains
+#--------------------------------------------------------------------
+associate_supply_set power_0d99_ss -handle PD_top.primary
+associate_supply_set power_0d99_ss -handle PD_sram.primary
+associate_supply_set power_0d81_ss -handle PD_intl.primary
+associate_supply_set power_0d81_sw_ss -handle PD_mem_ctrl.primary
+
+#--------------------------------------------------------------------
+# designate actual supply_sets for isolation and retention supples for PD_mem_ctrl
+#--------------------------------------------------------------------
+associate_supply_set power_0d81_ss -handle PD_mem_ctrl.isolate_ss
+associate_supply_set power_0d81_ss -handle PD_mem_ctrl.retain_ss
+
+#--------------------------------------------------------------------
+# Create power switch for memory controller domain - switch on
+# power side of supply network
+#--------------------------------------------------------------------
+create_power_switch mem_ctrl_sw \
+    -domain PD_mem_ctrl \
+    -output_supply_port {vout_p power_0d81_sw_ss.power} \
+    -input_supply_port {vin_p power_0d81_ss.power} \
+    -control_port {ctrl_p mc_pwr} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+#--------------------------------------------------------------------
+# Update PD_mem_ctrl isolation stragegies with -location info
+#--------------------------------------------------------------------
+set_isolation mem_ctrl_iso_1 -update \
+   -domain PD_mem_ctrl \
+   -location parent
+
+set_isolation mem_ctrl_iso_0 -update \
+   -domain PD_mem_ctrl \
+   -location parent
+
+#--------------------------------------------------------------------
+# Update supply_based power state for PD_mem_ctrl now that we know
+#  power is begin switched. No voltage information yet
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl.primary  \
+   -state OFF  { -update \
+      -supply_expr { ( power == OFF ) \
+       } \
+  } 
+
+#--------------------------------------------------------------------
+# Create power states for PD_mem_ctrl domain using 
+# previous named supply_expr states
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl \
+   -state MCTL_ON  { \
+      -logic_expr { PD_mem_ctrl.primary == ON } \
+   } \
+   -state MCTL_OFF  { \
+      -logic_expr { PD_mem_ctrl.primary == OFF } \
+   } \
+
+#--------------------------------------------------------------------
+# Create supply_based power state for alwasy on domains 
+# No voltage information yet
+#--------------------------------------------------------------------
+add_power_state PD_top.primary \
+   -state TOP_ON { \
+      -supply_expr { \
+         ( power ==  FULL_ON ) && ( ground == FULL_ON ) \
+      } -simstate NORMAL \
+   }
+
+add_power_state PD_sram.primary \
+   -state RAM_ON { \
+      -supply_expr { \
+         ( power == FULL_ON ) && ( ground == FULL_ON ) \
+      } -simstate NORMAL \
+   }
+
+add_power_state PD_intl.primary \
+   -state INT_ON { \
+      -supply_expr { \
+         ( power == FULL_ON ) && ( ground == FULL_ON ) \
+      } -simstate NORMAL \
+   }
+
+#--------------------------------------------------------------------
+# Create system level power states for PD_top using logic expression
+#--------------------------------------------------------------------
+add_power_state PD_top  \
+   -state ON_STATE { \
+      -logic_expr { \
+         ( PD_top.primary == TOP_ON && PD_intl.primary == INT_ON && \
+           PD_sram.primary == RAM_ON && PD_mem_ctrl == MCTL_ON) \
+      } \ 
+   } \
+   -state OFF_STATE { \
+      -logic_expr { 
+         ( PD_top.primary == TOP_ON && PD_intl.primary == INT_ON && \
+           PD_sram.primary == RAM_ON && PD_mem_ctrl == MCTL_OFF) \
+       } \
+    }

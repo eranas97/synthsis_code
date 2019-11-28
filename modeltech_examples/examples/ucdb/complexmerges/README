@@ -1,0 +1,40 @@
+These examples show the following Questa features:
+
+    * Shows various ways to manipulate UCDBs to facilitate a merge.
+
+    Subdirectories:
+        1) setup
+           -- Execute this directory to populate the "common_ucdbs" directory.
+	      Execute this before executing any of the "EXAMPLE_..."
+	      directories.
+        2) common_ucdbs
+	   -- Holds UCDBs used by the "EXAMPLE_..." directories. This
+	      directory is populated by executing the "setup" directory.
+        3) EXAMPLE_libs_differ_merge
+           -- Merge two identical designs compiled into different libraries.
+              Modify a copy of a UCDB so that the DU library portion of its
+	      DU names are made to be the same as those of another UCDB.
+	      Then merge these UCDB files.
+	4) EXAMPLE_du_merge
+           -- Merge all instances of the specified design unit in all the 
+	      input files. It then creates an output file consisting of one 
+	      instance of the design unit, containing all the merged data.
+        5) EXAMPLE_rename_merge
+           -- Modify a copy of a UCDB so that an instance name of a DU is 
+	      renamed to be the same as that of another UCDB.
+	      Then merge these UCDB files.
+        6) EXAMPLE_strip_merge
+           -- Copies of the input UCDBs are stripped levels of hierarchy
+	      until all UCDBs have the desired DUs at the top level.
+	      Then merge these UCDB files.
+        7) EXAMPLE_install_merge
+           -- Copies of the input UCDBs have levels of hierarchy
+	      installed until all UCDBs have the desired DUs at the same 
+	      level. 
+	      Then merge these UCDB files.
+        8) EXAMPLE_move_merge
+           -- Copies of the input UCDBs have empty levels of hierarchy
+	      installed and the desired DUs are moved there. 
+	      Then merge these UCDB files.
+
+IMPORTANT NOTES:

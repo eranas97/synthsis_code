@@ -1,0 +1,75 @@
+library (ls_lib) {
+    voltage_map(VDD1, 0.99);
+    voltage_map(VDD2, 0.81);
+    voltage_map(GND1, 0.0);
+    /*-------------------------------------------*
+     * Low voltage to high voltage level shifter *
+     *-------------------------------------------*/
+    cell (LS_LH) {
+        is_level_shifter : true;
+        level_shifter_type : LH;
+        input_voltage_range (0.81, 1.32);
+        output_voltage_range (0.81, 1.32);
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+            std_cell_main_rail : true;
+        }
+        pg_pin (VDDL) {
+            pg_type : primary_power;
+            voltage_name : VDD2;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            input_signal_level : VDD2;
+            level_shifter_data_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDDL;
+        }
+        pin(Z) {
+            direction : output;
+            output_signal_level : COREVDD1;
+            power_down_function : "!VDD + !VDDL + VSS";
+            function : "I";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*-------------------------------------------*
+     * High voltage to low voltage level shifter *
+     *-------------------------------------------*/
+    cell (LS_HL) {
+        is_level_shifter : true;
+        level_shifter_type : HL;
+        input_voltage_range (0.81, 1.32);
+        output_voltage_range (0.81, 1.32);
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD2;
+            std_cell_main_rail : true;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            input_signal_level : COREVDD1;
+            level_shifter_data_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            output_signal_level : COREVDD2;
+            power_down_function : "!VDD + VSS";
+            function : "I";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+}

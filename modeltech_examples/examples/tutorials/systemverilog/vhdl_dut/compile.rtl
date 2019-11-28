@@ -1,0 +1,7 @@
++incdir+src
+src/count.v
+src/ram2p_2kx8.v
+src/rdyacpt.v
+src/fifo_shift_ram.v
+src/rdyacpt_pins_if.sv
+src/interleaver.sv

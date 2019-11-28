@@ -1,0 +1,28 @@
+This example shows the following Power Aware feature:
+
+    * PA coverage
+
+Preliminary Information
+-----------------------
+For information about PA coverage support, please visit the Power Aware User 
+Manual, Chapter 6 "Power Aware Coverage".
+
+
+Running the example
+-------------------
+A do file "run.do" has been included with this example in order to help you compile, 
+optimize, and simulate the design. The "-pa_coverage=checks" option is needed with the 
+vopt command to enable PA coverage for dynamic checks and "-coverage" option is needed 
+in the vsim command to enable the power states coverage.
+
+This example contains 4 power domains and the add_power_states command is used to describe 
+the states of these power domain. Also there are isolation, level shifter, and retention 
+strategies applied on these power domains.
+
+The simulation tried to hit the different power states of these power domains and firing 
+different power aware dynamic checks.
+
+after the end of simulation, the "coverage report -pa -detail" command is used to report 
+the coverage information for both the power states and dynamic checks.
+
+

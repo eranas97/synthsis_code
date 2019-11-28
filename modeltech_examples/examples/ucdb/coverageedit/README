@@ -1,0 +1,4 @@
+This example shows the following Questa features:
+
+    * UCDB coverage edit
+    * Separate DUT coverage and testbench coverage results

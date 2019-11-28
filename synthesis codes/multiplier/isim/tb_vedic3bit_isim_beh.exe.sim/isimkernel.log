@@ -1,0 +1,29 @@
+Command line:
+   tb_vedic3bit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49801
+
+Thu Nov 28 14:41:20 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5330.8 Meg
+
+ Total Signals          : 46
+ Total Nets             : 39
+ Total Signal Drivers   : 27
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 29
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 125
+Total Line Count : 49
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 4701.66 Meg
+
+Thu Nov 28 23:38:05 2019
+

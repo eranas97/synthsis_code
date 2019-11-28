@@ -1,0 +1,148 @@
+# do run.do 
+
+# Model Technology ModelSim SE vcom PROJ-vhdl2008 2181981 Compiler 2010.03 Mar 21 2010
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Loading package std_logic_arith
+
+# -- Loading package STD_LOGIC_UNSIGNED
+
+# -- Compiling entity control
+
+# -- Compiling architecture RTL of control
+
+# -- Compiling entity retrieve
+
+# -- Compiling architecture RTL of retrieve
+
+# -- Compiling entity ringbuf
+
+# -- Compiling architecture RTL of ringbuf
+
+# -- Loading package std_iopak
+
+# -- Compiling entity store
+
+# -- Compiling architecture RTL of store
+
+# 
+
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+
+# 
+
+# Exported modules:
+
+# 	test_ringbuf
+
+# 
+
+# Model Technology ModelSim SE sccom PROJ-vhdl2008 2181981 compiler 2010.03 Mar 21 2010
+
+# vsim -voptargs=+acc test_ringbuf 
+
+# ** Note: (vsim-3812) Design is being optimized...
+
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "store(RTL)".
+
+# //  ModelSim SE PROJ-vhdl2008 2181981 Mar 21 2010 Linux 2.6.16.60-0.21-smp
+
+# //
+
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+
+# //              All Rights Reserved.
+
+# //
+
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+
+# //  AND IS SUBJECT TO LICENSE TERMS.
+
+# //
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/observe/vhdl/work/_sc/linux_gcc-4.3.3/systemc.so
+
+# Loading /export/scratch/bata/cached-tests/dev/tests_systemc/systemc_demo/observe/vhdl/work.test_ringbuf
+
+# Loading std.standard
+
+# Loading std.textio(body)
+
+# Loading ieee.std_logic_1164(body)
+
+# Loading ieee.std_logic_arith(body)
+
+# Loading work.ringbuf(rtl)
+
+# Loading ieee.std_logic_unsigned(body)
+
+# Loading std_developerskit.std_iopak(body)
+
+# Loading work.store(rtl)#1
+
+# Loading work.control(rtl)#1
+
+# Loading work.retrieve(rtl)#1
+
+# 1
+
+# sig1=0
+
+# sig2=0
+
+# sig3=XXXX
+
+# sig4(0)=X
+
+# VHDL drives sig1=1, sig2=TRUE, sig3=0101, sig4=100
+
+# sig1=1
+
+# sig2=1
+
+# sig3=0101
+
+# sig4(0)=1
+
+# VHDL drives sig1=0, sig2=FALSE, sig3=0000, sig4=111
+
+# sig1=0
+
+# sig2=0
+
+# sig3=0000
+
+# VHDL drives sig1=0, sig2=TRUE, sig3=1111, sig4=001
+
+# sig2=1
+
+# sig3=1111
+
+# sig4(0)=0
+
+# VHDL drives sig1=1, sig2=FALSE, sig3=0111, sig4=011
+
+# sig1=1
+
+# sig2=0
+
+# sig3=0111
+
+# VHDL drives sig1=1, sig2=TRUE, sig3=0101, sig4=100
+
+# sig2=1
+
+# sig3=0101
+
+# sig4(0)=1
+

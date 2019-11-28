@@ -1,0 +1,3 @@
+verilog work "adder3bit.v"
+verilog work "adder2bit.v"
+verilog work "vedic3bit.v"

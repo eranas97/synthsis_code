@@ -1,0 +1,13 @@
+g /top
+p
+p -c
+f -cvg
+p -r
+f -code f
+p -r
+f -all
+w
+d
+n
+n
+q

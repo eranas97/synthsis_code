@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<drill>
+  <sample type="bugaboo" version="1.0" instance="bugsA" timestamp="2009-07-05T05:54:05">
+    <table name="summary">
+      <row><opened>4</opened><closed>0</closed><active>4</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" instance="bugsB" timestamp="2009-07-06T05:54:05">
+    <table name="summary">
+      <row><opened>16</opened><closed>1</closed><active>15</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo2" version="1.0" timestamp="2009-07-07T05:54:05">
+    <table name="summary">
+      <row><opened>21</opened><closed>6</closed><active>15</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo2" version="1.0" instance="bugsA2" timestamp="2009-07-08T05:54:05">
+    <table name="summary">
+      <row><opened>23</opened><closed>7</closed><active>16</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-09T05:54:05">
+    <table name="summary">
+      <row><opened>30</opened><closed>8</closed><active>22</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-10T05:54:05">
+    <table name="summary">
+      <row><opened>33</opened><closed>9</closed><active>24</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-11T05:54:05">
+    <table name="summary">
+      <row><opened>36</opened><closed>14</closed><active>22</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-12T05:54:05">
+    <table name="summary">
+      <row><opened>47</opened><closed>22</closed><active>25</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-13T05:54:05">
+    <table name="summary">
+      <row><opened>57</opened><closed>31</closed><active>26</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-14T05:54:05">
+    <table name="summary">
+      <row><opened>60</opened><closed>40</closed><active>20</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-15T05:54:05">
+    <table name="summary">
+      <row><opened>67</opened><closed>41</closed><active>26</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-16T05:54:05">
+    <table name="summary">
+      <row><opened>76</opened><closed>49</closed><active>27</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-17T05:54:05">
+    <table name="summary">
+      <row><opened>84</opened><closed>52</closed><active>32</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-18T05:54:05">
+    <table name="summary">
+      <row><opened>89</opened><closed>53</closed><active>36</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-19T05:54:05">
+    <table name="summary">
+      <row><opened>98</opened><closed>54</closed><active>44</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-20T05:54:05">
+    <table name="summary">
+      <row><opened>100</opened><closed>61</closed><active>39</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-21T05:54:05">
+    <table name="summary">
+      <row><opened>111</opened><closed>68</closed><active>43</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-22T05:54:05">
+    <table name="summary">
+      <row><opened>121</opened><closed>71</closed><active>50</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-23T05:54:05">
+    <table name="summary">
+      <row><opened>125</opened><closed>75</closed><active>50</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-24T05:54:05">
+    <table name="summary">
+      <row><opened>127</opened><closed>79</closed><active>48</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-25T05:54:05">
+    <table name="summary">
+      <row><opened>136</opened><closed>83</closed><active>53</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-26T05:54:05">
+    <table name="summary">
+      <row><opened>147</opened><closed>88</closed><active>59</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-27T05:54:05">
+    <table name="summary">
+      <row><opened>150</opened><closed>93</closed><active>57</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-28T05:54:05">
+    <table name="summary">
+      <row><opened>152</opened><closed>93</closed><active>59</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-29T05:54:05">
+    <table name="summary">
+      <row><opened>155</opened><closed>96</closed><active>59</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-30T05:54:05">
+    <table name="summary">
+      <row><opened>162</opened><closed>96</closed><active>66</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-07-31T05:54:05">
+    <table name="summary">
+      <row><opened>169</opened><closed>100</closed><active>69</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-01T05:54:05">
+    <table name="summary">
+      <row><opened>179</opened><closed>108</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-02T05:54:05">
+    <table name="summary">
+      <row><opened>188</opened><closed>116</closed><active>72</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-03T05:54:05">
+    <table name="summary">
+      <row><opened>195</opened><closed>117</closed><active>78</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-04T05:54:05">
+    <table name="summary">
+      <row><opened>203</opened><closed>117</closed><active>86</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-05T05:54:05">
+    <table name="summary">
+      <row><opened>208</opened><closed>124</closed><active>84</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-06T05:54:05">
+    <table name="summary">
+      <row><opened>217</opened><closed>133</closed><active>84</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-07T05:54:05">
+    <table name="summary">
+      <row><opened>220</opened><closed>139</closed><active>81</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-08T05:54:05">
+    <table name="summary">
+      <row><opened>229</opened><closed>146</closed><active>83</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-09T05:54:05">
+    <table name="summary">
+      <row><opened>235</opened><closed>155</closed><active>80</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-10T05:54:05">
+    <table name="summary">
+      <row><opened>238</opened><closed>157</closed><active>81</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-11T05:54:05">
+    <table name="summary">
+      <row><opened>241</opened><closed>164</closed><active>77</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-12T05:54:05">
+    <table name="summary">
+      <row><opened>245</opened><closed>165</closed><active>80</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-13T05:54:05">
+    <table name="summary">
+      <row><opened>251</opened><closed>171</closed><active>80</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-14T05:54:05">
+    <table name="summary">
+      <row><opened>255</opened><closed>176</closed><active>79</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-15T05:54:05">
+    <table name="summary">
+      <row><opened>260</opened><closed>181</closed><active>79</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-16T05:54:05">
+    <table name="summary">
+      <row><opened>263</opened><closed>187</closed><active>76</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-17T05:54:05">
+    <table name="summary">
+      <row><opened>266</opened><closed>195</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-18T05:54:05">
+    <table name="summary">
+      <row><opened>274</opened><closed>198</closed><active>76</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-19T05:54:05">
+    <table name="summary">
+      <row><opened>276</opened><closed>201</closed><active>75</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-20T05:54:05">
+    <table name="summary">
+      <row><opened>281</opened><closed>207</closed><active>74</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-21T05:54:05">
+    <table name="summary">
+      <row><opened>283</opened><closed>209</closed><active>74</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-22T05:54:05">
+    <table name="summary">
+      <row><opened>287</opened><closed>218</closed><active>69</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-23T05:54:05">
+    <table name="summary">
+      <row><opened>294</opened><closed>222</closed><active>72</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-24T05:54:05">
+    <table name="summary">
+      <row><opened>301</opened><closed>226</closed><active>75</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-25T05:54:05">
+    <table name="summary">
+      <row><opened>308</opened><closed>231</closed><active>77</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-26T05:54:05">
+    <table name="summary">
+      <row><opened>311</opened><closed>238</closed><active>73</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-27T05:54:05">
+    <table name="summary">
+      <row><opened>313</opened><closed>242</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-28T05:54:05">
+    <table name="summary">
+      <row><opened>319</opened><closed>248</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-29T05:54:05">
+    <table name="summary">
+      <row><opened>322</opened><closed>251</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-30T05:54:05">
+    <table name="summary">
+      <row><opened>326</opened><closed>255</closed><active>71</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-08-31T05:54:05">
+    <table name="summary">
+      <row><opened>329</opened><closed>261</closed><active>68</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-01T05:54:05">
+    <table name="summary">
+      <row><opened>334</opened><closed>265</closed><active>69</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-02T05:54:05">
+    <table name="summary">
+      <row><opened>337</opened><closed>270</closed><active>67</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-03T05:54:05">
+    <table name="summary">
+      <row><opened>342</opened><closed>276</closed><active>66</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-04T05:54:05">
+    <table name="summary">
+      <row><opened>348</opened><closed>279</closed><active>69</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-05T05:54:05">
+    <table name="summary">
+      <row><opened>352</opened><closed>280</closed><active>72</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-06T05:54:05">
+    <table name="summary">
+      <row><opened>354</opened><closed>280</closed><active>74</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-07T05:54:05">
+    <table name="summary">
+      <row><opened>359</opened><closed>280</closed><active>79</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-08T05:54:05">
+    <table name="summary">
+      <row><opened>361</opened><closed>284</closed><active>77</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-09T05:54:05">
+    <table name="summary">
+      <row><opened>363</opened><closed>290</closed><active>73</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-10T05:54:05">
+    <table name="summary">
+      <row><opened>365</opened><closed>291</closed><active>74</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-11T05:54:05">
+    <table name="summary">
+      <row><opened>368</opened><closed>292</closed><active>76</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-12T05:54:05">
+    <table name="summary">
+      <row><opened>371</opened><closed>297</closed><active>74</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-13T05:54:05">
+    <table name="summary">
+      <row><opened>374</opened><closed>301</closed><active>73</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-14T05:54:05">
+    <table name="summary">
+      <row><opened>376</opened><closed>310</closed><active>66</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-15T05:54:05">
+    <table name="summary">
+      <row><opened>379</opened><closed>315</closed><active>64</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-16T05:54:05">
+    <table name="summary">
+      <row><opened>383</opened><closed>324</closed><active>59</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-17T05:54:05">
+    <table name="summary">
+      <row><opened>387</opened><closed>324</closed><active>63</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-18T05:54:05">
+    <table name="summary">
+      <row><opened>389</opened><closed>324</closed><active>65</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-19T05:54:05">
+    <table name="summary">
+      <row><opened>391</opened><closed>325</closed><active>66</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-20T05:54:05">
+    <table name="summary">
+      <row><opened>395</opened><closed>325</closed><active>70</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-21T05:54:05">
+    <table name="summary">
+      <row><opened>397</opened><closed>331</closed><active>66</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-22T05:54:05">
+    <table name="summary">
+      <row><opened>400</opened><closed>340</closed><active>60</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-23T05:54:05">
+    <table name="summary">
+      <row><opened>403</opened><closed>349</closed><active>54</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-24T05:54:05">
+    <table name="summary">
+      <row><opened>405</opened><closed>355</closed><active>50</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-25T05:54:05">
+    <table name="summary">
+      <row><opened>408</opened><closed>361</closed><active>47</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-26T05:54:05">
+    <table name="summary">
+      <row><opened>410</opened><closed>362</closed><active>48</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-27T05:54:05">
+    <table name="summary">
+      <row><opened>412</opened><closed>368</closed><active>44</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-28T05:54:05">
+    <table name="summary">
+      <row><opened>415</opened><closed>374</closed><active>41</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-29T05:54:05">
+    <table name="summary">
+      <row><opened>417</opened><closed>375</closed><active>42</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-09-30T05:54:05">
+    <table name="summary">
+      <row><opened>419</opened><closed>381</closed><active>38</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-01T05:54:05">
+    <table name="summary">
+      <row><opened>421</opened><closed>389</closed><active>32</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-02T05:54:05">
+    <table name="summary">
+      <row><opened>423</opened><closed>394</closed><active>29</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-03T05:54:05">
+    <table name="summary">
+      <row><opened>425</opened><closed>400</closed><active>25</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-04T05:54:05">
+    <table name="summary">
+      <row><opened>427</opened><closed>402</closed><active>25</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-05T05:54:05">
+    <table name="summary">
+      <row><opened>429</opened><closed>407</closed><active>22</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-06T05:54:05">
+    <table name="summary">
+      <row><opened>431</opened><closed>412</closed><active>19</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-07T05:54:05">
+    <table name="summary">
+      <row><opened>433</opened><closed>420</closed><active>13</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-08T05:54:05">
+    <table name="summary">
+      <row><opened>435</opened><closed>420</closed><active>15</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-09T05:54:05">
+    <table name="summary">
+      <row><opened>437</opened><closed>422</closed><active>15</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-10T05:54:05">
+    <table name="summary">
+      <row><opened>439</opened><closed>425</closed><active>14</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-11T05:54:05">
+    <table name="summary">
+      <row><opened>441</opened><closed>429</closed><active>12</active></row>
+    </table>
+  </sample>
+  <sample type="bugaboo" version="1.0" timestamp="2009-10-12T05:54:05">
+    <table name="summary">
+      <row><opened>443</opened><closed>436</closed><active>7</active></row>
+    </table>
+  </sample>
+</drill>

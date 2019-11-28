@@ -1,0 +1,13 @@
++define+OVL_ASSERT_ON            // Turn on OVL assertions
++define+OVL_COVER_ON             // Turn on OVL coverage
++define+OVL_SVA                  // Turn on SVA flavor
++define+OVL_IMPLICIT_XCHECK_OFF  // Turn off implicit X checking
+
+// File extensions
++libext+.vlib                    // OVL wrapper files
++libext+.v                       // Verilog wrapper files
++libext+.sv                       // Verilog wrapper files
+
+// Include directories
+// -- Accellera Standard OVL checkers
++incdir+$QUESTA_HOME/verilog_src/std_ovl

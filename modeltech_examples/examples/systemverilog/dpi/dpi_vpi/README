@@ -1,0 +1,15 @@
+This example shows the following SystemVerilog features:
+
+    * Direct Programming interface (DPI)
+
+Some testbench languages allow you to use dynamic strings to connect to design
+signals.  Besides being able to use hierarchical names directly in
+SystemVerilog, you can also pass signals by reference and use virtual
+interfaces which essentially give you pointers to signals.  Generate
+statements can create iterated references to arrayed instances.  There is also
+signal aliasing to group and ungroup bits of a bus.
+
+With VPI, SystemVerilog has the ability to do all sorts of programmable
+connections to the design, much more powerful than what you can do with simple
+strings.  Even more powerful is the ability to access the VPI using the DPI to
+get built-in language introspection.

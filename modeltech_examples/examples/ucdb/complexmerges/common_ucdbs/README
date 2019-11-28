@@ -1,0 +1,3 @@
+The 'common_ucdbs' directory:
+    Holds UCDBs used by the "../EXAMPLE_..." directories. 
+    This directory is populated by executing the "../setup" directory.

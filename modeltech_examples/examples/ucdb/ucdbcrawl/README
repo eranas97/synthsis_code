@@ -1,0 +1,12 @@
+This example shows the following Questa features:
+
+    * "sink" testcase -- everything but the kitchen sink! -- showing
+      various kinds of coverage structures.
+
+    * ucdbcrawl executable -- an in-memory read example using the UCDB API and
+      allowing interactive exploration of the data through a simple
+      command-line interface.
+
+    * ucdb_print.* utilities -- simple utilities for dumping contents of nodes
+      in the UCDB.
+

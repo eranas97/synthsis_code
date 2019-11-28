@@ -1,0 +1,19 @@
+# Test vectors for 8-bit adder
+# 0 means force 0
+# 1 means force 1
+# L means expect 0
+# H means expect 1
+# X means don't care
+#
+#          a        b           sum
+#time   87654321 87654321 cin 87654321 cout
+   0    11111111 00000000  0  XXXXXXXX  X
+ 100    00000001 00000001  1  HHHHHHHH  L
+ 200    00000010 00000001  0  LLLLLLHH  L
+ 300    10000000 00000001  0  LLLLLLHH  L
+ 400    11110000 00001111  0  HLLLLLLH  L
+ 500    00001111 11110000  1  HHHHHHHH  L
+ 600    10101010 10101010  1  LLLLLLLL  H
+ 700    00000000 00000000  0  LHLHLHLH  H
+ 800    00000000 00000000  0  LLLLLLLL  L
+

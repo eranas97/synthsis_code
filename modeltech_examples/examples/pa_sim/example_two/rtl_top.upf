@@ -1,0 +1,192 @@
+#--------------------------------------------------------------------
+# This sets the design top level 
+#--------------------------------------------------------------------
+set_scope rtl_top
+
+#--------------------------------------------------------------------
+# Create power domains. 
+#--------------------------------------------------------------------
+create_power_domain PD_top
+create_power_domain PD_intl     -elements {i0}
+create_power_domain PD_sram     -elements {m1 m2 m3 m4}
+create_power_domain PD_mem_ctrl -elements {mc0} \
+    -supply { retain_ss } \
+    -supply { isolate_ss }
+
+#--------------------------------------------------------------------
+# Create supply prots/nets
+#--------------------------------------------------------------------
+create_supply_port VDD_0d99 -domain PD_top
+create_supply_port VDD_0d81 -domain PD_top
+create_supply_port VSS -domain PD_top
+
+create_supply_net VDD_0d99 -domain PD_top
+create_supply_net VDD_0d81 -domain PD_top
+create_supply_net VSS -domain PD_top
+
+create_supply_net VDD_0d81_sw -domain PD_mem_ctrl
+
+#--------------------------------------------------------------------
+# Connect top level power domain supply ports to supply nets
+#--------------------------------------------------------------------
+connect_supply_net VDD_0d99 -ports VDD_0d99
+connect_supply_net VDD_0d81 -ports VDD_0d81
+connect_supply_net VSS      -ports VSS
+
+#--------------------------------------------------------------------
+# add supply_sets still no voltage information needed
+#--------------------------------------------------------------------
+create_supply_net VDD_0d81_SW -domain PD_mem_ctrl
+create_supply_set power_0d99_ss -function {power VDD_0d99 } -function {ground VSS}
+create_supply_set power_0d81_ss -function {power VDD_0d81 } -function {ground VSS}
+create_supply_set power_0d81_sw_ss -function {power VDD_0d81_SW } -function {ground VSS}
+
+#--------------------------------------------------------------------
+# designate primary supples for all domains
+#--------------------------------------------------------------------
+associate_supply_set power_0d99_ss -handle PD_top.primary
+associate_supply_set power_0d99_ss -handle PD_sram.primary
+associate_supply_set power_0d81_ss -handle PD_intl.primary
+associate_supply_set power_0d81_sw_ss -handle PD_mem_ctrl.primary
+
+#--------------------------------------------------------------------
+# designate actual supply_sets for isolation and retention supples for PD_mem_ctrl
+#--------------------------------------------------------------------
+associate_supply_set power_0d81_ss -handle PD_mem_ctrl.isolate_ss
+associate_supply_set power_0d81_ss -handle PD_mem_ctrl.retain_ss
+
+#--------------------------------------------------------------------
+# Create power switch for memory controller domain
+#--------------------------------------------------------------------
+create_power_switch mem_ctrl_sw \
+    -domain PD_mem_ctrl \
+    -output_supply_port {vout_p power_0d81_sw_ss.power} \
+    -input_supply_port {vin_p power_0d81_ss.power} \
+    -control_port {ctrl_p mc_pwr} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+#--------------------------------------------------------------------
+# Setup retention strategy for memory controller domain
+#--------------------------------------------------------------------
+set_retention mem_ctrl_ret \
+    -domain PD_mem_ctrl \
+    -retention_supply_set PD_mem_ctrl.retain_ss \
+    -retention_condition {(mc0/clk == 1'b0)} \
+    -save_signal {mc_save high} \
+    -restore_signal {mc_restore low}
+
+#--------------------------------------------------------------------
+# Setup ioslation strategy for memory controller domain
+#--------------------------------------------------------------------
+# Memory controller chip & write enables: clamp value of '1'
+set_isolation mem_ctrl_iso_1 \
+    -domain PD_mem_ctrl \
+    -isolation_supply_set PD_mem_ctrl.isolate_ss \
+    -clamp_value 1 \
+    -elements {mc0/ceb mc0/web} \
+    -isolation_signal mc_iso \
+    -isolation_sense high \
+    -location parent
+
+# All other outputs on memory controller: clamp value of '0'
+set_isolation mem_ctrl_iso_0 \
+    -domain PD_mem_ctrl \
+    -isolation_supply_set PD_mem_ctrl.isolate_ss \
+    -clamp_value 0 \
+    -elements {mc0/do_acpt mc0/addr} \
+    -isolation_signal mc_iso \
+    -isolation_sense high \
+    -location parent
+
+#--------------------------------------------------------------------
+# Create supply_based power state for swtichable PD_mem_ctrl domain
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl.primary \
+   -state MCTL_ON { \
+      -supply_expr { \
+         ( power == { FULL_ON, 0.9 }) && ( ground == {FULL_ON, 0.0} ) \
+      } -simstate NORMAL \
+   } \
+   -state MCTL_OFF { \
+      -supply_expr { ( power == OFF )  && ( ground == {FULL_ON, 0.0} ) \
+       }  -simstate CORRUPT \
+    }
+
+#--------------------------------------------------------------------
+# Create supply_based power state for always on domains 
+#--------------------------------------------------------------------
+add_power_state PD_top.primary \
+   -state TOP_ON { \
+      -supply_expr { \
+         ( power ==  {FULL_ON, 1.1} ) && ( ground == {FULL_ON, 0.0} ) \
+      } -simstate NORMAL \
+   }
+
+add_power_state PD_sram.primary \
+   -state RAM_ON { \
+      -supply_expr { \
+         ( power == { FULL_ON, 1.1 } ) && ( ground == { FULL_ON, 0.0 } ) \
+      } -simstate NORMAL \
+   }
+
+add_power_state PD_intl.primary \
+   -state INT_ON { \
+      -supply_expr { \
+         ( power == { FULL_ON, 0.9 } ) && ( ground == { FULL_ON, 0.0 } ) \
+      } -simstate NORMAL \
+   }
+
+#--------------------------------------------------------------------
+# Create system level power states for PD_top using logic expression
+#--------------------------------------------------------------------
+add_power_state PD_top  \
+   -state ON_STATE { \
+      -logic_expr { \
+         ( PD_top.primary == TOP_ON && PD_intl.primary == INT_ON && \
+           PD_sram.primary == RAM_ON && PD_mem_ctrl.primary == MCTL_ON) \
+      } \ 
+   } \
+   -state OFF_STATE { \
+      -logic_expr { 
+         ( PD_top.primary == TOP_ON && PD_intl.primary == INT_ON && \
+           PD_sram.primary == RAM_ON && PD_mem_ctrl.primary == MCTL_OFF) \
+       } \
+    }
+
+#--------------------------------------------------------------------
+# Define level shifters
+#--------------------------------------------------------------------
+
+set_level_shifter mem_ctrl_ls_in \
+    -domain PD_mem_ctrl \
+    -applies_to inputs \
+    -location self
+
+set_level_shifter mem_ctrl_ls_out \
+    -domain PD_mem_ctrl \
+    -applies_to outputs \
+    -location parent
+
+set_level_shifter interleaver_ls_in \
+    -domain PD_intl \
+    -applies_to inputs \
+    -location self
+
+set_level_shifter interleaver_ls_out \
+    -domain PD_intl \
+    -applies_to outputs \
+    -location parent
+
+#--------------------------------------------------------------------
+# associate supply_set with each LS strategy input/output handles
+#--------------------------------------------------------------------
+#associate_supply_set power_0d99_ss -handle PD_mem_ctrl.mem_ctrl_ls_in.input
+#associate_supply_set power_0d81_ss -handle PD_mem_ctrl.mem_ctrl_ls_in.output
+#associate_supply_set power_0d99_ss -handle PD_intl.interleaver_ls_in.input
+#associate_supply_set power_0d81_ss -handle PD_intl.interleaver_ls_in.output
+#associate_supply_set power_0d81_ss -handle PD_mem_ctrl.mem_ctrl_ls_out.input
+#associate_supply_set power_0d99_ss -handle PD_mem_ctrl.mem_ctrl_ls_out.output
+#associate_supply_set power_0d99_ss -handle PD_intl.interleaver_ls_out.output
+#associate_supply_set power_0d81_ss -handle PD_intl.interleaver_ls_out.input
+

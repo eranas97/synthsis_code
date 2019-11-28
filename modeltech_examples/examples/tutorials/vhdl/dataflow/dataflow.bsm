@@ -1,0 +1,14 @@
+#Copyright 1991-2016 Mentor Graphics Corporation
+#
+#All Rights Reserved.
+#
+#THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY OF 
+#MENTOR GRAPHICS CORPORATION OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+
+# Map an instance to a gate
+and2(vital_gate) AND
+
+# Map some processes to gates, the statements are labeled so we have a symbolic name rather
+# than a line number to map, making the maping less fragile when the source code is modified
+proc(rtl).test2_asgn OR
+proc(rtl).t_out_asgn NAND

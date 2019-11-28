@@ -1,0 +1,6 @@
+This example shows the following SystemVerilog features:
+
+    * Direct Programming interface (DPI)
+
+The example demonstrates the use of some of the built-in DPI C packages
+that are distributed with the simulator.

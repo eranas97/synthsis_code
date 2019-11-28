@@ -1,0 +1,8 @@
+This example shows the following Questa features:
+
+    * UCDB API with write streaming mode
+
+Write streaming mode is a memory-efficient means of writing a Unified
+Functional Coverage Database.  See comments within ucdbwrite.c for details.
+
+

@@ -1,0 +1,13 @@
+# do run.do 
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# 
+# Exported modules:
+# 	test_ringbuf
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# vsim test_ringbuf 
+# Loading work/systemc.so
+# Loading work.test_ringbuf
+# 
+# ** NOTICE  ** at 99800 ns: Data value not expected.
+# 
+# ** RESTORED ** at 202800 ns: Data returned to expected value.

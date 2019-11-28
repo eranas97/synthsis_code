@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45t-fgg484-3 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -mt off vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+vhdtdtfi -lib work {D:/synthesis codes/multiplier/vedic3bit.v} -lang verilog -prj multiplier -o vedic3bit.spl -module vedic3bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vedic3bit.spl {D:/synthesis codes/multiplier/vedic3bit.sym} 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+xst -intstyle ise -ifn "D:/synthesis codes/multiplier/vedic3bit.xst" -ofn "D:/synthesis codes/multiplier/vedic3bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "vedic3bit.ngc" vedic3bit.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o vedic3bit_map.ncd vedic3bit.ngd vedic3bit.pcf 
+par -w -intstyle ise -ol high -t 1 vedic3bit_map.ncd vedic3bit.ncd vedic3bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vedic3bit.twx vedic3bit.ncd -o vedic3bit.twr vedic3bit.pcf 
+vhdtdtfi -lib work {D:/synthesis codes/multiplier/vedic3bit.v} -lang verilog -prj multiplier -o vedic3bit.spl -module vedic3bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vedic3bit.spl {D:/synthesis codes/multiplier/vedic3bit.sym} 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim vedic3bit.ngc vedic3bit_synthesis.v 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drill version="1.0">
+  <config type="subzero">
+    <parameter name="dataSourceName">Subzero SCM</parameter>
+  </config>
+  <!--
+    This is the REAL data model configuration for bugaboo.
+    -->
+  <config type="subzero" version="1.0">
+    <parameter name="dataModel">
+      <dataModel version="1">
+        <versionUp>
+          <createTable name="summary" key="timestamp">
+            <addColumn name="lines"   type="int" alias="Source Lines"/>
+            <addColumn name="files"   type="int" alias="Source Files"/>
+            <addColumn name="commits" type="int" alias="Source Commits"/>
+          </createTable>
+        </versionUp>
+        <versionDown>
+          <dropTable name="summary"/>
+        </versionDown>
+      </dataModel>
+    </parameter>
+  </config>
+</drill>

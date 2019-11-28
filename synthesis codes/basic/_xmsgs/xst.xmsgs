@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"D:\synthesis codes\basic\tb_vedic3bit.v" Line 28: Using initial value of <arg fmt="%s" index="1">A</arg> since it is never assigned
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="old" >"D:\synthesis codes\basic\vedic3bit.v" Line 51: Instantiating &lt;<arg fmt="%s" index="1">P0</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">adder2bit</arg>&gt;
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\synthesis codes\basic\vedic3bit.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">vedic3bit</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\synthesis codes\basic\tb_vedic3bit.v" Line 26: Assignment to <arg fmt="%s" index="1">mul</arg> ignored, since the identifier is never used
+</msg>
+
+</messages>
+

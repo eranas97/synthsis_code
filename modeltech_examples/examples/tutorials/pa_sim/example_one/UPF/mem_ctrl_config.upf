@@ -1,0 +1,81 @@
+set upf_dir ./UPF
+#--------------------------------------------------------------------
+# set design top
+#--------------------------------------------------------------------
+set_design_top rtl_top 
+
+#--------------------------------------------------------------------
+# Create logic ports/nets. Implicitly connected via same net/port names
+#--------------------------------------------------------------------
+
+create_logic_port mc_pwr
+create_logic_net mc_pwr
+create_logic_port mc_iso
+create_logic_port mc_save
+create_logic_port mc_restore
+create_logic_net mc_iso
+create_logic_net mc_save
+create_logic_net mc_restore
+
+#--------------------------------------------------------------------
+# Create power domains. 
+#--------------------------------------------------------------------
+create_power_domain PD_top
+create_power_domain PD_intl     -elements {i0}
+create_power_domain PD_sram     -elements {m1 m2 m3 m4}
+
+#--------------------------------------------------------------------
+# load constraint UPF file
+#--------------------------------------------------------------------
+load_upf $upf_dir/mem_ctrl_const.upf
+
+#--------------------------------------------------------------------
+# Update PD_mem_ctrl to include
+# the isolation/retention supplies
+#--------------------------------------------------------------------
+create_power_domain PD_mem_ctrl -update \
+    -supply { retain_ss } \
+    -supply { isolate_ss }
+
+#--------------------------------------------------------------------
+# Setup retention strategy for memory controller domain
+#--------------------------------------------------------------------
+set_retention mem_ctrl_ret \
+    -domain PD_mem_ctrl \
+    -retention_supply_set PD_mem_ctrl.retain_ss \
+    -retention_condition {(mc0/clk == 1'b0)} \
+    -elements {mem_ctrl_ret_list} \
+    -save_signal {mc_save high} \
+    -restore_signal {mc_restore low}
+
+#--------------------------------------------------------------------
+# Setup ioslation strategy for memory controller domain
+# No location information yet
+#--------------------------------------------------------------------
+# Memory controller chip & write enables: clamp value of '1'
+set_isolation mem_ctrl_iso_1 \
+    -domain PD_mem_ctrl \
+    -isolation_supply_set PD_mem_ctrl.isolate_ss \
+    -clamp_value 1 \
+    -elements {mc0/ceb mc0/web} \
+    -isolation_signal mc_iso \
+    -isolation_sense high
+
+# All other outputs on memory controller: clamp value of '0'
+set_isolation mem_ctrl_iso_0 \
+    -domain PD_mem_ctrl \
+    -isolation_supply_set PD_mem_ctrl.isolate_ss \
+    -clamp_value 0 \
+    -elements {mc0/do_acpt mc0/addr} \
+    -isolation_signal mc_iso \
+    -isolation_sense high
+
+#--------------------------------------------------------------------
+# Create logic expression based Power state for early PA simulation
+# corruption. Still not known if power or ground is switched
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl.primary \
+   -state OFF { \
+      -logic_expr { ( mc_pwr == 1'b0 ) \
+       }  -simstate CORRUPT \
+    }

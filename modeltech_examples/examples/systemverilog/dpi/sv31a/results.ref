@@ -1,0 +1,22 @@
+# vsim -do "run -all; quit -f" -c top
+# Start time: 15:09:26 on Apr 02,2014
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE DEV-10.3 2697767 Apr  2 2014 Linux 2.6.9-89.ELlargesmp
+# // Warning:This is a non-production build that will expire in 44 days on Sat May 17 00:00:00 2014
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading /var/tmp/huiyin@gretel_dpi_12133/linux_gcc-4.5.0/dpi_auto_compile.so
+# run -all
+# bitarr = ffff0000ffff002f
+# logicarr = 55zzzz5555xxxx75
+#  quit -f
+# End time: 15:09:27 on Apr 02,2014, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0

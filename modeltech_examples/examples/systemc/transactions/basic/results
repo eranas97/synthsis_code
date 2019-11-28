@@ -1,0 +1,9 @@
+# do run.do 
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# 
+# Exported modules:
+# 	top
+# Model Technology ModelSim SE sccom <VERSION> compiler <DATE>
+# vsim top 
+# Loading work/systemc.so
+# Loading work.top

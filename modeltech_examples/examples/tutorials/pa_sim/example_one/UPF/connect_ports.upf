@@ -1,0 +1,5 @@
+upf_version 2.0
+connect_logic_net mc_PWR -ports {dut/mc_pwr}
+connect_logic_net mc_ISO -ports {dut/mc_iso}
+connect_logic_net mc_SAVE -ports {dut/mc_save}
+connect_logic_net mc_RESTORE -ports {dut/mc_restore}

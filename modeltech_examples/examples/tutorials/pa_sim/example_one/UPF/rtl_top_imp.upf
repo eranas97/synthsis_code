@@ -1,0 +1,107 @@
+set upf_dir ./UPF
+
+set_design_top rtl_top
+
+load_upf $upf_dir/rtl_top.upf
+#--------------------------------------------------------------------
+# Create top level power domain supply ports
+#--------------------------------------------------------------------
+create_supply_port VDD_0d99 -domain PD_top
+create_supply_port VDD_0d81 -domain PD_top
+create_supply_port VSS      -domain PD_top
+
+#--------------------------------------------------------------------
+# Create supply nets
+#--------------------------------------------------------------------
+create_supply_net VDD_0d99 -domain PD_top
+create_supply_net VDD_0d81 -domain PD_top
+create_supply_net VSS -domain PD_top
+
+create_supply_net VDD_0d81_sw -domain PD_mem_ctrl
+
+#--------------------------------------------------------------------
+# Connect top level power domain supply ports to supply nets
+#--------------------------------------------------------------------
+connect_supply_net VDD_0d99 -ports VDD_0d99
+connect_supply_net VDD_0d81 -ports VDD_0d81
+connect_supply_net VSS      -ports VSS
+
+create_supply_net VDD_0d81_SW -domain PD_mem_ctrl
+create_supply_set power_0d99_ss -function {power VDD_0d99 } -function {ground VSS} -update
+create_supply_set power_0d81_ss -function {power VDD_0d81 } -function {ground VSS} -update
+create_supply_set power_0d81_sw_ss -function {power VDD_0d81_SW } -function {ground VSS} -update
+
+#--------------------------------------------------------------------
+# Update power states with actual voltage information
+#--------------------------------------------------------------------
+add_power_state PD_mem_ctrl.primary \
+   -state ON  { -update \
+      -supply_expr { \
+         ( power == { FULL_ON, 0.9 }) && ( ground == {FULL_ON, 0.0} ) \
+      } \
+   }
+
+add_power_state PD_top.primary \
+   -state TOP_ON { -update \
+      -supply_expr { \
+         ( power ==  {FULL_ON, 1.1} ) && ( ground == {FULL_ON, 0.0} ) \
+      } \
+   }
+
+add_power_state PD_sram.primary \
+   -state RAM_ON { -update \
+      -supply_expr { \
+         ( power == { FULL_ON, 1.1 } ) && ( ground == { FULL_ON, 0.0 } ) \
+      } \
+   }
+
+add_power_state PD_intl.primary \
+   -state INT_ON { -update \
+      -supply_expr { \
+         ( power == { FULL_ON, 0.9 } ) && ( ground == { FULL_ON, 0.0 } ) \
+      } \
+   }
+
+
+#--------------------------------------------------------------------
+# Define level shifters
+#--------------------------------------------------------------------
+# want LS on all .99-.81v ports of mc0
+# outputs must be in parent to get .81-.99v supply
+
+set_level_shifter mem_ctrl_ls_in \
+    -domain PD_mem_ctrl \
+    -applies_to inputs \
+    -location self
+
+set_level_shifter mem_ctrl_ls_out \
+    -domain PD_mem_ctrl \
+    -applies_to outputs \
+    -location parent
+
+# want LS on all .99-.81v ports of Interleaver i0
+# outputs must be in parent to get .81-.99v supply
+
+set_level_shifter interleaver_ls_in \
+    -domain PD_intl \
+    -applies_to inputs \
+    -location self
+
+set_level_shifter interleaver_ls_out \
+    -domain PD_intl \
+    -applies_to outputs \
+    -location parent
+
+#--------------------------------------------------------------------
+# designate high_to_low level shifter supples for all domains 0.99 -> 0.81
+#--------------------------------------------------------------------
+#associate_supply_set power_0d99_ss -handle PD_mem_ctrl.mem_ctrl_ls_in.input
+#associate_supply_set power_0d81_ss -handle PD_mem_ctrl.mem_ctrl_ls_in.output
+#associate_supply_set power_0d99_ss -handle PD_intl.interleaver_ls_in.input
+#associate_supply_set power_0d81_ss -handle PD_intl.interleaver_ls_in.output
+#associate_supply_set power_0d81_ss -handle PD_mem_ctrl.mem_ctrl_ls_out.input
+#associate_supply_set power_0d99_ss -handle PD_mem_ctrl.mem_ctrl_ls_out.output
+#associate_supply_set power_0d99_ss -handle PD_intl.interleaver_ls_out.output
+#associate_supply_set power_0d81_ss -handle PD_intl.interleaver_ls_out.input
+
+save_upf rtl_top_all_1_0.upf

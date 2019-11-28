@@ -1,0 +1,14 @@
+4-state vector answer 0 => 0000000000000000
+2-state vector answer 0 => 0000000000000000
+2-state vector answer 0 => 0000000000000000
+       longint answer 0 => 0000000000000000
+
+4-state vector answer 1 => 0000000000000000
+2-state vector answer 1 => 0000000000000000
+2-state vector answer 1 => 0000000000000000
+       longint answer 1 => 0000000000000000
+
+4-state vector answer 2 => 0000ffff0000ffff
+2-state vector answer 2 => 0000ffff0000ffff
+2-state vector answer 2 => 0000ffff0000ffff
+       longint answer 2 => 0000ffff0000ffff

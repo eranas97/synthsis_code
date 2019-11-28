@@ -1,0 +1,24 @@
+vunit check_top_unit(tb)
+{
+  default clock = (posedge clk);
+
+  sequence cover_refresh = {rose(tb.cntrl.refresh)};
+  c_refresh : cover {cover_refresh};
+
+  // Check for reset
+  sequence s_reset_state = {rose(reset); (ras_n & cas_n & ~ack)};
+  c_reset : cover {s_reset_state};
+
+  // check for memory response
+  property test_read_response = always {rose(as) & rw} |=> {[*5:12]; ack}; 
+  property test_write_response = always {rose(as) & ~rw} |=> {[*5:12]; ack};
+
+  assert test_read_response;
+  assert test_write_response;
+
+  // Check if address strobe is deasserted after acknowledge from memory
+  property check_as_deasserts = always {rose(as)} |=> {[*5:12]; ack; ~as};
+  assert check_as_deasserts;
+
+}
+

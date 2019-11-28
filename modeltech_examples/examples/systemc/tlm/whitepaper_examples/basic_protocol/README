@@ -1,0 +1,13 @@
+
+The files in this directory encapsulate the basic protocol for the user.
+
+They translate between user recognisable functions such as read() and write() to transport layer functions such as transport(). The user need never know about the implementation of the basic protocol.
+
+The definition of the basic protocol is in basic_protocol.h. There are two features which make this protocol "routable" : get_address() in basic_request and the default constructor in basic_reponse.
+
+basic_initiator_port is for code writers on the master side. It supplies convenient read/write functions to the basic protocol.
+
+basic_slave_base is the base class from which all basic protocol slaves should inherit. It implements transport(), unpacks the basic requests and responses, but leaves the read and write functions for the user to implement.
+
+
+

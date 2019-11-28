@@ -1,0 +1,20 @@
+This example shows the following Power Aware feature:
+
+    * PDU-Based Simulation
+
+Preliminary Information
+-----------------------
+For information about PDU-Based Simulation, please visit the Power Aware User 
+Manual, Chapter 3, "PDU-Based Simulation" section.
+
+
+Running the example
+-------------------
+A do file "run.do" has been included with this example in order to help you compile, 
+optimize, and simulate the design.
+
+To enable this flow, the user should use the "-pa_defertop" option in vopt command 
+and the -pa_top in the vsim command where the "-pa_defertop" option specifies that 
+the location of the DUT will be defined later while the "-pa_top" option specifies 
+the path from the test bench top to the design top instance.
+

@@ -1,0 +1,70 @@
+library (iso_lib) {
+    voltage_map(VDD1, 0.99);
+    voltage_map(GND1, 0.0);
+    /*-------------------------------------*
+     * Isolation model - isolation to zero *
+     *-------------------------------------*/
+    cell (ISO_LO) {
+        is_isolation_cell : true;
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            isolation_cell_data_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ISO) {
+            direction : input;
+            isolation_cell_enable_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "((!ISO) I)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+    }
+    /*-------------------------------------* 
+     * Isolation model - isolation to one  * 
+     *-------------------------------------*/
+    cell (ISO_HI) {
+        is_isolation_cell : true;
+        pg_pin (VDD) {
+            pg_type : primary_power;
+            voltage_name : VDD1;
+        }
+        pg_pin (VSS) {
+            pg_type : primary_ground;
+            voltage_name : GND1;
+        }
+        pin(I) {
+            direction : input;
+            isolation_cell_data_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(ISO) {
+            direction : input;
+            isolation_cell_enable_pin : true;
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }
+        pin(Z) {
+            direction : output;
+            power_down_function : "!VDD + VSS";
+            function : "(I+ISO)";
+            related_ground_pin : VSS;
+            related_power_pin : VDD;
+        }  
+    }
+}

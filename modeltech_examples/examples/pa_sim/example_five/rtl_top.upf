@@ -1,0 +1,155 @@
+#--------------------------------------------------------------------
+# This sets the design top level 
+#--------------------------------------------------------------------
+upf_version 2.0
+set_scope /alu_tester/dut
+
+#--------------------------------------------------------------------
+# Create power domains
+#--------------------------------------------------------------------
+create_power_domain PD_TOP 
+create_power_domain PD_IN -elements {in1_reg in2_reg sel_reg}
+create_power_domain PD_ALU -elements {alu_inst}
+create_power_domain PD_OUT -elements {out1_reg}
+
+#--------------------------------------------------------------------
+# Create top level power domain supply ports
+#--------------------------------------------------------------------
+
+create_supply_port MAIN_PWR_low
+create_supply_port MAIN_PWR_moderate
+create_supply_port MAIN_PWR_high
+create_supply_port MAIN_GND
+
+#--------------------------------------------------------------------
+# Create power domain supply nets
+#--------------------------------------------------------------------
+
+create_supply_net MAIN_PWR_low
+create_supply_net MAIN_PWR_moderate
+create_supply_net MAIN_PWR_high
+create_supply_net VDD_TOP_net -domain PD_TOP
+create_supply_net GND_TOP_net -domain PD_TOP
+create_supply_net VDD_IN_net -domain PD_IN
+create_supply_net ISO_IN_net -domain PD_IN
+create_supply_net GND_IN_net -domain PD_IN
+create_supply_net VDD_ALU_net -domain PD_ALU
+create_supply_net GND_ALU_net -domain PD_ALU
+create_supply_net VDD_OUT_net -domain PD_OUT
+create_supply_net RET_OUT_net -domain PD_OUT
+create_supply_net GND_OUT_net -domain PD_OUT
+
+#--------------------------------------------------------------------
+# Connect top level power domain supply ports to supply nets
+#--------------------------------------------------------------------
+
+connect_supply_net MAIN_PWR_low -ports MAIN_PWR_low
+connect_supply_net MAIN_PWR_moderate -ports MAIN_PWR_moderate
+connect_supply_net MAIN_PWR_high -ports MAIN_PWR_high
+connect_supply_net VDD_TOP_net -ports MAIN_PWR_moderate
+connect_supply_net GND_TOP_net -ports MAIN_GND
+connect_supply_net GND_IN_net -ports MAIN_GND
+connect_supply_net GND_ALU_net -ports MAIN_GND
+connect_supply_net GND_OUT_net -ports MAIN_GND
+
+#--------------------------------------------------------------------
+# Create supply sets
+#--------------------------------------------------------------------
+
+create_supply_set PD_TOP_ss -function {power VDD_TOP_net} -function {ground GND_TOP_net}
+create_supply_set PD_IN_ss -function {power VDD_IN_net} -function {ground GND_IN_net}
+create_supply_set PD_IN_ISO_ss -function {power ISO_IN_net} -function {ground GND_IN_net}
+create_supply_set PD_ALU_ss -function {power VDD_ALU_net} -function {ground GND_ALU_net}
+create_supply_set PD_OUT_ss -function {power VDD_OUT_net} -function {ground GND_OUT_net}
+create_supply_set PD_OUT_RET_ss -function {power RET_OUT_net} -function {ground GND_OUT_net}
+
+#--------------------------------------------------------------------
+# Update the power domains with their supply sets
+#--------------------------------------------------------------------
+
+create_power_domain PD_TOP -update -supply {primary PD_TOP_ss}
+create_power_domain PD_IN -update -supply {primary PD_IN_ss} -supply {default_isolation PD_IN_ISO_ss}
+create_power_domain PD_ALU -update -supply {primary PD_ALU_ss}
+create_power_domain PD_OUT -update -supply {primary PD_OUT_ss} -supply {default_retention PD_OUT_RET_ss}
+
+#--------------------------------------------------------------------
+# Create power switch
+#--------------------------------------------------------------------
+create_power_switch IN_sw \
+    -domain PD_IN \
+    -output_supply_port {vout_p VDD_IN_net} \
+    -input_supply_port {vin_p MAIN_PWR_moderate} \
+    -control_port {ctrl_p IN_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+create_power_switch IN_ISO_sw \
+    -domain PD_IN \
+    -output_supply_port {vout_p ISO_IN_net} \
+    -input_supply_port {vin_p MAIN_PWR_moderate} \
+    -control_port {ctrl_p IN_ISO_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+create_power_switch ALU_sw \
+    -domain PD_ALU \
+    -output_supply_port {vout_p VDD_ALU_net} \
+    -input_supply_port {vin_low MAIN_PWR_low} \
+    -input_supply_port {vin_moderate MAIN_PWR_moderate} \
+    -input_supply_port {vin_high MAIN_PWR_high} \
+    -control_port {ctrl_low ALU_PWR_low} \
+    -control_port {ctrl_moderate ALU_PWR_moderate} \
+    -control_port {ctrl_high ALU_PWR_high} \
+    -on_state {low_volt vin_low {ctrl_low}} \
+    -on_state {moderate_volt vin_moderate {ctrl_moderate}} \
+    -on_state {high_volt vin_high {ctrl_high}} \
+    -off_state {off_state {!ctrl_low && !ctrl_moderate && !ctrl_high}} \
+    -error_state {err_state {(ctrl_low && ctrl_moderate) || (ctrl_high && ctrl_moderate) || (ctrl_high && ctrl_low) || (ctrl_high && ctrl_low && ctrl_moderate)}} 
+
+create_power_switch OUT_sw \
+    -domain PD_OUT \
+    -output_supply_port {vout_p VDD_OUT_net} \
+    -input_supply_port {vin_p MAIN_PWR_moderate} \
+    -control_port {ctrl_p OUT_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+create_power_switch OUT_RET_sw \
+    -domain PD_OUT \
+    -output_supply_port {vout_p RET_OUT_net} \
+    -input_supply_port {vin_p MAIN_PWR_moderate} \
+    -control_port {ctrl_p OUT_RET_PWR} \
+    -on_state {normal_working vin_p {ctrl_p}} \
+    -off_state {off_state {!ctrl_p}}
+
+#--------------------------------------------------------------------
+# Adding the power states of the power domains primary supplies
+#--------------------------------------------------------------------
+
+add_power_state PD_TOP.primary -state  PD_TB_always_on { -supply_expr {(power == {FULL_ON,5.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL}
+add_power_state PD_IN.primary -state  PD_IN_on { -supply_expr {(power == {FULL_ON,5.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL }
+add_power_state PD_IN.primary -state  PD_IN_off { -supply_expr {(power == {OFF}) && (ground == {FULL_ON,0.0}) } -logic_expr {!IN_PWR} -simstate CORRUPT }
+add_power_state PD_ALU.primary -state  PD_ALU_low_volt { -supply_expr {(power == {FULL_ON,3.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL }
+add_power_state PD_ALU.primary -state  PD_ALU_moderate_volt { -supply_expr {(power == {FULL_ON,5.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL }
+add_power_state PD_ALU.primary -state  PD_ALU_high_volt { -supply_expr {(power == {FULL_ON,7.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL }
+add_power_state PD_ALU.primary -state  PD_ALU_off { -supply_expr {(power == {OFF}) && (ground == {FULL_ON,0.0}) } -logic_expr {!ALU_PWR_low && !ALU_PWR_high && !ALU_PWR_moderate } -simstate CORRUPT }
+add_power_state PD_OUT.primary -state  PD_OUT_on { -supply_expr {(power == {FULL_ON,5.0}) && (ground == {FULL_ON,0.0}) } -simstate NORMAL }
+add_power_state PD_OUT.primary -state  PD_OUT_off { -supply_expr {(power == {OFF}) && (ground == {FULL_ON,0.0}) } -logic_expr {!OUT_PWR} -simstate CORRUPT }
+
+#--------------------------------------------------------------------
+# setting the isolation strategy for the PD_IN power domain
+#--------------------------------------------------------------------
+
+set_isolation PD_IN_iso -domain PD_IN -isolation_signal IN_ISO -applies_to outputs -location self
+
+#--------------------------------------------------------------------
+# setting the level shifter strategy for the PD_ALU power domain
+#--------------------------------------------------------------------
+
+set_level_shifter PD_ALU_ls -domain PD_ALU -applies_to outputs -rule {both} -location parent
+
+#--------------------------------------------------------------------
+# setting the retention strategy for the PD_OUT power domain
+#--------------------------------------------------------------------
+
+set_retention PD_OUT_ret -domain PD_OUT -restore_signal {OUT_RET negedge} -save_signal {OUT_RET posedge}
